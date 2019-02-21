@@ -1,0 +1,22 @@
+{
+  "name": "TPUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of TPUIKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Topredator/TPUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Topredator": "zhouxiaolu@kaike.la"
+  },
+  "source": {
+    "git": "https://github.com/Topredator/TPUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TPUIKit/Classes/**/*"
+}
