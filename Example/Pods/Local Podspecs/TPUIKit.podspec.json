@@ -18,5 +18,53 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "TPUIKit/Classes/**/*"
+  "source_files": "TPUIKit/Classes/TPUIKit.h",
+  "prefix_header_contents": "#import \"TPUIKitDefine.h\"",
+  "subspecs": [
+    {
+      "name": "Base",
+      "source_files": "TPUIKit/Classes/Base/**/*"
+    },
+    {
+      "name": "GradientView",
+      "source_files": "TPUIKit/Classes/GradientView/**/*"
+    },
+    {
+      "name": "Navigator",
+      "source_files": "TPUIKit/Classes/Navigator/**/*"
+    },
+    {
+      "name": "SimButton",
+      "source_files": "TPUIKit/Classes/SimButton/**/*"
+    },
+    {
+      "name": "Refresh",
+      "source_files": "TPUIKit/Classes/Refresh/**/*",
+      "resources": "TPUIKit/Assets/Refresh.xcassets",
+      "dependencies": {
+        "Masonry": [
+
+        ],
+        "MJRefresh": [
+          "~> 3.1.14"
+        ],
+        "TPUIKit/Base": [
+
+        ]
+      }
+    },
+    {
+      "name": "Toast",
+      "source_files": "TPUIKit/Classes/Toast/**/*",
+      "dependencies": {
+        "TPUIKit/Base": [
+
+        ],
+        "MBProgressHUD": [
+          "~> 1.1.0"
+        ]
+      },
+      "resources": "TPUIKit/Assets/Toast.xcassets"
+    }
+  ]
 }

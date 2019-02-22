@@ -29,8 +29,39 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'TPUIKit/Classes/**/*'
+  s.source_files = 'TPUIKit/Classes/TPUIKit.h'
+  s.prefix_header_contents = '#import "TPUIKitDefine.h"'
+  
+  s.subspec 'Base' do |ss|
+      ss.source_files = 'TPUIKit/Classes/Base/**/*'
+  end
+  
+  s.subspec 'GradientView' do |ss|
+      ss.source_files = 'TPUIKit/Classes/GradientView/**/*'
+  end
+  
+  s.subspec 'Navigator' do |ss|
+      ss.source_files = 'TPUIKit/Classes/Navigator/**/*'
+  end
+  
+  s.subspec 'SimButton' do |ss|
+      ss.source_files = 'TPUIKit/Classes/SimButton/**/*'
+  end
+  
+  s.subspec 'Refresh' do |ss|
+      ss.source_files = 'TPUIKit/Classes/Refresh/**/*'
+      ss.resources = 'TPUIKit/Assets/Refresh.xcassets'
+      ss.dependency 'Masonry'
+      ss.dependency 'MJRefresh', '~> 3.1.14'
+      ss.dependency 'TPUIKit/Base'
+  end
+  
+  s.subspec 'Toast' do |ss|
+      ss.source_files = 'TPUIKit/Classes/Toast/**/*'
+      ss.dependency 'TPUIKit/Base'
+      ss.dependency 'MBProgressHUD', '~> 1.1.0'
+      ss.resources = 'TPUIKit/Assets/Toast.xcassets'
+  end
   
   # s.resource_bundles = {
   #   'TPUIKit' => ['TPUIKit/Assets/*.png']
