@@ -33,11 +33,11 @@
     }];
     
     // 设置Gif
-    NSArray *idleImages = @[[TPUIKitDefine ModuleImage:@"loading1_00000"]];
+    NSArray *idleImages = @[(UIImage *)[TPUIKitDefine ModuleImage:@"loading1_00000"]];
     // 设置即将刷新状态的动画图片
     NSMutableArray *refreshingImages = [NSMutableArray array];
     for (int i = 0; i <= 49; i++) {
-        UIImage *image = [TPUIKitDefine ModuleImage:[NSString stringWithFormat:@"loading1_000%02d", i]];
+        UIImage *image = (UIImage *)[TPUIKitDefine ModuleImage:[NSString stringWithFormat:@"loading1_000%02d", i]];
         [refreshingImages addObject:image];
     }
     // 设置不同状态的图片
