@@ -8,6 +8,6 @@
 #import <Foundation/Foundation.h>
 
 @interface TPUIKitDefine : NSObject
-+ (UIImage *)ModuleImage:(NSString *)imageName;
++ (UIImage *)imageName:(NSString *)imageName;
 @end
 

@@ -9,7 +9,7 @@
 
 
 @implementation TPUIKitDefine
-+ (UIImage *)ModuleImage:(NSString *)imageName {
++ (UIImage *)imageName:(NSString *)imageName {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     return [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
 }
