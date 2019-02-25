@@ -8,11 +8,9 @@
 #import "TPUIKitDefine.h"
 
 
-UIImage *TPModuleImage(NSString *imageName) {
-    NSBundle *bundle = [NSBundle bundleForClass:[TPUIKitDefine class]];
+@implementation TPUIKitDefine
++ (UIImage *)ModuleImage:(NSString *)imageName {
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     return [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
 }
-
-@implementation TPUIKitDefine
-
 @end

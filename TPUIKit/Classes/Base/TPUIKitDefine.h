@@ -7,8 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-UIImage *TPModuleImage(NSString *imageName);
 @interface TPUIKitDefine : NSObject
-
++ (UIImage *)ModuleImage:(NSString *)imageName;
 @end
 
