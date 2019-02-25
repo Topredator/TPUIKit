@@ -22,7 +22,7 @@
 //    self.stateLabel.textAlignment = NSTextAlignmentCenter;
 //    self.stateLabel.font = [UIFont systemFontOfSize:20];
     
-    [self setTitle:@"下拉11111刷新" forState:MJRefreshStateIdle];
+    [self setTitle:@"下拉刷新" forState:MJRefreshStateIdle];
     [self setTitle:@"松开刷新" forState:MJRefreshStatePulling];
     [self setTitle:@"加载中" forState:MJRefreshStateRefreshing];
     
