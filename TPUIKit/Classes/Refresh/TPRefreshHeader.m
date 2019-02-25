@@ -8,8 +8,6 @@
 #import "TPRefreshHeader.h"
 #import <Masonry/Masonry.h>
 
-
-
 @implementation TPRefreshHeader
 - (void)prepare {
     [super prepare];
@@ -21,10 +19,10 @@
 - (void)setupSubviews {
     self.lastUpdatedTimeLabel.hidden = YES;
     // 设置状态标签
-    self.stateLabel.textAlignment = NSTextAlignmentCenter;
-    self.stateLabel.font = [UIFont systemFontOfSize:12];
+//    self.stateLabel.textAlignment = NSTextAlignmentCenter;
+//    self.stateLabel.font = [UIFont systemFontOfSize:20];
     
-    [self setTitle:@"下拉刷新" forState:MJRefreshStateIdle];
+    [self setTitle:@"下拉11111刷新" forState:MJRefreshStateIdle];
     [self setTitle:@"松开刷新" forState:MJRefreshStatePulling];
     [self setTitle:@"加载中" forState:MJRefreshStateRefreshing];
     
@@ -39,21 +37,19 @@
     // 设置即将刷新状态的动画图片
     NSMutableArray *refreshingImages = [NSMutableArray array];
     for (int i = 0; i <= 49; i++) {
-        UIImage *image = TPModuleImage([NSString stringWithFormat:@"loading1_0000%02d", i]);
+        UIImage *image = TPModuleImage([NSString stringWithFormat:@"loading1_000%02d", i]);
         [refreshingImages addObject:image];
     }
     // 设置不同状态的图片
     [self setImages:idleImages forState:MJRefreshStateIdle];
-    [self setImages:idleImages forState:MJRefreshStatePulling];
+    [self setImages:refreshingImages forState:MJRefreshStatePulling];
     [self setImages:refreshingImages duration:3.5 forState:MJRefreshStateRefreshing];
     
     [self.gifView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(38, 36));
+        make.size.mas_equalTo(CGSizeMake(44, 22));
         make.centerX.mas_equalTo(0);
-        make.top.mas_equalTo(8);
+        make.bottom.equalTo(self.stateLabel.mas_top).offset(-10);
     }];
-    
-    self.mj_h = 70;
 }
 - (void)setPullingPercent:(CGFloat)pullingPercent {
     [super setPullingPercent:pullingPercent];
