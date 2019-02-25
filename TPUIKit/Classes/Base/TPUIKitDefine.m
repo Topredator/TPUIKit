@@ -5,12 +5,9 @@
 //  Created by Topredator on 2019/2/22.
 //
 
-#import "TPUIKitDefine.h"
+#import "TPGradientView.h"
 
-
-@implementation TPUIKitDefine
-+ (UIImage *)imageName:(NSString *)imageName {
-    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    return [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
+UIImage *TPModuleImage(NSString *name) {
+    NSBundle *bundle = [NSBundle bundleForClass:[TPGradientView class]];
+    return [UIImage imageNamed:name inBundle:bundle compatibleWithTraitCollection:nil];
 }
-@end
