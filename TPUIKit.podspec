@@ -30,7 +30,6 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
   s.source_files = 'TPUIKit/Classes/TPUIKit.h'
-  s.prefix_header_contents = '#import "TPUIKitDefine.h"'
   
   s.subspec 'Base' do |ss|
       ss.source_files = 'TPUIKit/Classes/Base/**/*'

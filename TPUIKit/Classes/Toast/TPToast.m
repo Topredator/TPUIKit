@@ -8,7 +8,7 @@
 #import "TPToast.h"
 
 #define kTPWindow [UIApplication sharedApplication].keyWindow
-
+#import "TPUIKitDefine.h"
 
 @implementation TPToast
 

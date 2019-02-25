@@ -7,7 +7,7 @@
 
 #import "TPRefreshHeader.h"
 #import <Masonry/Masonry.h>
-
+#import "TPUIKitDefine.h"
 @implementation TPRefreshHeader
 - (void)prepare {
     [super prepare];
