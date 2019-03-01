@@ -35,20 +35,20 @@ static char kBlankViewKey;
 + (instancetype)blankView {
     return [[self alloc] init];
 }
-+ (TPBlankView *)blankViewInView:(__kindof UIView *)view {
++ (TPBlankView *)blankViewInView:(UIView *)view {
     return objc_getAssociatedObject(view, &kBlankViewKey);
 }
-+ (instancetype)showInView:(__kindof UIView *)view animated:(BOOL)animated {
++ (instancetype)showInView:(UIView *)view animated:(BOOL)animated {
     TPBlankView *blankView = [self blankView];
     [blankView showInView:view animated:animated];
     return blankView;
 }
-+ (instancetype)hideInView:(__kindof UIView *)view animated:(BOOL)animated {
++ (instancetype)hideInView:(UIView *)view animated:(BOOL)animated {
     TPBlankView *blankView = [self blankViewInView:view];
     [blankView hideWithAnimated:animated];
     return blankView;
 }
-- (void)showInView:(__kindof UIView *)view animated:(BOOL)animated {
+- (void)showInView:(UIView *)view animated:(BOOL)animated {
     TPBlankView *oldBlankView = [TPBlankView blankViewInView:view];
     if (!view || [oldBlankView isEqual:self]) return;
     if (oldBlankView) [oldBlankView hideWithAnimated:animated];
@@ -149,7 +149,7 @@ static char kBlankViewKey;
 - (void)setupSubviews {
     self.contentView = self.activitiyView;
 }
-- (void)showInView:(__kindof UIView *)view animated:(BOOL)animated {
+- (void)showInView:(UIView *)view animated:(BOOL)animated {
     [super showInView:view animated:animated];
     [self.activitiyView startAnimating];
 }
