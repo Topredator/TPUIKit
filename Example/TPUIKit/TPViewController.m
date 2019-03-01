@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSArray *data = @[@"加载", @"你好啊", @"成功", @"请求成功", @"失败", @"请求失败", @"显示信息", @"测试"];
+    NSArray *data = @[@"加载", @"你好啊", @"成功", @"请求成功", @"失败", @"请求失败", @"显示信息", @"测试Navigator", @"显示blank", @"显示带有刷新按钮的blank", @"activityBlank", @"隐藏blank"];
     [self.datas addObjectsFromArray:data];
     self.myTable.mj_header = [TPRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
     self.myTable.mj_footer = [TPRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
@@ -87,6 +87,32 @@
             TPTestViewController *testVC = [TPTestViewController new];
             testVC.title = @"测试";
             [TPNavigator pushViewController:testVC animated:YES];
+        }
+            break;
+        case 8: {
+            TPTextBlankView *blank = [TPTextBlankView showInView:tableView animated:YES];
+            blank.imageView.image = [UIImage imageNamed:@""];
+            blank.textLabel.text = @"显示成功";
+            blank.subTextLabel.text = @"你需要显示什么";
+        }
+            break;
+        case 9: {
+            TPTextBlankView *blank = [TPTextBlankView showInView:tableView animated:YES];
+            blank.imageView.image = [UIImage imageNamed:@""];
+            blank.textLabel.text = @"显示成功";
+            blank.subTextLabel.text = @"你需要显示什么";
+            __weak typeof(blank) blankView = blank;
+            [blank setRefreshTitle:@"删除" actionBlock:^{
+                [blankView hideWithAnimated:YES];
+            }];
+        }
+            break;
+        case 10: {
+            [tableView tp_showActivityBlankView];
+        }
+            break;
+        case 11: {
+            [[TPBlankView blankViewInView:tableView] hideWithAnimated:YES];
         }
             break;
         default:

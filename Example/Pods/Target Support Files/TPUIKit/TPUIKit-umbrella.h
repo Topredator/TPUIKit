@@ -12,6 +12,8 @@
 
 #import "TPUIKit.h"
 #import "TPUIKitDefine.h"
+#import "TPBlankView.h"
+#import "UIView+TPBlankView.h"
 #import "TPGradientView.h"
 #import "TPNavigator.h"
 #import "TPRefreshFooter.h"

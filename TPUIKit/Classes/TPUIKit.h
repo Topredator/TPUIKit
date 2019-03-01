@@ -20,3 +20,6 @@
 // Refresh
 #import "TPRefreshHeader.h"
 #import "TPRefreshFooter.h"
+
+// BlankView
+#import "TPBlankView.h"
