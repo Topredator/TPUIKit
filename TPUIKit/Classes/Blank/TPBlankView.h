@@ -13,10 +13,10 @@
 @property (nonatomic, strong, nullable) UIView *contentView;
 @property (nonatomic, assign) CGFloat topOffset UI_APPEARANCE_SELECTOR;
 + (instancetype)blankView;
-+ (TPBlankView *)blankViewInView:(UIView *)view;
-+ (instancetype)showInView:(UIView *)view animated:(BOOL)animated;
-+ (instancetype)hideInView:(UIView *)view animated:(BOOL)animated;
-- (void)showInView:(UIView *)view animated:(BOOL)animated;
++ (TPBlankView *)blankViewInView:(__kindof UIView *)view;
++ (instancetype)showInView:(__kindof UIView *)view animated:(BOOL)animated;
++ (instancetype)hideInView:(__kindof UIView *)view animated:(BOOL)animated;
+- (void)showInView:(__kindof UIView *)view animated:(BOOL)animated;
 - (void)hideWithAnimated:(BOOL)animated;
 - (void)setupSubviews;
 @end

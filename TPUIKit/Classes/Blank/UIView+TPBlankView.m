@@ -10,7 +10,9 @@
 #import "TPUIKitDefine.h"
 #import <Masonry/Masonry.h>
 
-static TPTextBlankView *TPCreateTextBlankView(UIView *view, UIImage *image, NSString *text, NSString *subText) {
+#define force_inline __inline__ __attribute__((always_inline))
+
+static force_inline TPTextBlankView *TPCreateTextBlankView(__kindof UIView *view, UIImage *image, NSString *text, NSString *subText) {
     TPTextBlankView *blankView = [TPTextBlankView showInView:view animated:YES];
     blankView.imageView.image = image;
     blankView.textLabel.text = text;
