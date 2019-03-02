@@ -9,3 +9,6 @@
 
 UIImage *TPModuleImage(NSString *name);
 
+@interface TPUIKitDefine : NSObject
+
+@end
