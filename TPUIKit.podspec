@@ -33,6 +33,9 @@ TODO: Add long description of the pod here.
   
   s.subspec 'Base' do |ss|
       ss.source_files = 'TPUIKit/Classes/Base/**/*'
+      ss.resource_bundle = {
+        'TPUIKitBase' => ['TPUIKit/Assets/Base.xcassets']
+      }
   end
   
   s.subspec 'GradientView' do |ss|
@@ -49,7 +52,10 @@ TODO: Add long description of the pod here.
   
   s.subspec 'Refresh' do |ss|
       ss.source_files = 'TPUIKit/Classes/Refresh/**/*'
-      ss.resources = 'TPUIKit/Assets/Refresh.xcassets'
+      #      ss.resources = 'TPUIKit/Assets/Refresh.xcassets'
+      ss.resource_bundle = {
+          'TPUIKitRefresh' => ['TPUIKit/Assets/Refresh.xcassets']
+      }
       ss.dependency 'Masonry'
       ss.dependency 'MJRefresh', '~> 3.1.14'
       ss.dependency 'TPUIKit/Base'
@@ -59,17 +65,21 @@ TODO: Add long description of the pod here.
       ss.source_files = 'TPUIKit/Classes/Toast/**/*'
       ss.dependency 'TPUIKit/Base'
       ss.dependency 'MBProgressHUD', '~> 1.1.0'
-      ss.resources = 'TPUIKit/Assets/Toast.xcassets'
+      ss.resource_bundle = {
+          'TPUIKitToast' => ['TPUIKit/Assets/Toast.xcassets']
+      }
+#      ss.resources = 'TPUIKit/Assets/Toast.xcassets'
   end
   
   s.subspec 'Blank' do |ss|
       ss.source_files = 'TPUIKit/Classes/Blank/**/*'
       ss.dependency 'TPUIKit/Base'
       ss.dependency 'Masonry'
+      ss.resource_bundle = {
+          'TPUIKitBlank' => ['TPUIKit/Assets/Blank.xcassets']
+      }
   end
-  # s.resource_bundles = {
-  #   'TPUIKit' => ['TPUIKit/Assets/*.png']
-  # }
+   
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

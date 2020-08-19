@@ -7,7 +7,7 @@
 
 #import "UIView+TPBlankView.h"
 #import "TPBlankView.h"
-#import "TPUIKitDefine.h"
+#import "TPUIBlankAccets.h"
 #import <Masonry/Masonry.h>
 
 #define force_inline __inline__ __attribute__((always_inline))
@@ -27,7 +27,7 @@ static force_inline TPTextBlankView *TPCreateTextBlankView(__kindof UIView *view
 - (TPImageBlankView *)tp_showLoadingBlankView {
     NSMutableArray *images = @[].mutableCopy;
     for (NSInteger i = 0; i <= 49; i++) {
-        UIImage *image = TPModuleImage([NSString stringWithFormat:@"loading1_000%02ld", i]);
+        UIImage *image = [TPUIBlankAccets imageName:[NSString stringWithFormat:@"loading1_000%02ld", i]];
         [images addObject:image];
     }
     return [self tp_showLoading:images text:nil size:CGSizeMake(180, 90)];

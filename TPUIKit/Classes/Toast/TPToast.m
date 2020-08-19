@@ -8,7 +8,7 @@
 #import "TPToast.h"
 
 #define kTPWindow [UIApplication sharedApplication].keyWindow
-#import "TPUIKitDefine.h"
+#import "TPUIToastAccets.h"
 
 @implementation TPToast
 
@@ -35,7 +35,7 @@
     [self hideInView:view];
     TPToast *toast = [TPToast showHUDAddedTo:view animated:YES];
     toast.mode = MBProgressHUDModeCustomView;
-    TPToastImageView *imageView = [self fetchToastImageView];
+    UIImageView *imageView = [self fetchToastImageView];
     toast.customView = imageView;
     toast.square = YES;
     toast.detailsLabel.text = loading;
@@ -49,7 +49,7 @@
     TPToast *toast = [TPToast showHUDAddedTo:view animated:YES];
     toast.mode = MBProgressHUDModeCustomView;
     toast.square = YES;
-    toast.customView = [[UIImageView alloc] initWithImage:TPModuleImage(@"iconSuccess")];
+    toast.customView = [[UIImageView alloc] initWithImage:[TPUIToastAccets imageName:@"iconSuccess"]];
     toast.detailsLabel.text = success ?: @"";
     [toast hideAnimated:YES afterDelay:[self durationForDisplayString:success ?: @""]];
     return toast;
@@ -91,7 +91,7 @@
     TPToast *toast = [TPToast showHUDAddedTo:kTPWindow animated:YES];
     toast.minSize = CGSizeMake(120, 120);
     toast.mode = MBProgressHUDModeCustomView;
-    TPToastImageView *imageView = [self fetchToastImageView];
+    UIImageView *imageView = [self fetchToastImageView];
     toast.customView = imageView;
     toast.square = YES;
     if (string) {
@@ -146,7 +146,7 @@
     toast.detailsLabel.text = text ?: @"";
     toast.detailsLabel.textColor = UIColor.whiteColor;
     if (icon) {
-        toast.customView = [[UIImageView alloc] initWithImage:TPModuleImage(icon)];
+        toast.customView = [[UIImageView alloc] initWithImage:[TPUIToastAccets imageName:icon]];
         toast.mode = MBProgressHUDModeCustomView;
     }
     /// 隐藏时，从父视图上移除
@@ -154,11 +154,11 @@
     [toast hideAnimated:YES afterDelay:[self durationForDisplayString:text ?: @""]];
 }
 
-+ (TPToastImageView *)fetchToastImageView {
-    TPToastImageView *imageView = [[TPToastImageView alloc] initWithFrame:CGRectMake(0, 0, 38, 36)];
++ (UIImageView *)fetchToastImageView {
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 38, 36)];
     NSMutableArray *images = [NSMutableArray array];
     for (NSInteger i = 0; i <= 49; i++) {
-        [images addObject:TPModuleImage([NSString stringWithFormat:@"loading1_000%02ld", i])];
+        [images addObject:[TPUIToastAccets imageName:[NSString stringWithFormat:@"loading1_000%02ld", i]]];
     }
     imageView.animationImages = images;
     imageView.contentMode = UIViewContentModeScaleAspectFill;

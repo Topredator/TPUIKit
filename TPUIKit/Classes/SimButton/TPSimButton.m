@@ -116,7 +116,7 @@ static CGFloat kBtnGap = 5;
             //  top
             CGFloat top = frame.size.height / 2 - height / 2;
             titleLabelFrame.origin.y = top;
-            self.titleLabel.frame = frame;
+            self.titleLabel.frame = titleLabelFrame;
             //  centerX
             CGFloat centerX = frame.size.width / 2;
             CGPoint imageViewCenter = self.imageView.center;

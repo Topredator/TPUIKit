@@ -22,7 +22,12 @@
   "subspecs": [
     {
       "name": "Base",
-      "source_files": "TPUIKit/Classes/Base/**/*"
+      "source_files": "TPUIKit/Classes/Base/**/*",
+      "resource_bundles": {
+        "TPUIKitBase": [
+          "TPUIKit/Assets/Base.xcassets"
+        ]
+      }
     },
     {
       "name": "GradientView",
@@ -39,7 +44,11 @@
     {
       "name": "Refresh",
       "source_files": "TPUIKit/Classes/Refresh/**/*",
-      "resources": "TPUIKit/Assets/Refresh.xcassets",
+      "resource_bundles": {
+        "TPUIKitRefresh": [
+          "TPUIKit/Assets/Refresh.xcassets"
+        ]
+      },
       "dependencies": {
         "Masonry": [
 
@@ -63,7 +72,11 @@
           "~> 1.1.0"
         ]
       },
-      "resources": "TPUIKit/Assets/Toast.xcassets"
+      "resource_bundles": {
+        "TPUIKitToast": [
+          "TPUIKit/Assets/Toast.xcassets"
+        ]
+      }
     },
     {
       "name": "Blank",
@@ -74,6 +87,11 @@
         ],
         "Masonry": [
 
+        ]
+      },
+      "resource_bundles": {
+        "TPUIKitBlank": [
+          "TPUIKit/Assets/Blank.xcassets"
         ]
       }
     }

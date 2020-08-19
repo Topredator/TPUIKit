@@ -7,7 +7,6 @@
 
 #import <UIKit/UIKit.h>
 #import <MBProgressHUD/MBProgressHUD.h>
-#import "TPToastImageView.h"
 
 @interface TPToast : MBProgressHUD
 /// 通过传入的字符串 获取展示的时间
