@@ -9,7 +9,7 @@
 #import "TPTestViewController.h"
 
 @interface TPTestViewController ()
-@property (nonatomic, strong) TPGradientView *gradientView;
+@property (nonatomic, strong) TPUIGradientView *gradientView;
 @property (nonatomic, strong) TPSimButton *simBtn;
 @end
 
@@ -32,9 +32,10 @@
         make.top.equalTo(self.gradientView.mas_bottom).offset(30);
     }];
 }
-- (TPGradientView *)gradientView {
+- (TPUIGradientView *)gradientView {
     if (!_gradientView) {
-        _gradientView = [[TPGradientView alloc] initWithBeginColor:UIColor.redColor endColor:UIColor.greenColor direction:TPGradientDirectionLeftToRight];
+        _gradientView = [[TPUIGradientView alloc] initWithFrame:CGRectZero];
+        [_gradientView tpAddGradient:TPCreateGradientLayer(UIColor.redColor, UIColor.blueColor, TPUIGradientDirectionLeftToRight)];
     }
     return _gradientView;
 }

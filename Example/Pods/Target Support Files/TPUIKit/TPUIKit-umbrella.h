@@ -11,6 +11,10 @@
 #endif
 
 #import "TPUIKit.h"
+#import "TPUIAlert.h"
+#import "TPUIAlertMaker.h"
+#import "TPUIBannerPageView.h"
+#import "TPUIBannerView.h"
 #import "UIBarButtonItem+TPUIButtonItem.h"
 #import "TPUIBackNavigationController.h"
 #import "TPUIBaseAccets.h"
@@ -22,7 +26,11 @@
 #import "TPBlankView.h"
 #import "TPUIBlankAccets.h"
 #import "UIView+TPBlankView.h"
-#import "TPGradientView.h"
+#import "TPUIGradientButton.h"
+#import "TPUIGradientLabel.h"
+#import "TPUIGradientLayer.h"
+#import "TPUIGradientView.h"
+#import "TPUIGraphicView.h"
 #import "TPNavigator.h"
 #import "TPRefreshFooter.h"
 #import "TPRefreshHeader.h"
