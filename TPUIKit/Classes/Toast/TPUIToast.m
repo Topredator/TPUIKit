@@ -1,16 +1,16 @@
 //
-//  TPToast.m
+//  TPUIToast.m
 //  TPUIKit
 //
 //  Created by Topredator on 2019/2/22.
 //
 
-#import "TPToast.h"
+#import "TPUIToast.h"
 
 #define kTPWindow [UIApplication sharedApplication].keyWindow
 #import "TPUIToastAccets.h"
 
-@implementation TPToast
+@implementation TPUIToast
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
@@ -33,7 +33,7 @@
 + (instancetype)showLoading:(NSString *)loading inView:(UIView *)view {
     if (!view) return nil;
     [self hideInView:view];
-    TPToast *toast = [TPToast showHUDAddedTo:view animated:YES];
+    TPUIToast *toast = [TPUIToast showHUDAddedTo:view animated:YES];
     toast.mode = MBProgressHUDModeCustomView;
     UIImageView *imageView = [self fetchToastImageView];
     toast.customView = imageView;
@@ -46,7 +46,7 @@
 + (instancetype)showSuccess:(NSString *)success inView:(UIView *)view {
     if (!view) return nil;
     [self hideInView:view];
-    TPToast *toast = [TPToast showHUDAddedTo:view animated:YES];
+    TPUIToast *toast = [TPUIToast showHUDAddedTo:view animated:YES];
     toast.mode = MBProgressHUDModeCustomView;
     toast.square = YES;
     toast.customView = [[UIImageView alloc] initWithImage:[TPUIToastAccets imageName:@"iconSuccess"]];
@@ -57,7 +57,7 @@
 + (instancetype)showInfo:(NSString *)info inView:(UIView *)view {
     if (!view) return nil;
     [self hideInView:view];
-    TPToast *toast = [TPToast showHUDAddedTo:view animated:YES];
+    TPUIToast *toast = [TPUIToast showHUDAddedTo:view animated:YES];
     toast.mode = MBProgressHUDModeText;
     toast.detailsLabel.text = info ?: @"";
     [toast hideAnimated:YES afterDelay:[self durationForDisplayString:info ?: @""]];
@@ -76,7 +76,7 @@
 /// 隐藏视图
 + (void)hideInView:(UIView *)view {
     if (view) {
-        [TPToast hideHUDForView:view animated:YES];
+        [TPUIToast hideHUDForView:view animated:YES];
     }
 }
 
@@ -88,7 +88,7 @@
 /// 加载视图，底部附带文字
 + (void)showLoadingWithString:(NSString *)string {
     [self hideToast];
-    TPToast *toast = [TPToast showHUDAddedTo:kTPWindow animated:YES];
+    TPUIToast *toast = [TPUIToast showHUDAddedTo:kTPWindow animated:YES];
     toast.minSize = CGSizeMake(120, 120);
     toast.mode = MBProgressHUDModeCustomView;
     UIImageView *imageView = [self fetchToastImageView];
@@ -123,7 +123,7 @@
 + (void)showInfoWithString:(NSString *)string {
     [self hideToast];
     if (!string) return;
-    TPToast *toast = [TPToast showHUDAddedTo:kTPWindow animated:YES];
+    TPUIToast *toast = [TPUIToast showHUDAddedTo:kTPWindow animated:YES];
     toast.margin = 18;
     toast.mode = MBProgressHUDModeText;
     toast.detailsLabel.textColor = UIColor.whiteColor;
@@ -141,7 +141,7 @@
     if (!view) {
         view = kTPWindow;
     }
-    TPToast *toast = [TPToast showHUDAddedTo:view animated:YES];
+    TPUIToast *toast = [TPUIToast showHUDAddedTo:view animated:YES];
     toast.minSize = text.length ? CGSizeMake(160, 113) : CGSizeMake(120, 120);
     toast.detailsLabel.text = text ?: @"";
     toast.detailsLabel.textColor = UIColor.whiteColor;

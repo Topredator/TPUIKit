@@ -1,13 +1,13 @@
 //
-//  TPNavigator.m
+//  TPUINavigator.m
 //  TPUIKit
 //
 //  Created by Topredator on 2019/2/21.
 //
 
-#import "TPNavigator.h"
+#import "TPUINavigator.h"
 
-@implementation TPNavigator
+@implementation TPUINavigator
 
 + (UIViewController *)currentViewController {
     UIViewController *rootVC = [UIApplication sharedApplication].delegate.window.rootViewController;
@@ -26,7 +26,7 @@
     if ([viewController isKindOfClass:[UINavigationController class]]) {
         return;
     } else {
-        UINavigationController *navigationController = [TPNavigator currentNavigationController];
+        UINavigationController *navigationController = [TPUINavigator currentNavigationController];
         //  如果不存在导航控制器 直接返回
         if (!navigationController) return;
         [navigationController pushViewController:viewController animated:animated];
@@ -40,13 +40,13 @@
 {
     //  不存在直接返回
     if (!viewController) return;
-    UIViewController *currentViewController = [TPNavigator currentViewController];
+    UIViewController *currentViewController = [TPUINavigator currentViewController];
     if (!currentViewController) return;
     [currentViewController presentViewController:viewController animated:animated completion:completion];
 }
 + (void)popViewControllerWithTimes:(NSUInteger)times animated:(BOOL)animated
 {
-    UIViewController *currentViewController = [TPNavigator currentViewController];
+    UIViewController *currentViewController = [TPUINavigator currentViewController];
     UINavigationController *currentNavigationController = currentViewController.navigationController;
     //  两者缺一不可
     if (!currentViewController || !currentNavigationController) return;
@@ -57,7 +57,7 @@
 }
 + (void)popToRootViewControllerAnimated:(BOOL)animated
 {
-    UINavigationController *currentNavigationController = [TPNavigator currentNavigationController];
+    UINavigationController *currentNavigationController = [TPUINavigator currentNavigationController];
     //  不存在导航控制器 直接返回
     if (!currentNavigationController) return;
     NSUInteger count = currentNavigationController.viewControllers.count;
@@ -66,7 +66,7 @@
 
 + (void)dismissViewControllerTimes:(NSUInteger)times animated:(BOOL)animated completion:(void (^)(void))completion
 {
-    UIViewController *currentViewController = [TPNavigator currentViewController];
+    UIViewController *currentViewController = [TPUINavigator currentViewController];
     //  两者缺一不可
     if (!currentViewController || !currentViewController.presentingViewController) return;
     while (times > 0) {
@@ -78,7 +78,7 @@
 }
 + (void)dismissToRootViewControllerAnimated:(BOOL)animated completion:(void (^)(void))completion
 {
-    UIViewController *currentViewController = [TPNavigator currentViewController];
+    UIViewController *currentViewController = [TPUINavigator currentViewController];
     //  两者缺一不可
     if (!currentViewController || !currentViewController.presentingViewController) return;
     while (currentViewController.presentingViewController) {

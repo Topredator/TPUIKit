@@ -1,14 +1,14 @@
 //
-//  TPRefreshHeader.m
+//  TPUIRefreshHeader.m
 //  TPUIKit
 //
 //  Created by Topredator on 2019/2/21.
 //
 
-#import "TPRefreshHeader.h"
+#import "TPUIRefreshHeader.h"
 #import <Masonry/Masonry.h>
 #import "TPUIRefreshAccets.h"
-@implementation TPRefreshHeader
+@implementation TPUIRefreshHeader
 - (void)prepare {
     [super prepare];
     [self setupSubviews];

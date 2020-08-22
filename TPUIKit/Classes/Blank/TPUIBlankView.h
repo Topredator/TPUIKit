@@ -6,14 +6,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "UIView+TPBlankView.h"
 
-@interface TPBlankView : UIView
+/// 空白展示页
+@interface TPUIBlankView : UIView
 @property (nonatomic, strong, nullable) UIView *contentView;
 @property (nonatomic, assign) CGFloat topOffset UI_APPEARANCE_SELECTOR;
+@property (nonatomic, assign) UIEdgeInsets customEdgeInsets;
+
 + (instancetype)blankView;
-+ (TPBlankView *)blankViewInView:(__kindof UIView *)view;
++ (__kindof TPUIBlankView *)blankViewInView:(__kindof UIView *)view;
+
 + (instancetype)showInView:(__kindof UIView *)view animated:(BOOL)animated;
 + (instancetype)hideInView:(__kindof UIView *)view animated:(BOOL)animated;
 - (void)showInView:(__kindof UIView *)view animated:(BOOL)animated;
@@ -22,22 +25,21 @@
 @end
 
 #pragma mark ==================  TPImageBlankView   ==================
-@interface TPImageBlankView : TPBlankView
+@interface TPUIImageBlankView : TPUIBlankView
 @property (nonatomic, strong, readonly) UIImageView *imageView;
 @end
 #pragma mark ==================  TPActivityBlankView   ==================
-@interface TPActivityBlankView : TPBlankView
+@interface TPUIActivityBlankView : TPUIBlankView
 @property (nonatomic, strong, readonly) UIActivityIndicatorView *activitiyView;
 @end
-#pragma mark ==================  TPTextBlankView   ==================
-@interface TPTextBlankView : TPImageBlankView
+#pragma mark ==================  TPUITextBlankView   ==================
+@interface TPUITextBlankView : TPUIImageBlankView
 /// 主标题
 @property (nonatomic, strong, readonly) UILabel *textLabel;
 /// 副标题
 @property (nonatomic, strong, readonly) UILabel *subTextLabel;
 /// 刷新按钮
 @property (nonatomic, strong, readonly) UIButton *refreshButton;
-
 /**
  设置刷新按钮
 

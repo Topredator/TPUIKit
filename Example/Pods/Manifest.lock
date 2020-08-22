@@ -2,33 +2,38 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.7)
-  - TPUIKit (1.0.2):
-    - TPUIKit/Alert (= 1.0.2)
-    - TPUIKit/Banner (= 1.0.2)
-    - TPUIKit/Base (= 1.0.2)
-    - TPUIKit/Blank (= 1.0.2)
-    - TPUIKit/GradientView (= 1.0.2)
-    - TPUIKit/GraphicView (= 1.0.2)
-    - TPUIKit/Navigator (= 1.0.2)
-    - TPUIKit/Refresh (= 1.0.2)
-    - TPUIKit/SimButton (= 1.0.2)
-    - TPUIKit/Toast (= 1.0.2)
-  - TPUIKit/Alert (1.0.2)
-  - TPUIKit/Banner (1.0.2)
-  - TPUIKit/Base (1.0.2)
-  - TPUIKit/Blank (1.0.2):
+  - TPUIKit (1.0.3):
+    - TPUIKit/Alert (= 1.0.3)
+    - TPUIKit/Banner (= 1.0.3)
+    - TPUIKit/Base (= 1.0.3)
+    - TPUIKit/Blank (= 1.0.3)
+    - TPUIKit/GradientView (= 1.0.3)
+    - TPUIKit/GraphicView (= 1.0.3)
+    - TPUIKit/MarginLabel (= 1.0.3)
+    - TPUIKit/Navigator (= 1.0.3)
+    - TPUIKit/Refresh (= 1.0.3)
+    - TPUIKit/SimButton (= 1.0.3)
+    - TPUIKit/Tabbar (= 1.0.3)
+    - TPUIKit/Toast (= 1.0.3)
+  - TPUIKit/Alert (1.0.3)
+  - TPUIKit/Banner (1.0.3)
+  - TPUIKit/Base (1.0.3)
+  - TPUIKit/Blank (1.0.3):
     - Masonry
     - TPUIKit/Base
-  - TPUIKit/GradientView (1.0.2)
-  - TPUIKit/GraphicView (1.0.2):
+  - TPUIKit/GradientView (1.0.3)
+  - TPUIKit/GraphicView (1.0.3):
     - Masonry
-  - TPUIKit/Navigator (1.0.2)
-  - TPUIKit/Refresh (1.0.2):
+  - TPUIKit/MarginLabel (1.0.3)
+  - TPUIKit/Navigator (1.0.3)
+  - TPUIKit/Refresh (1.0.3):
     - Masonry
     - MJRefresh (~> 3.1.14)
     - TPUIKit/Base
-  - TPUIKit/SimButton (1.0.2)
-  - TPUIKit/Toast (1.0.2):
+  - TPUIKit/SimButton (1.0.3)
+  - TPUIKit/Tabbar (1.0.3):
+    - TPUIKit/Base
+  - TPUIKit/Toast (1.0.3):
     - MBProgressHUD (~> 1.1.0)
     - TPUIKit/Base
 
@@ -49,7 +54,7 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  TPUIKit: 807cbe6577ae54995cf047de1e13da3dbbb7c7f3
+  TPUIKit: 7da8d6f7b09856d88c5fddcb8259a16ec2306984
 
 PODFILE CHECKSUM: a3e213d27700fd3486ce83b1e02e7eeff091c4c4
 

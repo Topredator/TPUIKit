@@ -7,11 +7,11 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^OptionBlock)(void);
+typedef void(^TPUIOptionBlock)(void);
 @interface TPUIAlertOption : NSObject
 @property (nonatomic, copy) NSString *title;
 /// 回调操作
-@property (nonatomic, copy) OptionBlock block;
+@property (nonatomic, copy) TPUIOptionBlock block;
 /// 设置字体颜色
 @property (nonatomic, strong) UIColor *textColor;
 @property (nonatomic, assign) UIAlertActionStyle actionStyle;
@@ -19,8 +19,8 @@ typedef void(^OptionBlock)(void);
 @property (nonatomic) SEL selector;
 
 - (instancetype)init NS_UNAVAILABLE;
-+ (instancetype)optionWithTitle:(NSString *)title block:(OptionBlock)block;
-+ (instancetype)optionWithTitle:(NSString *)title block:(OptionBlock)block actionStyle:(UIAlertActionStyle)actionStyle;
++ (instancetype)optionWithTitle:(NSString *)title block:(TPUIOptionBlock)block;
++ (instancetype)optionWithTitle:(NSString *)title block:(TPUIOptionBlock)block actionStyle:(UIAlertActionStyle)actionStyle;
 
 + (instancetype)optionWithTitle:(NSString *)title target:(id)target selector:(SEL)selector;
 @end
@@ -29,10 +29,10 @@ NS_INLINE TPUIAlertOption *TPUIAlertTitleOption(NSString *title) {
     return [TPUIAlertOption optionWithTitle:title block:nil];
 }
 /// 带有回调
-NS_INLINE TPUIAlertOption *TPUIAlertBlockOption(NSString *title, OptionBlock block) {
+NS_INLINE TPUIAlertOption *TPUIAlertBlockOption(NSString *title, TPUIOptionBlock block) {
     return [TPUIAlertOption optionWithTitle:title block:block];
 }
-NS_INLINE TPUIAlertOption *TPUIAlertColorOption(NSString *title, OptionBlock block, UIColor *color) {
+NS_INLINE TPUIAlertOption *TPUIAlertColorOption(NSString *title, TPUIOptionBlock block, UIColor *color) {
     TPUIAlertOption *option = [TPUIAlertOption optionWithTitle:title block:block];
     option.textColor = color ?: nil;
     return option;

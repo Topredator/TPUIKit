@@ -10,7 +10,7 @@
 
 @interface TPTestViewController ()
 @property (nonatomic, strong) TPUIGradientView *gradientView;
-@property (nonatomic, strong) TPSimButton *simBtn;
+@property (nonatomic, strong) TPUISimButton *simBtn;
 @end
 
 @implementation TPTestViewController
@@ -39,10 +39,10 @@
     }
     return _gradientView;
 }
-- (TPSimButton *)simBtn {
+- (TPUISimButton *)simBtn {
     if (!_simBtn) {
-        _simBtn = [[TPSimButton alloc] initWithFrame:CGRectZero];
-        _simBtn.iconPosition = TPSimButtonIconPositionRight;
+        _simBtn = [[TPUISimButton alloc] initWithFrame:CGRectZero];
+        _simBtn.iconPosition = TPUISimButtonIconPositionRight;
         _simBtn.iconTextMargin = 5;
         _simBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         _simBtn.backgroundColor = UIColor.purpleColor;

@@ -23,8 +23,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSArray *data = @[@"加载", @"你好啊", @"成功", @"请求成功", @"失败", @"请求失败", @"显示信息", @"测试Navigator", @"显示blank", @"显示带有刷新按钮的blank", @"activityBlank", @"隐藏blank"];
     [self.datas addObjectsFromArray:data];
-    self.myTable.mj_header = [TPRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
-    self.myTable.mj_footer = [TPRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
+    self.myTable.mj_header = [TPUIRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
+    self.myTable.mj_footer = [TPUIRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
 }
 - (void)refresh {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -50,54 +50,54 @@
     NSInteger row = indexPath.row;
     switch (row) {
             case 0: {
-                [TPToast showLoading];
+                [TPUIToast showLoading];
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    [TPToast hideToast];
+                    [TPUIToast hideToast];
                 });
             }
             break;
             case 1:{
-                [TPToast showLoadingWithString:@"你好啊"];
+                [TPUIToast showLoadingWithString:@"你好啊"];
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    [TPToast hideToast];
+                    [TPUIToast hideToast];
                 });
             }
             break;
             case 2: {
-                [TPToast showSuccess];
+                [TPUIToast showSuccess];
             }
             break;
             case 3: {
-                [TPToast showSuccessWithString:@"请求成功"];
+                [TPUIToast showSuccessWithString:@"请求成功"];
             }
             break;
             case 4: {
-                [TPToast showError];
+                [TPUIToast showError];
             }
             break;
             case 5: {
-                [TPToast showErrorWithString:@"请求失败"];
+                [TPUIToast showErrorWithString:@"请求失败"];
             }
             break;
             case 6: {
-                [TPToast showInfoWithString:@"春眠不知晓，\n处处闻啼鸟。\n夜来风雨声，\n花落知多少。"];
+                [TPUIToast showInfoWithString:@"春眠不知晓，\n处处闻啼鸟。\n夜来风雨声，\n花落知多少。"];
             }
             break;
         case 7: {
             TPTestViewController *testVC = [TPTestViewController new];
             testVC.title = @"测试";
-            [TPNavigator pushViewController:testVC animated:YES];
+            [TPUINavigator pushViewController:testVC animated:YES];
         }
             break;
         case 8: {
-            TPTextBlankView *blank = [TPTextBlankView showInView:tableView animated:YES];
+            TPUITextBlankView *blank = [TPUITextBlankView showInView:tableView animated:YES];
             blank.imageView.image = [UIImage imageNamed:@""];
             blank.textLabel.text = @"显示成功";
             blank.subTextLabel.text = @"你需要显示什么";
         }
             break;
         case 9: {
-            TPTextBlankView *blank = [TPTextBlankView showInView:tableView animated:YES];
+            TPUITextBlankView *blank = [TPUITextBlankView showInView:tableView animated:YES];
             blank.imageView.image = [UIImage imageNamed:@""];
             blank.textLabel.text = @"显示成功";
             blank.subTextLabel.text = @"你需要显示什么";
@@ -112,7 +112,7 @@
         }
             break;
         case 11: {
-            [[TPBlankView blankViewInView:tableView] hideWithAnimated:YES];
+            [[TPUIBlankView blankViewInView:tableView] hideWithAnimated:YES];
         }
             break;
         default:

@@ -5,14 +5,14 @@
 //  Created by Topredator on 2019/3/1.
 //
 
-#import "TPBlankView.h"
+#import "TPUIBlankView.h"
 #import <objc/runtime.h>
 #import <Masonry/Masonry.h>
 
 static CGFloat kTPBlankViewHiddenAnimationDiration = 0.25;
 
 static char kBlankViewKey;
-@implementation TPBlankView
+@implementation TPUIBlankView
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -35,21 +35,21 @@ static char kBlankViewKey;
 + (instancetype)blankView {
     return [[self alloc] init];
 }
-+ (TPBlankView *)blankViewInView:(__kindof UIView *)view {
++ (TPUIBlankView *)blankViewInView:(__kindof UIView *)view {
     return objc_getAssociatedObject(view, &kBlankViewKey);
 }
 + (instancetype)showInView:(__kindof UIView *)view animated:(BOOL)animated {
-    TPBlankView *blankView = [self blankView];
+    TPUIBlankView *blankView = [self blankView];
     [blankView showInView:view animated:animated];
     return blankView;
 }
 + (instancetype)hideInView:(__kindof UIView *)view animated:(BOOL)animated {
-    TPBlankView *blankView = [self blankViewInView:view];
+    TPUIBlankView *blankView = [self blankViewInView:view];
     [blankView hideWithAnimated:animated];
     return blankView;
 }
 - (void)showInView:(__kindof UIView *)view animated:(BOOL)animated {
-    TPBlankView *oldBlankView = [TPBlankView blankViewInView:view];
+    TPUIBlankView *oldBlankView = [TPUIBlankView blankViewInView:view];
     if (!view || [oldBlankView isEqual:self]) return;
     if (oldBlankView) [oldBlankView hideWithAnimated:animated];
     objc_setAssociatedObject(view, &kBlankViewKey, self, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -115,9 +115,21 @@ static char kBlankViewKey;
     }
     _topOffset = topOffset;
 }
-
+- (void)setCustomEdgeInsets:(UIEdgeInsets)customEdgeInsets {
+    if (!UIEdgeInsetsEqualToEdgeInsets(_customEdgeInsets, customEdgeInsets) && self.superview) {
+        CGFloat offsetX = (customEdgeInsets.left - customEdgeInsets.right) / 2.0;
+        CGFloat offSetY = (customEdgeInsets.top - customEdgeInsets.bottom) / 2.0;
+        [self mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(offsetX);
+            make.centerY.mas_equalTo(offSetY);
+            make.edges.mas_equalTo(customEdgeInsets);
+        }];
+        [self.superview layoutIfNeeded];
+    }
+    _customEdgeInsets = customEdgeInsets;
+}
 @end
-@implementation TPImageBlankView
+@implementation TPUIImageBlankView
 @synthesize imageView = _imageView;
 - (UIImageView *)imageView {
     if (!_imageView) {
@@ -133,7 +145,7 @@ static char kBlankViewKey;
     self.contentView = self.imageView;
 }
 @end
-@implementation TPActivityBlankView
+@implementation TPUIActivityBlankView
 @synthesize activitiyView = _activitiyView;
 - (UIActivityIndicatorView *)activitiyView {
     if (!_activitiyView) {
@@ -159,11 +171,11 @@ static char kBlankViewKey;
 }
 @end
 
-@interface TPTextBlankView ()
+@interface TPUITextBlankView ()
 @property (nonatomic, copy) void (^refreshBlock)(void);
 @end
 
-@implementation TPTextBlankView
+@implementation TPUITextBlankView
 @synthesize textLabel = _textLabel;
 @synthesize subTextLabel = _subTextLabel;
 @synthesize refreshButton = _refreshButton;
@@ -182,13 +194,13 @@ static char kBlankViewKey;
         make.right.mas_lessThanOrEqualTo(-10);
     }];
     [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.imageView.mas_bottom).offset(20);
+        make.top.equalTo(self.imageView.mas_bottom).offset(10);
         make.centerX.mas_equalTo(0);
         make.left.mas_greaterThanOrEqualTo(10);
         make.right.mas_lessThanOrEqualTo(-10);
     }];
     [self.subTextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.textLabel.mas_bottom).offset(6);
+        make.top.equalTo(self.textLabel.mas_bottom).offset(10);
         make.centerX.mas_equalTo(0);
         make.left.mas_greaterThanOrEqualTo(10);
         make.right.mas_lessThanOrEqualTo(-10);
@@ -197,7 +209,9 @@ static char kBlankViewKey;
         make.top.equalTo(self.subTextLabel.mas_bottom).offset(20);
         make.bottom.mas_equalTo(-20);
         make.centerX.mas_equalTo(0);
-        make.size.mas_equalTo(CGSizeMake(200, 40));
+        make.height.mas_equalTo(35);
+        make.width.mas_greaterThanOrEqualTo(130);
+        make.width.mas_lessThanOrEqualTo(220);
     }];
 }
 - (void)setRefreshTitle:(NSString *)title target:(id)target action:(SEL)action {

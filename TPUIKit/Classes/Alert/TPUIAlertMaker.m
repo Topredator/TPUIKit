@@ -14,10 +14,10 @@
     }
     return self;
 }
-+ (instancetype)optionWithTitle:(NSString *)title block:(OptionBlock)block {
++ (instancetype)optionWithTitle:(NSString *)title block:(TPUIOptionBlock)block {
     return [self optionWithTitle:title block:block actionStyle:UIAlertActionStyleDefault];
 }
-+ (instancetype)optionWithTitle:(NSString *)title block:(OptionBlock)block actionStyle:(UIAlertActionStyle)actionStyle {
++ (instancetype)optionWithTitle:(NSString *)title block:(TPUIOptionBlock)block actionStyle:(UIAlertActionStyle)actionStyle {
     TPUIAlertOption *option = [TPUIAlertOption new];
     option.title = title;
     option.block = block;

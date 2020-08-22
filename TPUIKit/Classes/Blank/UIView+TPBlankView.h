@@ -7,22 +7,22 @@
 
 #import <UIKit/UIKit.h>
 
-@class TPBlankView;
-@class TPImageBlankView;
-@class TPActivityBlankView;
-@class TPTextBlankView;
+@class TPUIBlankView;
+@class TPUIImageBlankView;
+@class TPUIActivityBlankView;
+@class TPUITextBlankView;
 
 @interface UIView (TPBlankView)
 
 /**
  显示系统activity指示器
  */
-- (TPActivityBlankView *)tp_showActivityBlankView;
+- (TPUIActivityBlankView *)tp_showActivityBlankView;
 
 /**
  显示加载动画空白页
  */
-- (TPImageBlankView *)tp_showLoadingBlankView;
+- (TPUIImageBlankView *)tp_showLoadingBlankView;
 
 /**
  显示加载动画空白页
@@ -31,15 +31,15 @@
  @param text 显示的文案
  @param size 图片的尺寸
  */
-- (TPImageBlankView *)tp_showLoading:(NSArray <UIImage *>*)images text:(NSString *)text size:(CGSize)size;
+- (TPUIImageBlankView *)tp_showLoading:(NSArray <UIImage *>*)images text:(NSString *)text size:(CGSize)size;
 /**
  显示带图片的空白页
 
  @param image 需要显示的图片
  */
-- (TPImageBlankView *)tp_showBlankViewWithImage:(UIImage *)image;
-- (TPTextBlankView *)tp_showTextBlankViewWithImage:(UIImage *)image text:(NSString *)text;
-- (TPTextBlankView *)tp_showTextBlankViewWithImage:(UIImage *)image text:(NSString *)text subText:(NSString *)subText;
+- (TPUIImageBlankView *)tp_showBlankViewWithImage:(UIImage *)image;
+- (TPUITextBlankView *)tp_showTextBlankViewWithImage:(UIImage *)image text:(NSString *)text;
+- (TPUITextBlankView *)tp_showTextBlankViewWithImage:(UIImage *)image text:(NSString *)text subText:(NSString *)subText;
 
 /**
  显示带刷新按钮的空白页
@@ -53,11 +53,11 @@
  @param target 相应对象
  @param action 响应回调
  */
-- (TPTextBlankView *)tp_showTextBlankViewWithImage:(UIImage *)image text:(NSString *)text subText:(NSString *)subText refreshTitle:(NSString *)title refreshTarget:(id)target action:(SEL)action;
+- (TPUITextBlankView *)tp_showTextBlankViewWithImage:(UIImage *)image text:(NSString *)text subText:(NSString *)subText refreshTitle:(NSString *)title refreshTarget:(id)target action:(SEL)action;
 /**
  @param refreshBlock 回调
  */
-- (TPTextBlankView *)tp_showTextBlankViewWithImage:(UIImage *)image text:(NSString *)text subText:(NSString *)subText refreshTitle:(NSString *)title refreshBlock:(void(^)(void))refreshBlock;
+- (TPUITextBlankView *)tp_showTextBlankViewWithImage:(UIImage *)image text:(NSString *)text subText:(NSString *)subText refreshTitle:(NSString *)title refreshBlock:(void(^)(void))refreshBlock;
 
 /**
  隐藏

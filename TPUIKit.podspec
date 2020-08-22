@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TPUIKit'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A short description of TPUIKit.'
 
 # This description is used to generate tags and improve search results.
@@ -91,6 +91,14 @@ TODO: Add long description of the pod here.
    s.subspec 'GraphicView' do |ss|
        ss.source_files = 'TPUIKit/Classes/GraphicView/**/*'
        ss.dependency 'Masonry'
+   end
+   
+   s.subspec 'MarginLabel' do |ss|
+       ss.source_files = 'TPUIKit/Classes/MarginLabel/**/*'
+   end
+   s.subspec 'Tabbar' do |ss|
+       ss.source_files = 'TPUIKit/Classes/Tabbar/**/*'
+       ss.dependency 'TPUIKit/Base'
    end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

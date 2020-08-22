@@ -1,5 +1,5 @@
 //
-//  TPToast.h
+//  TPUIToast.h
 //  TPUIKit
 //
 //  Created by Topredator on 2019/2/22.
@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 
-@interface TPToast : MBProgressHUD
+@interface TPUIToast : MBProgressHUD
 /// 通过传入的字符串 获取展示的时间
 + (NSTimeInterval)durationForDisplayString:(NSString *)string;
 

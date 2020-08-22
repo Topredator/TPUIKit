@@ -1,17 +1,17 @@
 //
-//  TPRefreshFooter.m
+//  TPUIRefreshFooter.m
 //  TPUIKit
 //
 //  Created by Topredator on 2019/2/22.
 //
 
-#import "TPRefreshFooter.h"
+#import "TPUIRefreshFooter.h"
 
-@interface TPRefreshFooter ()
+@interface TPUIRefreshFooter ()
 @property (nonatomic, weak) UIActivityIndicatorView *loadingView;
 @end
 
-@implementation TPRefreshFooter
+@implementation TPUIRefreshFooter
 - (UIActivityIndicatorView *)loadingView {
     if (!_loadingView) {
         UIActivityIndicatorView *loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:self.activityIndicatorViewStyle];

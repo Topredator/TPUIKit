@@ -1,5 +1,5 @@
 //
-//  TPNavigator.h
+//  TPUINavigator.h
 //  TPUIKit
 //
 //  Created by Topredator on 2019/2/21.
@@ -9,7 +9,7 @@
 
 
 
-@interface TPNavigator : NSObject
+@interface TPUINavigator : NSObject
 /**
  获取当前界面控制器
  
