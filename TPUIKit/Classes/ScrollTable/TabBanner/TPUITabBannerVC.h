@@ -5,7 +5,7 @@
 //  Created by Topredator on 2020/10/31.
 //
 
-#import <TPUIKit/TPUIKit.h>
+#import "TPUIBaseViewController.h"
 #import "TPUIGrScrollView.h"
 #import "TPUIBannerView.h"
 #import "TPUITabbar.h"

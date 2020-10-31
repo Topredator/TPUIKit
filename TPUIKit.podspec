@@ -100,6 +100,7 @@ TODO: Add long description of the pod here.
        ss.source_files = 'TPUIKit/Classes/Tabbar/**/*'
        ss.dependency 'TPUIKit/Base'
    end
+   
    s.subspec 'ScrollTable' do |ss|
        ss.source_files = 'TPUIKit/Classes/ScrollTable/**/*'
        ss.dependency 'TPUIKit/Base'
