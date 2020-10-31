@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-/// 可滚动的 列表嵌套视图
+/// 列表嵌套视图
 @interface TPUIScrollTableVC : TPUIBaseViewController <TPUIBannerViewDelegate, TPUITabbarDelegate>
 /// 顶部选项栏
 @property (nonatomic, strong) TPUIScrollTopBar *topTabBar;

@@ -54,14 +54,14 @@
     if (self.isClickItem) return;
     CGFloat x = scrollView.contentOffset.x;
     NSInteger maxIndex = (NSInteger)(self.viewControllers.count - 1);
-    if (x >= 0 && x <= kXTUIScreenWidth * maxIndex) {
+    if (x >= 0 && x <= TPUIScreenWidth * maxIndex) {
         [self.topTabBar updateSubViewsWhenParentScrollViewScroll:scrollView];
     }
 }
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     self.isClickItem = NO;
 }
-- (NSInteger)numberOfPagesForBannerView:(XTBannerView *)bannerView {
+- (NSInteger)numberOfPagesForBannerView:(TPUIBannerView *)bannerView {
     return self.viewControllers.count;
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
