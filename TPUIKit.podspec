@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/Topredator/TPUIKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Topredator' => 'zhouxiaolu@kaike.la' }
+  s.author           = { 'Topredator' => 'luyanggold@163.com' }
   s.source           = { :git => 'https://github.com/Topredator/TPUIKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -100,6 +100,15 @@ TODO: Add long description of the pod here.
        ss.source_files = 'TPUIKit/Classes/Tabbar/**/*'
        ss.dependency 'TPUIKit/Base'
    end
+   s.subspec 'ScrollTable' do |ss|
+       ss.source_files = 'TPUIKit/Classes/ScrollTable/**/*'
+       ss.dependency 'TPUIKit/Base'
+       ss.dependency 'TPUIKit/Tabbar'
+       ss.dependency 'TPUIKit/Banner'
+       ss.dependency 'Masonry'
+   end
+   
+   
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

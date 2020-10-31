@@ -36,6 +36,8 @@
 #import "TPUIRefreshAccets.h"
 #import "TPUIRefreshFooter.h"
 #import "TPUIRefreshHeader.h"
+#import "TPUIScrollTableVC.h"
+#import "TPUIScrollTopBar.h"
 #import "TPUISimButton.h"
 #import "TPUITabbar.h"
 #import "TPUITabItem.h"

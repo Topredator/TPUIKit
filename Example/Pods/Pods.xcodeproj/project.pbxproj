@@ -8,180 +8,184 @@
 
 /* Begin PBXBuildFile section */
 		0116999205A46198CC6443778A8BAE52 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DA15AFBA59855E226FAF3FB95A0E37 /* MJRefreshHeader.m */; };
-		01E0742159352EE5C4AA2D3C4DEB2587 /* TPUIBaseAccets.m in Sources */ = {isa = PBXBuildFile; fileRef = B14839B03EC0D8A232A90BD94CB4A10D /* TPUIBaseAccets.m */; };
+		0301909A5BBECD21E24E98C119618491 /* TPUIMarginLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 45444A1CBA4DED19E32BFBD69012F33A /* TPUIMarginLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03E9D1028B1D0E597D04CEBD49D6F05D /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF111B30A91ED47C71942534DF0EEB /* MJRefreshFooter.m */; };
-		051FE55DF6B30390F5D64AD8E234E229 /* TPUIGraphicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23562B466636B9418BC5CAC777D28DD1 /* TPUIGraphicView.m */; };
+		0443E3045F6154ED02B12BBC5C3FDC95 /* TPUIBlankView.h in Headers */ = {isa = PBXBuildFile; fileRef = F3B3FF3944803C208B425B736D51CD5A /* TPUIBlankView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05A040F35BF1C88F869404E1A940B493 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B606D063D31C39FDE12E09B3B7255D /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05EA1447EEA0EB669F8DEE73964A7C60 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 64728F929A5C3CB7B204F2DA45B0A46E /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		065A4F6A28D534779C2BCC42AAD8921E /* TPUIGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BA8D0838D9BA0D88EFB7AC99AC331B /* TPUIGradientButton.m */; };
+		0697E0A142292AC8CD59A9EC626FACED /* TPUIMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 42196511602699464C3A5AEF5FA305E8 /* TPUIMethodSwizzling.m */; };
+		082EC92EFB43AC7F9623B798BD5F578C /* TPUISimButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE6460643DA8BF92ABD64FD02ED2D51 /* TPUISimButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0967598607D521318F69D7D39D517B20 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 917AEE646D5E2F2A7DD67060A9A33905 /* ViewController+MASAdditions.m */; };
 		098630ECDB64ED7B89F5F687C82B4AC3 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A384CBF73FB926A45E952E531D2C49 /* NSArray+MASAdditions.m */; };
 		0A293BC418AA0CF64EECEE3C86AE851D /* MJRefreshBackNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B4948412F0D5854BF6B558EAB877EE4 /* MJRefreshBackNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A69F92916A5FF0C86AB212C7EE29CAD /* TPUIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 530FAD1D895711F5D253C2B075D4DC31 /* TPUIBaseViewController.m */; };
 		0AF1AD35706D90B1A91F291B899EF8C0 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 531DA57DD8D6AF4697BBAE58D8D5E3C8 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C28041B9135D8968C6307464597813C /* TPUITabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D592FA21CCA8D838088A00012D5520C /* TPUITabbar.m */; };
 		0ED96C2BFBC7238A100BC7CD916440B0 /* UIScrollView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 08D129D20FFA776B3F10198D47C8AA6A /* UIScrollView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11C11F95A0EE14149BFF78BF1FE3DF97 /* TPUIRefreshAccets.m in Sources */ = {isa = PBXBuildFile; fileRef = EEEF445599CE24C9C3D1EFDA8C5A83B1 /* TPUIRefreshAccets.m */; };
+		0F0A02615FCFB95474F4149261095248 /* TPUIRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0621EEF5B1183DF5AC2661AA254FB8AF /* TPUIRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F5794DB3A1C6DE8FB4EE71C8C09BAE5 /* UIView+TPBlankView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD863152A29E176D9EAA812AC2F4547 /* UIView+TPBlankView.m */; };
+		11A3F5269233510D2C824F24036E95AD /* TPUIToastAccets.m in Sources */ = {isa = PBXBuildFile; fileRef = E387A5DF053FF9D48BB117603B4EF74D /* TPUIToastAccets.m */; };
 		14A1F8F0AC0D3D614E226EB2F875E0ED /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C8D8CC8ABDB8AE18296DE6B1BBAA4 /* MJRefreshNormalHeader.m */; };
-		18600F7BD20470149E1FBEEE0BC1C299 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310EBF408EB106A5565051516C6BC284 /* Masonry.framework */; };
+		15570B424FE1F801E4BDA1ECE28B7F27 /* TPUIScrollTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF1958274034471E63D809433366D4B /* TPUIScrollTableVC.m */; };
+		16DB61C8A3F967F6EC5E6717C01C08F9 /* TPUIBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81482FF434F177804502CD9D7135A525 /* TPUIBannerView.m */; };
+		18EA4B91D1247E6F02D504AC71074011 /* TPUIRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14439954C1956299494E9FF778930CA0 /* TPUIRefreshFooter.m */; };
 		1972E85F0FCD0F3EAF28ED7CD036286E /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A77D85213347D41604CAE2D7BC54118 /* Masonry-dummy.m */; };
+		1A8CB513EEF04BBC2B3C6DA5CBC4D8A7 /* TPUIBaseAccets.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1FE02E57D3799FA2A64E749C0AF49C /* TPUIBaseAccets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B21BCC5FB3FD3EC7884233C2C8A2E19 /* TPUISimButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AAF792EC1FBAC6B416D6610068EEBC /* TPUISimButton.m */; };
 		208179E90202621AB6829760FFFA93BF /* Pods-TPUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10D6C1797DF50970E6200389ED791BF3 /* Pods-TPUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21D5B3A18722B9AFF643737D50457177 /* TPUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8386227CD65E3BD092C866387E205E /* TPUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		280D36330BAC5715615FF4A8B42D60D6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 97471A6358749C25DC5BE8FBCDE97042 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		297A3627CF2F032CBFDC61D1A3786E63 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E5978388437C584E1CB7577D527608 /* MASViewAttribute.m */; };
 		299F12937C90218A3807CC95AA639487 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF553DF875446CF12C505E7613D9F0B9 /* MJRefreshBackNormalFooter.m */; };
 		2A52D0C8B5DEEB1EFF24F8061E91AABA /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 340B32FC30F7023EEAF4A1B88D080FC4 /* UIScrollView+MJRefresh.m */; };
 		2A7FD4939378213CCC6222BF5A2CD57D /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B238900061A9580991845DB45F76B8C8 /* MJRefreshAutoNormalFooter.m */; };
-		2CEE81D4DC119942CBEA18DC315A934B /* TPUIBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2A93A9DC720F86451E931373950A /* TPUIBaseTableViewCell.m */; };
+		2E0E14F1DBBE654D48800462F9BE7EFD /* TPUIBannerPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A6C56CD93E5C110E5A253C2F6A02D52 /* TPUIBannerPageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		326E342812E64E8DEC188E4866031A31 /* TPUIScrollTopBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5E09A504490FD520C5DBC1D3ECB8D4 /* TPUIScrollTopBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		333C4DEF0BED4CA16CCF8A22EEB05C2B /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CB6B435B221FF0C7991CF8DC2ECCD4 /* MJRefreshBackGifFooter.m */; };
-		335530D3D4A925F2E551122288569462 /* TPUITabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC216692478E835C1C0EB114C0773D9 /* TPUITabbar.m */; };
 		33E5258A99BFCE6EF6C1A82D9AA6FBAF /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E04046BC798574BD50EAF237E6ECEB /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		346080C0D1CA23399ADD739D722D7CEF /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A79C381FC9CCC9A8669643DDF2D79E6 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		368C3CD9BBA66806A0646F11E227D4DF /* TPUIMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CAC5189FCDADC1B34184AC0B32F783 /* TPUIMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3574C524338AB0E134F4CFE3D9106B5F /* TPUINavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = C751A2CFA6BA39D388E0252B350EC154 /* TPUINavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A2589F7282670393088D1D28D07CD7 /* TPUIGraphicView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DB1154854007025801ADCE8168EBB1 /* TPUIGraphicView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38C00EB35F295C26F542B8C39CCFE78A /* TPUIRefreshAccets.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1EBE0BF6566E2FDFEAA27DC073B821 /* TPUIRefreshAccets.m */; };
+		3914C812851D12E4AFB9BADD8734FE1E /* Toast.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829D7AAFF053E2648758DDDD33C34E26 /* Toast.xcassets */; };
 		39B6E7D27620A6C0819C31040B227AAE /* MJRefreshGifHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CE6625ACC65D83FAD3F0628729EC11F4 /* MJRefreshGifHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3ACD280B392CC463396649677BB3ADDD /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E812FACEACA7D526C433545E1EE4D81 /* MBProgressHUD.framework */; };
 		3CDD9BFCCBFB0B02436363EFFF98935A /* Pods-TPUIKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B2872B5F9CBAC975CFD93AD6C31C85 /* Pods-TPUIKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DA5F1D8E51CDD102A871C2F37770C7B /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 64202F0026334ED9F17B875856649686 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F16D804325593344A0F85AE492A5C79 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6187D2AE94109023367B147ACA9FD3AE /* UIScrollView+MJExtension.m */; };
-		3F18ED9246CBC98FFB16FE3ADE19C4F0 /* TPUIMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBE74DD64A04E947E12CBAC0678D8F5 /* TPUIMethodSwizzling.m */; };
-		3FE1C2D3EDC191D4A4048F6570D50FB4 /* TPUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6058C21FAAB674D14A8E4958C0A57E /* TPUIKit-dummy.m */; };
 		403FB5B6A9F1E63B4E0860D3C5A26D4B /* Pods-TPUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C41A3923CC90A3F0EF19A53361EE893 /* Pods-TPUIKit_Example-dummy.m */; };
-		437B50A5E4007D481031EEF82EA44821 /* TPUIRefreshAccets.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC13E2A7E9F754EC2714453AE53E3B6 /* TPUIRefreshAccets.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44C5698F4D30C2C1C902473690601F1F /* Toast.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29A968AEE72A891B668221D44A3CDB1 /* Toast.xcassets */; };
-		46636A188461010F0FD06293397E730E /* TPUIRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CB782370154B7318F94450886E753C /* TPUIRefreshHeader.m */; };
-		4711510CC54D0AFEC7588CEC5EB7101B /* TPUIKitToast.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8B34D9C8CB742E387C77FAF0A7BE5E2E /* TPUIKitToast.bundle */; };
-		47DE4240875244BEE660C8F5DAB5980F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615DED21F69A608E6D083A25717A3BD3 /* Foundation.framework */; };
+		443A1DCC082168114CB908CE74C9FD62 /* Blank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76894E6879AA0958A2C4796384EC4AF1 /* Blank.xcassets */; };
+		450FCE21025531243B3EC3C6C63170F0 /* TPUIBaseAccets.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD84BD115FD75C4EAFC1C64284AFE6E /* TPUIBaseAccets.m */; };
 		48881623240E26BA71BC25107EE78525 /* MJRefreshAutoGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4439404A6ECBF76714EA792E3CC43931 /* MJRefreshAutoGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A6344D3E07654EB1889062A8B7992AC /* TPUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93D7456AB47CA9120832560B3AB6D9FB /* TPUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B0981F9AC628CF5100C50FF4A163A4A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB1F8F6154ACBD8F68C696BE35B758F /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BB6DE7F7EFE0D673D83A3A9DE7F4139 /* TPUIToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E46103BE9EC1ED41C0518395B4BAB1 /* TPUIToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D454EE3F755DF90ECC5F13698086B6A /* TPUIBlankAccets.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EC7A57344F89437A9817F05F5916A73 /* TPUIBlankAccets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B3AE32843469880050FEBBBB39209AB /* TPUITabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1689CC886CB4879C722620051166344E /* TPUITabItem.m */; };
+		4C6F6518DAF63440CFEC517119EC0A9E /* TPUIScrollTableVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 618E4B7347D32380BB259C9F6F7D5504 /* TPUIScrollTableVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ECC489B4982EFF0185CCBE9B3D93A04 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69904C3E6D91B5A7DA25E1624486C683 /* Base.xcassets */; };
+		4ED5FC6690E85711EB662AA49DA64931 /* TPUIBackNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EE8C8551C5AA2BF3722390933830DEB /* TPUIBackNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F5453330A2C82B176C71EEEC4DF7D98 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6201298B6C7E76ECA205EFC65C3EEDF4 /* MJRefreshAutoStateFooter.m */; };
-		50BB46BC66AC7617B2A62EA24DACBB72 /* TPUIBlankView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F6CBD950EEBA6830D9672F0077B745 /* TPUIBlankView.m */; };
-		51AE731B6A6C0D70867978277DB6317F /* TPUIBlankView.h in Headers */ = {isa = PBXBuildFile; fileRef = ECA594B0681B7FE8CB6A8EB122F55FDC /* TPUIBlankView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51E51226C48BAF02EC1B5EEC4618DA25 /* TPUIRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2022E8DCB6B25ADE10ECAD66990F6B81 /* TPUIRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		570C13355253E9B100070E2F1022DA71 /* Refresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957D12DCA2CA43718E28EDA568F37D0B /* Refresh.xcassets */; };
-		5B0FCEE4F6AF55F1E408D18EB913F632 /* TPUISimButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DFAF9129093AA20E71FC8EDBD9E28CD /* TPUISimButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BC0A094F650684ED3298FB4E3791406 /* TPUIBannerPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D54BBAC5DF69E8769A3A47D29B91C7E1 /* TPUIBannerPageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54FF91EBEF7218CB6CB3F1458153CF09 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989AEEEB02B866C0A141125A14EEA3A7 /* MJRefresh.framework */; };
+		55AC4077F0B874F367DEA3548C27AF52 /* TPUIScrollTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA703D7DD5DE9F64F68C7E191DC7123 /* TPUIScrollTopBar.m */; };
+		55CBB004E5AF707A1644E5D699C1AF08 /* TPUINavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 327C5DC5188C96A990F7467D8CE72C21 /* TPUINavigator.m */; };
+		573DBD5DC694D28319537891DBC51B54 /* TPUITabbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 34141BFE9BA56170FFA9A05C9E3A8860 /* TPUITabbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DD3CCC7F2523FCF70FE6387275945E4 /* Refresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91448F4D72494BC0488D3FBF05936585 /* Refresh.xcassets */; };
+		5F8FD471DA51AC90DBBE7D332292EA0E /* TPUIBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DDFBED0C331EF9124172B2A017F7987B /* TPUIBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62D03E2F04C526C87B298DADC6F8600D /* TPUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE05CAD9D0A3C2A2F91E1A8DE98A7E2 /* TPUIKit-dummy.m */; };
 		6496446016C149A05E360793BC94A085 /* MJRefreshBackStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = DC82204B515AEE7BCE503CDE34A8D6AC /* MJRefreshBackStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64F46B6A8DBA885AF570A54A082D1BAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9304C54953CFE7ADEED4B65B78FA9A /* QuartzCore.framework */; };
-		659672AA568D901C346FC8C597DB8B5B /* TPUIBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4A3D8FAD0B696731422BD1CFFEEB5 /* TPUIBannerView.m */; };
+		65DB6B269CA7CE8B0C0A31CDF86C43D2 /* TPUIBlankView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE0C0EBEBCA2B19BCCFCC2BBE167804 /* TPUIBlankView.m */; };
 		66457B4A6802B94B61C6ADAC5D7A5C62 /* MJRefreshAutoStateFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = B13EDA802D331B825B81316065F0F7EF /* MJRefreshAutoStateFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6782DF51127156DB56E217BCD507B3FE /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = D5434AE3F7D633AE9154E4144A7DB75D /* MJRefreshAutoGifFooter.m */; };
-		68F4B48041B49CB3BDD2629D3AE7FD7C /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EAF891BEF61E6DCE54370AFC6DDE01 /* Base.xcassets */; };
-		69C8C468D21E7B3519F4F844F454FDC7 /* Blank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B19DA7B3B6B209653B5A8EB141E9D932 /* Blank.xcassets */; };
+		681F70C8A4CCA7410E42A6F8038B446C /* TPUIAlertMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEF4F21A50D6EF778070A2723EE7129 /* TPUIAlertMaker.m */; };
 		6A2E5946CCE328A1260552E7F831959C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615DED21F69A608E6D083A25717A3BD3 /* Foundation.framework */; };
 		6A3B4E0FA5DE11893067D816CEE8349C /* Pods-TPUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E14D46A8E114B7A453DCD53B099D71D /* Pods-TPUIKit_Tests-dummy.m */; };
 		6A470BF4E9F0D3C3712D9FC582F7C9BD /* MJRefreshConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B12B991C124A156FEFF7CFCDC37F9BB /* MJRefreshConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A6AD3A5BBDBFD0B4AF936BD518EC0B1 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32603610C6AB4631CE7411225E5F879F /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F8C9F47B599D1E8C3426843E23D225F /* TPUIGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = ED3D16CCA35DACBE3E605C33C1434678 /* TPUIGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70B77BE487CE9527EA3E66C689111F25 /* MJRefreshNormalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 60879A7BF56EED2710FE87E28AFE7072 /* MJRefreshNormalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70EE1C774C978E1876AE6CA1224E897D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3C4EDDA633EBC8241C5DC7395FD459 /* MBProgressHUD.m */; };
-		75E0684A3615CE575D96DC12CF5FDD95 /* TPUIToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA41502F7CA776D841E8FB27E89772 /* TPUIToast.m */; };
+		760F911A76E8CCC004001BCFCD197645 /* TPUIGradientButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 12F1EE0732B50B180B68A7CE77B50BC8 /* TPUIGradientButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		762E3951F3B8372E5A5B8BBE96E0C17B /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7A6737C6EAE4FC2F15FFB315A7F69 /* MJRefreshBackStateFooter.m */; };
+		76604625A3264E8CE18500C932C8FE3C /* TPUIGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5296937CFA32DF92D1DF52310D054E49 /* TPUIGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78B2727EE5D693F58D019DB098005101 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C052834EB63787B037829B7312C877B /* MASConstraintMaker.m */; };
+		794D3B3425CC60D2DBD3066F9C1D6383 /* TPUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DC44346C9153D8FE5AB07E1A3D4F078 /* TPUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BFF65958F014760B6AC4742824892EB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 202177F9F18363CE69A9F64C717B0730 /* MASCompositeConstraint.m */; };
+		7E41CF3FB7150B8BADECAA90737F1E7B /* TPUIAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE46AD24A2ED6C02AF9D200E5CD2DCD /* TPUIAlert.m */; };
 		81B9E2F21B1EF9FE4E769103108DEA8A /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 144A8071A81392476A4289DC01709D18 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		823C5F2F429111D9A1311BF078992E98 /* TPUIGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 509B4E05BA83FC9BFF4C9423605B2292 /* TPUIGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8539B851E01A58467BE49CA3FA77223C /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B59D914AA8483AE94697637C8B57206 /* MASLayoutConstraint.m */; };
-		85B31DA82AA63393DCE208A3E3DBD6F5 /* TPUISimButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F409A08D167A64B2AC19A061E80EBA3 /* TPUISimButton.m */; };
+		8709A81B839D626C372CD137B34EFBB7 /* TPUIGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F526690D56A536A3F03533F0F5053BFA /* TPUIGradientLabel.m */; };
 		8B92011C9373001132C8148BFC8F50B3 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C0783DE1B18D2CADB20B2F37BA96D0C6 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BFFEDAE4F6E1913FDF7F481CCC415AF /* TPUIKitToast.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8B34D9C8CB742E387C77FAF0A7BE5E2E /* TPUIKitToast.bundle */; };
+		8C8B1F2BD8A6C54986B883338C7CB68A /* UIView+TPBlankView.h in Headers */ = {isa = PBXBuildFile; fileRef = 167F3A6DBD8954A1DDB5C2AD707C866E /* UIView+TPBlankView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CD9BB8F4A587140C1D861A70ABB4FB5 /* TPUIMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB9079278453C48910759FAB7C874D /* TPUIMarginLabel.m */; };
 		8D4D1F6E4709EBB13974E95DC1059DDC /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5C3A6103EA57BA34AF49EA0682E8DD /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D65CE579E516BDD5FB36CAA21D693F6 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = AC088F83BAA4FE82DC5F8F537ED2B744 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8D87C9952B4A745F79D6C00FCA55E0D0 /* TPUIBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166EF59667062FF64C7F92A690CC1B67 /* TPUIBaseNavigationController.m */; };
+		8E314022C97DD2F500C6C66B42171519 /* TPUIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6ECA2B330D84BAF1CDB90996E6496E /* TPUIBaseViewController.m */; };
+		8EBBA2E7373EF504B00B7E03B550B75F /* TPUIKitRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 655D59F15B5FA524A7530CF330509EC2 /* TPUIKitRefresh.bundle */; };
+		8F06A47E9B04746CE3D58ED06E268379 /* UIBarButtonItem+TPUIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FC78CC61FF1DEDEA54585100A5060CE0 /* UIBarButtonItem+TPUIButtonItem.m */; };
 		8F31819454827D1670CAC8F6B8BAC0A5 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9A805E2F0C8D5AC776F9CF6FE5256572 /* MJRefresh.bundle */; };
-		8FEC69F3C82278F4FA4BAC62D50E4339 /* TPUIGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E37CA5B2F8902BE9BA9BB1F895EE0E15 /* TPUIGradientLabel.m */; };
+		9033F8207D9E51B4DF2A1A159B6CEEB8 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E812FACEACA7D526C433545E1EE4D81 /* MBProgressHUD.framework */; };
+		90A261F9B0A7D2573E9B08677FF24104 /* TPUIMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = FABF890D054EC2678FBE802300DD0643 /* TPUIMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		923484DC262E3072501287810F2C03AA /* TPUIBlankAccets.h in Headers */ = {isa = PBXBuildFile; fileRef = 79491AB5D9564F8E015B6B5AF87C7AC3 /* TPUIBlankAccets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		941955A19C40899D275604E6E9C21A6D /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E5A5AB32E5472233069175F9FBD1C9F /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94B56E7DE2CB2520C6934500BD23D37D /* TPUIBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B586E5659BD0E875C970203D959EDF4 /* TPUIBaseTableViewCell.m */; };
 		9577B427BE9F9536725C03478765DBE6 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C97FBA0237603F9B2CD08667DB6E15 /* MJRefreshBackFooter.m */; };
 		96152B6581A629A38AE9498243EFAADF /* MJRefreshBackGifFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6521FA485A5393B57B80507CCE849A85 /* MJRefreshBackGifFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		970F14BBE9FEF12A8BA7ECDC7BF9E2C6 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB84ECDE5C2D88C73493F9C567342C /* MJRefreshConst.m */; };
+		977FE52D639FE0C5865715CEE0249C04 /* TPUITabItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EBB3A067773423B1C45583AFCE45FA5 /* TPUITabItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97B5037397C02AFBA93143B3567B4934 /* TPUIToastAccets.h in Headers */ = {isa = PBXBuildFile; fileRef = 72DA9134814131DC0E723E0BAE683CF2 /* TPUIToastAccets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98337F23B46EC94A2789C0DE21BFD96D /* MJRefreshAutoFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 59520D5099436C21259CFFDF579308C2 /* MJRefreshAutoFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		992CAD8A0150658FF7069123F12F6C6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615DED21F69A608E6D083A25717A3BD3 /* Foundation.framework */; };
-		99765511A4DDECBA95EAB33C519C6E29 /* TPUIBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0882BD479DCFE056F7BBBFD8277590DB /* TPUIBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99AC2AF7ABE5CD9F488C2B312E29B6D1 /* MJRefreshAutoNormalFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = DA92F4CB13420449F115C8E6A620C1B4 /* MJRefreshAutoNormalFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AC9DF1904C624BED0C374337DF8A097 /* TPUIGraphicView.h in Headers */ = {isa = PBXBuildFile; fileRef = A7962CBBBC4D9AF4BEADBBD94A0D24C5 /* TPUIGraphicView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ACB6777BF87C944195352753F307CF4 /* UIView+TPBlankView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4736DD53BF70BE16CD5A5BE58FC1CC8B /* UIView+TPBlankView.m */; };
+		9B23B6E6768BF6DFCE405F8239A243DB /* TPUIGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD17B4C3780512C8AA4A7903C6882DA /* TPUIGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D546E1168C04B0B2EAE005D9275D18B /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F99BE7D113E5DE5B58473B2B1133941 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A031C032CFEDFE915279E275A04EF334 /* MJRefreshComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = CB070E4F64DC65F38B2F0B004DD0CE1B /* MJRefreshComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A114AAAC5377743FD24B20F054EFDB9F /* TPUIBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 243EBC917A33B9BBEBB6386BBBA7304A /* TPUIBaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A292E5B0A3F0783FDFF400129316981D /* TPUIBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A7AE7F6FADBF53A473626B72CABE8D06 /* TPUIBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2B4099D502B666A38F1237E5F9989CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615DED21F69A608E6D083A25717A3BD3 /* Foundation.framework */; };
 		A35FBEEC7D088AEC05297E8292A32C77 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F48312821094F69EB95BCE6A6A373730 /* View+MASAdditions.m */; };
 		A556058B0B08B94156481722C30BEEF3 /* MJRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E598D9F827020AFFD99CA56C1BE0C304 /* MJRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A601994621C892656F60D1A1292A9565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B2574C2ACF262FDEEBCD5715EE9638 /* CoreGraphics.framework */; };
-		A7F4B0EEB6C994AF09C9A53C3D1C90C7 /* TPUIMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FF778C24EBC2F01888D03801DCC70 /* TPUIMarginLabel.m */; };
+		A753FEA7F9480E421039FFA17AC94CB5 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310EBF408EB106A5565051516C6BC284 /* Masonry.framework */; };
+		AB71381908B7045A87B0A169BB48BA9F /* UIBarButtonItem+TPUIButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = FCFD0911545E821D5E4ED67F254592C4 /* UIBarButtonItem+TPUIButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB9FB1075E6B9C0BF3EC8BAC7007BD93 /* MJRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0C56B04C722F8DB420C27ADA9EE203 /* MJRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC8EBFBF3A5DD250443834AE890B13F3 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989AEEEB02B866C0A141125A14EEA3A7 /* MJRefresh.framework */; };
-		ACC1B70F67953E87DDEEB9039A2AB7C0 /* TPUIBackNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD39DA500BC9AFDDE5A021398E7570C /* TPUIBackNavigationController.m */; };
-		AEABD9C3FBB67462F1DF18B609AFFE93 /* TPUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0686842A825584E579053888B2501A92 /* TPUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEBE77FD0E2DD41A3C039302482102E5 /* TPUITabbar.h in Headers */ = {isa = PBXBuildFile; fileRef = E50A0D8901416A62FD7E8348A8CF4FDA /* TPUITabbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B03E7E7589AC01B866D44FF93CB7BE30 /* TPUIBaseAccets.h in Headers */ = {isa = PBXBuildFile; fileRef = A8E086A222AF8E80C53C7A5691826A4C /* TPUIBaseAccets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B25295C403A59D714D1670EEF4AB9CE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615DED21F69A608E6D083A25717A3BD3 /* Foundation.framework */; };
+		B29B737C2534656EFF4EC5CFD831B87A /* TPUIRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 381201806820EA77F1EF0AE8D053CF0F /* TPUIRefreshHeader.m */; };
 		B373020D1219FEEC8CBE5C6B2678FAA5 /* NSBundle+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 693C764FCCD9FDD3940558498E2139F4 /* NSBundle+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B397061ACF9C4C5BC023FBA7FA437F8B /* TPUIGradientLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BBCDACBD752FB6BCDD3E597E0B5DE6B /* TPUIGradientLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3C364DD23CBF0F661914D0F0F5E21DA /* TPUIToastAccets.m in Sources */ = {isa = PBXBuildFile; fileRef = 46292E5C1B7C7B0A80890451D13D8018 /* TPUIToastAccets.m */; };
-		B5B8885816602C95700D9FEC5E67322A /* UIBarButtonItem+TPUIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 693E2D355E23E2BBB92BF4AC0B7B2261 /* UIBarButtonItem+TPUIButtonItem.m */; };
-		B7598D62A2D72DBEA426F75DBBBAA70B /* TPUIBannerPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C8AD67106F531EC1CCC3B9EC8FA5E8 /* TPUIBannerPageView.m */; };
-		B7A007ACA9DB3D3ACE94FA862A4D98D9 /* TPUIToastAccets.h in Headers */ = {isa = PBXBuildFile; fileRef = 9478D2B9414C9A146728D6E3FCDC937F /* TPUIToastAccets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7D645EC004610E8A581E532D28771EC /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C2831B110C2DEC5390CCB991BF7E3228 /* MASViewConstraint.m */; };
 		B8812EC9258E228E36D44D4D460B120E /* MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = F06C47B82E0557E24042F27D7D633290 /* MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B89F403EB817A94FA2B6D09A84FCC55C /* TPUIBlankAccets.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C21BCD882E6CDF7942D20024E5EA3E /* TPUIBlankAccets.m */; };
+		B9AF64E72B94E598279AFB964C10C9AE /* TPUIMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCF267631423BCD9BCA5C59B0F63918 /* TPUIMethodSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB66BCDC8DC72A90BCD3B4522161CC9C /* TPUIGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1EA770945055426A6B8CA6BD5571D7 /* TPUIGradientLayer.m */; };
 		C0861ADB4C5FA30F4F9E051F7638A264 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C2C22DB2D29117796E9F9903AC231B /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		C23F019D5423CE739A379733BDFA2250 /* TPUIMarginLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD0A81BBAE0A2A0DBFFBF0FCD35A41E /* TPUIMarginLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C31EFB30407D5077BB26ADB40990E027 /* TPUIBlankAccets.m in Sources */ = {isa = PBXBuildFile; fileRef = BE73BEC65D7DB3C490D5E683392B9D2D /* TPUIBlankAccets.m */; };
-		C4292EDFCB7BEF54687FA4A03A26F2E5 /* TPUIAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2714369A6047AE1BEAB8CBB16404B3 /* TPUIAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2951B22F21CABA7156EEFCF47B117A3 /* TPUIRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DEECF7FA2DB3AAAF789AFA1C7DF028 /* TPUIRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C579128CC4586FF6D56E7F0DF9E3F165 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1602ABC4340D69159D24CE178E3B1009 /* MJRefreshStateHeader.m */; };
 		C7B0979AB5F9DD07ED6DA0E3AC8DA076 /* MJRefreshStateHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D04DA81AEB85083F33D58D5BECD1191D /* MJRefreshStateHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C88E4B2C1BC0B9D83B7B58730C90D0D3 /* TPUIAlertMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A180386F037798C531B534374BE79859 /* TPUIAlertMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9DAD50ACA677459D959DA95867FB912 /* TPUIBackNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 209C8A8D3880EF5ACDF491E073B420FF /* TPUIBackNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8B1B31A4F492C5D1568131E01BDB6E4 /* TPUIGradientLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3744115EB7ADF286B23BA482AB0DF820 /* TPUIGradientLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB19E837657CE5775BD659C742BDDDAE /* TPUIGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 224F6E2C4CA072C3B66F381636562D25 /* TPUIGradientView.m */; };
 		CE93C54413259B4AC3683B6EB874D466 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866D58797EDD35BB8B4DAEAF0C29B76E /* UIKit.framework */; };
-		CEF67BE2F0B6621E3E54E490334A7F3B /* TPUIKitRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 655D59F15B5FA524A7530CF330509EC2 /* TPUIKitRefresh.bundle */; };
-		CFA2A52FAB08D90EEB4600A880649FB1 /* TPUIGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD35563D2197138CACCA0326CFC9A6 /* TPUIGradientView.m */; };
-		CFECBB6DEA4C2CCB89BC44EF0916AA61 /* TPUIBaseTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 170581D0FE8B6B762CCE688AC649A205 /* TPUIBaseTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFFEB8A6941DB4DA99066E41896FE4EE /* TPUIGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3BFC49F2B0D31DCFD674577C055DB9 /* TPUIGradientLayer.m */; };
+		D08EF346A5E6A78B81DF0CC085DD6794 /* TPUIKitBase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 553844E134CCB7C23995F73F66EC02C8 /* TPUIKitBase.bundle */; };
 		D0CCA29D563BD5C9A80FA6D02BCBD5BB /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B303BFE7489ED1470467E5EE868E9481 /* UIView+MJExtension.m */; };
-		D419FA5092EAC55CD0175027EFAFAA77 /* TPUIGradientButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DF09DF48101B24AE7431E66667F302 /* TPUIGradientButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D45611E8F8D8A0E92449ED0A155C09FD /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF003BF3D1361EACAE6FF08399C4BE3C /* MJRefreshAutoFooter.m */; };
-		D9795AA2AD66EC1986C75CC3C8061D82 /* TPUIAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8009B2781EA0CE32560F9E032A851082 /* TPUIAlert.m */; };
+		D4EFBFF98922552636632726A9844338 /* TPUIBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4295FA41287AD06B57FCE2E960FE125 /* TPUIBaseNavigationController.m */; };
+		D5358459E0DE822716796BAEB0B113AB /* TPUIToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9114FB41EB8D167A6254AEC106C890 /* TPUIToast.m */; };
+		D593C2154C70DBDD1C22B7F1339355FE /* TPUIBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDC251519E620F73E4FFE0ADB68130F /* TPUIBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DABF20F73D27572CD97071A6D4DB9004 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B85C5CFCE4138CC64E5BCF9D133F753 /* MBProgressHUD-dummy.m */; };
 		DD605F812C91FC7AB4F59F1ECCBA0982 /* MJRefreshBackFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E718A03667117BC12860AC71D3CC6C3 /* MJRefreshBackFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE34827644F36AE8B5A2BCDBE659EC51 /* TPUIAlertMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C869CBE56BA8FF64F0B8F8B76B9CA53C /* TPUIAlertMaker.m */; };
-		E027E592505B8A8FA31A9A74B047C4DE /* TPUIRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7F2BB305002A3B54C6B528C1AD8333 /* TPUIRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF4FCC2D8113124B2071DF1F03DBBFE3 /* TPUIBaseTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0F4335AD819A5E5AB41A686BBFB25A /* TPUIBaseTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF9DD5BD7AA0DB8CA274DE06197D85A9 /* TPUIKitBlank.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEC664968769A8BDF0DF4602FE2246CE /* TPUIKitBlank.bundle */; };
+		E404842AF3CFBE177A9306E9FEAAD3E4 /* TPUIAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA812A8D7DFAA370D4B063C8510EB56 /* TPUIAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E44D4596E5DFAF2458FEA91D23447B1A /* MJRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D632B11A1F941D0853566006A13F421 /* MJRefresh-dummy.m */; };
-		E4C039AF549FB7A6887850BBEF376E47 /* TPUIRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9970F7BB1E53690B939C93BDB594E3 /* TPUIRefreshFooter.m */; };
-		E511681CBC35EAFB8400404598A8CB30 /* TPUINavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5696005BC50C84A9D80F576CD752C82C /* TPUINavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E51F496BDC6ACADE04FDA059C6CB2342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615DED21F69A608E6D083A25717A3BD3 /* Foundation.framework */; };
-		E68BFD12D83A7C2F4CB0C17635037EE1 /* UIView+TPBlankView.h in Headers */ = {isa = PBXBuildFile; fileRef = 499D45DCC3CE950C4A8424B3C1FDDA38 /* UIView+TPBlankView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7304C352808013D67EE82BF7AF1D2BA /* UIScrollView+MJRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = CECE60DD4CEDF54157FFF6610801CF8C /* UIScrollView+MJRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7BD6CD7E6BD797308FC0FF0C7185224 /* TPUITabItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A049B63996353258F206ECF90990497 /* TPUITabItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7CA20228B3583F41927813EE904CAD3 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20EEEF53966791A8E8D7215A6026A484 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8DD5D1D406150E1C80AD015271B6848 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D72D70E8D02C51F76EE3A6D6BC2D125 /* MASConstraint.m */; };
+		EAAC7F4EEE52FDF6693465FCFB03E792 /* TPUIBackNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D13A99134B0F5EB90B47131CBC8CC301 /* TPUIBackNavigationController.m */; };
 		EAE8B0895956885A752B173683A0D889 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5333D8F58B7BC773D0DF90E1CB7125C3 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB2A4C29BE958CCB03B3FD9FAB927F1F /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D8AE82E43BFC9BE19C5276CFA15BC0 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECDF1814866AAAEA0173ED8A8F17A790 /* TPUIKitBase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 553844E134CCB7C23995F73F66EC02C8 /* TPUIKitBase.bundle */; };
+		EBA2D15028B43B52876304FD11670196 /* TPUIRefreshAccets.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EEB1D1D725870F05FB07F14F0B4B8AA /* TPUIRefreshAccets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECE7EA322E34D49AA6BA214B2E186496 /* TPUIBaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C80238F1DD2C8F8875CA2F57343B4C4 /* TPUIBaseNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECEA1DFDE6D8AD75CD2EC083B801F1DD /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DD5E2DD1633F4D0E017F5FE2546A3 /* MJRefreshComponent.m */; };
 		EDD70CE2C2ECB482CFFB0EF720EAA798 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F0065F411FE8F7B580A035AF663ACF75 /* NSBundle+MJRefresh.m */; };
 		EDF22D485E9480A525852898A09FBA38 /* UIView+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 623017293998B50287335BA0F7A01EBA /* UIView+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1C1731262F452BF1765A31CAD1872A0 /* TPUITabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F12E90B76327302A1810BD15C06482F /* TPUITabItem.m */; };
-		F65F64EAFB7D2467F4D2A385753FBD5D /* TPUIKitBlank.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEC664968769A8BDF0DF4602FE2246CE /* TPUIKitBlank.bundle */; };
-		F66A8A98837E86B7FB277C38C8EEED97 /* UIBarButtonItem+TPUIButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 34E72DFF9DD831F84E4BC98EA86D8140 /* UIBarButtonItem+TPUIButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51419C63282F054557F6ACE3BE4FA6E /* TPUIGraphicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4FB8DD29031328F08D32C89696D732 /* TPUIGraphicView.m */; };
 		F8AAB6789B0A59CC99A8466A64543BE1 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FCF696A4A08866D790076F938E873 /* MJRefreshGifHeader.m */; };
-		FA5CF815EA29481D3581091261E5CE2A /* TPUIMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B41E907C65473923BB4D2EBA45C0607 /* TPUIMethodSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAFBFA90F7BC3E7CF50F8A5CF0A8B264 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D4A73C152F1A5D01E73FF238B9F072 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDA11799171AC341F213E7647D6627C6 /* TPUINavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C144CDAE0D486E943DB99BA5CBE2A04 /* TPUINavigator.m */; };
+		FC9F32A4DFF65D93F0B1AD639D81E792 /* TPUIBannerPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA894CDE2BC2E8550CC4ED15BFC36B4 /* TPUIBannerPageView.m */; };
+		FDC662C6F7B4C93432FE181EE16E1ABB /* TPUIAlertMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD22D70C4D9C2BB381355DCC208A6AB /* TPUIAlertMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF0EE7E6F869E55DA268F25622674EB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615DED21F69A608E6D083A25717A3BD3 /* Foundation.framework */; };
+		FF8F58E3490BF3CBBB9D97BE7DB2483B /* TPUIToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CD02EF2E706324DCF21596017B1F1B1 /* TPUIToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDDC6C200E3AA7E85E7BD40FEB09A29 /* TPUIGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD900C6B16F9832CC5E1B8102E7BD6 /* TPUIGradientButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1CA1201E623C76476399CD00B3B6E293 /* PBXContainerItemProxy */ = {
+		0AEE51564890988538F75A810CCF8766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
+			remoteInfo = MJRefresh;
+		};
+		1CF9C6F2B98CB5E63A0EB3ECAD6758DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5D0A65CB47E8C3E158E7A80F23991180;
 			remoteInfo = "TPUIKit-TPUIKitRefresh";
-		};
-		2DD7455A10AB8D4DA85071EF65756BDB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92182B4A5FBF9927B181081F48498926;
-			remoteInfo = "TPUIKit-TPUIKitBlank";
 		};
 		430BA7A670DC1E6396145C8606441E6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -189,20 +193,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
 			remoteInfo = MJRefresh;
-		};
-		4E62F3CBB0E062E4C278144B7AEFA62E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 773ED8272A0AB1347575BED06913FBF2;
-			remoteInfo = "TPUIKit-TPUIKitBase";
-		};
-		549EB9E23902501DD26427AD294370BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
 		};
 		598B9A0959CD57900EC4253776D02586 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -218,12 +208,12 @@
 			remoteGlobalIDString = F3E5FE8B51A3A845B8970EC0B41047F8;
 			remoteInfo = "Pods-TPUIKit_Example";
 		};
-		6FF6E808F9D8B7A159EADA60F9C586E2 /* PBXContainerItemProxy */ = {
+		7240A4BF3AE49CB5A1313ACF2AE6F84D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
-			remoteInfo = MJRefresh;
+			remoteGlobalIDString = 0EC358D96914005896ABFB46BCB0F384;
+			remoteInfo = "TPUIKit-TPUIKitToast";
 		};
 		77088DB1B90DABD7185AA5F8D8FD2A42 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -232,12 +222,12 @@
 			remoteGlobalIDString = 1026C137FD16446CA28CAD8CFB5E5449;
 			remoteInfo = TPUIKit;
 		};
-		C47C5D98CF9DB29C375CB9CC9C83EAA1 /* PBXContainerItemProxy */ = {
+		DAEE241A12F15805A9238C60BB4DE161 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
-			remoteInfo = MBProgressHUD;
+			remoteGlobalIDString = 92182B4A5FBF9927B181081F48498926;
+			remoteInfo = "TPUIKit-TPUIKitBlank";
 		};
 		DB5F01B48005AB27D54F1876314B0B36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -246,12 +236,26 @@
 			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
 			remoteInfo = MBProgressHUD;
 		};
-		EDC57A1D53366CE8609EBCF27A2C9887 /* PBXContainerItemProxy */ = {
+		EA933232D260472B80FB781DD6A2A9DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0EC358D96914005896ABFB46BCB0F384;
-			remoteInfo = "TPUIKit-TPUIKitToast";
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
+		EAEDA571184BA787F8581CA1134036B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 773ED8272A0AB1347575BED06913FBF2;
+			remoteInfo = "TPUIKit-TPUIKitBase";
+		};
+		FB4F41EC38B8EDC49FEB6C488D097F1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -259,98 +263,91 @@
 		021FCAA95CCBEFFD57A1060A7C945FD8 /* Pods-TPUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		047485331790D89B94BED74BAFC3C693 /* Pods_TPUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TPUIKit_Tests.framework; path = "Pods-TPUIKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C2C22DB2D29117796E9F9903AC231B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		0686842A825584E579053888B2501A92 /* TPUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPUIKit-umbrella.h"; sourceTree = "<group>"; };
+		0621EEF5B1183DF5AC2661AA254FB8AF /* TPUIRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIRefreshFooter.h; path = TPUIKit/Classes/Refresh/TPUIRefreshFooter.h; sourceTree = "<group>"; };
 		0877B4313D22121F85ACD908301EAE43 /* Pods_TPUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TPUIKit_Example.framework; path = "Pods-TPUIKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0882BD479DCFE056F7BBBFD8277590DB /* TPUIBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBannerView.h; path = TPUIKit/Classes/Banner/TPUIBannerView.h; sourceTree = "<group>"; };
+		08968199872349ADDE6158794ECC3726 /* TPUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPUIKit.release.xcconfig; sourceTree = "<group>"; };
 		08D129D20FFA776B3F10198D47C8AA6A /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
-		0A0FF778C24EBC2F01888D03801DCC70 /* TPUIMarginLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIMarginLabel.m; path = TPUIKit/Classes/MarginLabel/TPUIMarginLabel.m; sourceTree = "<group>"; };
 		0A79C381FC9CCC9A8669643DDF2D79E6 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		0B12B991C124A156FEFF7CFCDC37F9BB /* MJRefreshConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshConst.h; path = MJRefresh/MJRefreshConst.h; sourceTree = "<group>"; };
-		0BAA41502F7CA776D841E8FB27E89772 /* TPUIToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIToast.m; path = TPUIKit/Classes/Toast/TPUIToast.m; sourceTree = "<group>"; };
-		0DBE74DD64A04E947E12CBAC0678D8F5 /* TPUIMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIMethodSwizzling.m; path = TPUIKit/Classes/Base/TPUIMethodSwizzling.m; sourceTree = "<group>"; };
+		0BE0C0EBEBCA2B19BCCFCC2BBE167804 /* TPUIBlankView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBlankView.m; path = TPUIKit/Classes/Blank/TPUIBlankView.m; sourceTree = "<group>"; };
+		0C5759D4786DA821DD1AB62D26CF517A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0DDC251519E620F73E4FFE0ADB68130F /* TPUIBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBannerView.h; path = TPUIKit/Classes/Banner/TPUIBannerView.h; sourceTree = "<group>"; };
 		10D6C1797DF50970E6200389ED791BF3 /* Pods-TPUIKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPUIKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		12F1EE0732B50B180B68A7CE77B50BC8 /* TPUIGradientButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGradientButton.h; path = TPUIKit/Classes/GradientView/TPUIGradientButton.h; sourceTree = "<group>"; };
+		14439954C1956299494E9FF778930CA0 /* TPUIRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIRefreshFooter.m; path = TPUIKit/Classes/Refresh/TPUIRefreshFooter.m; sourceTree = "<group>"; };
 		144A8071A81392476A4289DC01709D18 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		1602ABC4340D69159D24CE178E3B1009 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshStateHeader.m; path = MJRefresh/Custom/Header/MJRefreshStateHeader.m; sourceTree = "<group>"; };
-		166EF59667062FF64C7F92A690CC1B67 /* TPUIBaseNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBaseNavigationController.m; path = TPUIKit/Classes/Base/TPUIBaseNavigationController.m; sourceTree = "<group>"; };
-		170581D0FE8B6B762CCE688AC649A205 /* TPUIBaseTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBaseTableViewCell.h; path = TPUIKit/Classes/Base/TPUIBaseTableViewCell.h; sourceTree = "<group>"; };
-		18F6CBD950EEBA6830D9672F0077B745 /* TPUIBlankView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBlankView.m; path = TPUIKit/Classes/Blank/TPUIBlankView.m; sourceTree = "<group>"; };
+		167F3A6DBD8954A1DDB5C2AD707C866E /* UIView+TPBlankView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TPBlankView.h"; path = "TPUIKit/Classes/Blank/UIView+TPBlankView.h"; sourceTree = "<group>"; };
+		1689CC886CB4879C722620051166344E /* TPUITabItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUITabItem.m; path = TPUIKit/Classes/Tabbar/TPUITabItem.m; sourceTree = "<group>"; };
+		19DB1154854007025801ADCE8168EBB1 /* TPUIGraphicView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGraphicView.h; path = TPUIKit/Classes/GraphicView/TPUIGraphicView.h; sourceTree = "<group>"; };
 		1B3626A033CBDA312A892CF5141720C3 /* MJRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MJRefresh-Info.plist"; sourceTree = "<group>"; };
 		1B4948412F0D5854BF6B558EAB877EE4 /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		1B586E5659BD0E875C970203D959EDF4 /* TPUIBaseTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBaseTableViewCell.m; path = TPUIKit/Classes/Base/TPUIBaseTableViewCell.m; sourceTree = "<group>"; };
+		1BE05CAD9D0A3C2A2F91E1A8DE98A7E2 /* TPUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPUIKit-dummy.m"; sourceTree = "<group>"; };
+		1DC44346C9153D8FE5AB07E1A3D4F078 /* TPUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIKit.h; path = TPUIKit/Classes/TPUIKit.h; sourceTree = "<group>"; };
+		1EA703D7DD5DE9F64F68C7E191DC7123 /* TPUIScrollTopBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIScrollTopBar.m; path = TPUIKit/Classes/ScrollTable/TPUIScrollTopBar.m; sourceTree = "<group>"; };
 		1EED849B91663EC7FBBBBE53EB41E8D8 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
-		1F2714369A6047AE1BEAB8CBB16404B3 /* TPUIAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIAlert.h; path = TPUIKit/Classes/Alert/TPUIAlert.h; sourceTree = "<group>"; };
 		1F5C3A6103EA57BA34AF49EA0682E8DD /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		1FA812A8D7DFAA370D4B063C8510EB56 /* TPUIAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIAlert.h; path = TPUIKit/Classes/Alert/TPUIAlert.h; sourceTree = "<group>"; };
+		1FD17B4C3780512C8AA4A7903C6882DA /* TPUIGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGradientLayer.h; path = TPUIKit/Classes/GradientView/TPUIGradientLayer.h; sourceTree = "<group>"; };
+		1FEF4F21A50D6EF778070A2723EE7129 /* TPUIAlertMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIAlertMaker.m; path = TPUIKit/Classes/Alert/TPUIAlertMaker.m; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		202177F9F18363CE69A9F64C717B0730 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		2022E8DCB6B25ADE10ECAD66990F6B81 /* TPUIRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIRefreshFooter.h; path = TPUIKit/Classes/Refresh/TPUIRefreshFooter.h; sourceTree = "<group>"; };
-		209C8A8D3880EF5ACDF491E073B420FF /* TPUIBackNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBackNavigationController.h; path = TPUIKit/Classes/Base/TPUIBackNavigationController.h; sourceTree = "<group>"; };
 		20EEEF53966791A8E8D7215A6026A484 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		2243B1F2C96415B9E885B47A7636C282 /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
-		23562B466636B9418BC5CAC777D28DD1 /* TPUIGraphicView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGraphicView.m; path = TPUIKit/Classes/GraphicView/TPUIGraphicView.m; sourceTree = "<group>"; };
-		243EBC917A33B9BBEBB6386BBBA7304A /* TPUIBaseNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBaseNavigationController.h; path = TPUIKit/Classes/Base/TPUIBaseNavigationController.h; sourceTree = "<group>"; };
+		224F6E2C4CA072C3B66F381636562D25 /* TPUIGradientView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGradientView.m; path = TPUIKit/Classes/GradientView/TPUIGradientView.m; sourceTree = "<group>"; };
 		24CF111B30A91ED47C71942534DF0EEB /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 		27E04046BC798574BD50EAF237E6ECEB /* MJRefreshFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshFooter.h; path = MJRefresh/Base/MJRefreshFooter.h; sourceTree = "<group>"; };
-		28F7FEA7F27847EE1203BAEAFDFB07A9 /* ResourceBundle-TPUIKitRefresh-TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TPUIKitRefresh-TPUIKit-Info.plist"; sourceTree = "<group>"; };
-		2B3BFC49F2B0D31DCFD674577C055DB9 /* TPUIGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGradientLayer.m; path = TPUIKit/Classes/GradientView/TPUIGradientLayer.m; sourceTree = "<group>"; };
-		2BA4C15F8F476301B5983A7A107B39AF /* TPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPUIKit.debug.xcconfig; sourceTree = "<group>"; };
-		2BBCDACBD752FB6BCDD3E597E0B5DE6B /* TPUIGradientLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGradientLabel.h; path = TPUIKit/Classes/GradientView/TPUIGradientLabel.h; sourceTree = "<group>"; };
+		28278A01F7BC071DFA0F651EEB37CB59 /* ResourceBundle-TPUIKitToast-TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TPUIKitToast-TPUIKit-Info.plist"; sourceTree = "<group>"; };
+		2C80238F1DD2C8F8875CA2F57343B4C4 /* TPUIBaseNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBaseNavigationController.h; path = TPUIKit/Classes/Base/TPUIBaseNavigationController.h; sourceTree = "<group>"; };
 		2CDFD5E05EDC54C1D83B5C2A85418E46 /* Pods-TPUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TPUIKit_Tests.modulemap"; sourceTree = "<group>"; };
 		2E5A5AB32E5472233069175F9FBD1C9F /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		2EC7A57344F89437A9817F05F5916A73 /* TPUIBlankAccets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBlankAccets.h; path = TPUIKit/Classes/Blank/TPUIBlankAccets.h; sourceTree = "<group>"; };
-		2EE395E48EB345432E863FF2B4B86B22 /* TPUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPUIKit.release.xcconfig; sourceTree = "<group>"; };
+		2EE8C8551C5AA2BF3722390933830DEB /* TPUIBackNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBackNavigationController.h; path = TPUIKit/Classes/Base/TPUIBackNavigationController.h; sourceTree = "<group>"; };
 		2F34AF2CCC493DBDE2E8176CE918041E /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
 		302EE24BDA8BB459ECDA56C76B3F4E0E /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
 		310EBF408EB106A5565051516C6BC284 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		312653C3EBC085EA0F0889F8B1A55C74 /* Pods-TPUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TPUIKit_Example.modulemap"; sourceTree = "<group>"; };
 		32603610C6AB4631CE7411225E5F879F /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		327C5DC5188C96A990F7467D8CE72C21 /* TPUINavigator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUINavigator.m; path = TPUIKit/Classes/Navigator/TPUINavigator.m; sourceTree = "<group>"; };
 		340B32FC30F7023EEAF4A1B88D080FC4 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJRefresh.m"; path = "MJRefresh/UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
-		34E72DFF9DD831F84E4BC98EA86D8140 /* UIBarButtonItem+TPUIButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TPUIButtonItem.h"; sourceTree = "<group>"; };
+		34141BFE9BA56170FFA9A05C9E3A8860 /* TPUITabbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUITabbar.h; path = TPUIKit/Classes/Tabbar/TPUITabbar.h; sourceTree = "<group>"; };
 		3658AAA899F97678981E69A85EB3FFBE /* Pods-TPUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3744115EB7ADF286B23BA482AB0DF820 /* TPUIGradientLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGradientLabel.h; path = TPUIKit/Classes/GradientView/TPUIGradientLabel.h; sourceTree = "<group>"; };
 		3769205E6C253659166B2BD0BA2222BC /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		381201806820EA77F1EF0AE8D053CF0F /* TPUIRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIRefreshHeader.m; path = TPUIKit/Classes/Refresh/TPUIRefreshHeader.m; sourceTree = "<group>"; };
 		3A1DD5E2DD1633F4D0E017F5FE2546A3 /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
 		3A77D85213347D41604CAE2D7BC54118 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		3A7F2BB305002A3B54C6B528C1AD8333 /* TPUIRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIRefreshHeader.h; path = TPUIKit/Classes/Refresh/TPUIRefreshHeader.h; sourceTree = "<group>"; };
 		3B85C5CFCE4138CC64E5BCF9D133F753 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		3C41A3923CC90A3F0EF19A53361EE893 /* Pods-TPUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPUIKit_Example-dummy.m"; sourceTree = "<group>"; };
 		3D632B11A1F941D0853566006A13F421 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
-		3DFAF9129093AA20E71FC8EDBD9E28CD /* TPUISimButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUISimButton.h; path = TPUIKit/Classes/SimButton/TPUISimButton.h; sourceTree = "<group>"; };
 		3E718A03667117BC12860AC71D3CC6C3 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
-		3E858823DDE610C9FD96CD0085C3DFA0 /* ResourceBundle-TPUIKitToast-TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TPUIKitToast-TPUIKit-Info.plist"; sourceTree = "<group>"; };
+		3FA894CDE2BC2E8550CC4ED15BFC36B4 /* TPUIBannerPageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBannerPageView.m; path = TPUIKit/Classes/Banner/TPUIBannerPageView.m; sourceTree = "<group>"; };
+		42196511602699464C3A5AEF5FA305E8 /* TPUIMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIMethodSwizzling.m; path = TPUIKit/Classes/Base/TPUIMethodSwizzling.m; sourceTree = "<group>"; };
 		43ECB6502F777C78F4BABE18594494AA /* Pods-TPUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		43FC0D6F4BCF4BDA8020F4132EFBBBCA /* Pods-TPUIKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPUIKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4439404A6ECBF76714EA792E3CC43931 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
-		46292E5C1B7C7B0A80890451D13D8018 /* TPUIToastAccets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIToastAccets.m; path = TPUIKit/Classes/Toast/TPUIToastAccets.m; sourceTree = "<group>"; };
+		45444A1CBA4DED19E32BFBD69012F33A /* TPUIMarginLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIMarginLabel.h; path = TPUIKit/Classes/MarginLabel/TPUIMarginLabel.h; sourceTree = "<group>"; };
 		46B2574C2ACF262FDEEBCD5715EE9638 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		4736DD53BF70BE16CD5A5BE58FC1CC8B /* UIView+TPBlankView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TPBlankView.m"; path = "TPUIKit/Classes/Blank/UIView+TPBlankView.m"; sourceTree = "<group>"; };
-		48BA8D0838D9BA0D88EFB7AC99AC331B /* TPUIGradientButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGradientButton.m; path = TPUIKit/Classes/GradientView/TPUIGradientButton.m; sourceTree = "<group>"; };
-		499D45DCC3CE950C4A8424B3C1FDDA38 /* UIView+TPBlankView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TPBlankView.h"; path = "TPUIKit/Classes/Blank/UIView+TPBlankView.h"; sourceTree = "<group>"; };
-		49CC3527FBF2D78C1FF8B536615FBC80 /* TPUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPUIKit-prefix.pch"; sourceTree = "<group>"; };
-		4AC216692478E835C1C0EB114C0773D9 /* TPUITabbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUITabbar.m; path = TPUIKit/Classes/Tabbar/TPUITabbar.m; sourceTree = "<group>"; };
 		4CB1F8F6154ACBD8F68C696BE35B758F /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		509B4E05BA83FC9BFF4C9423605B2292 /* TPUIGradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGradientView.h; path = TPUIKit/Classes/GradientView/TPUIGradientView.h; sourceTree = "<group>"; };
+		4EEB1D1D725870F05FB07F14F0B4B8AA /* TPUIRefreshAccets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIRefreshAccets.h; path = TPUIKit/Classes/Refresh/TPUIRefreshAccets.h; sourceTree = "<group>"; };
 		5239D09D13A3F2C5259C2EE94B51BD01 /* MJRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MJRefresh.modulemap; sourceTree = "<group>"; };
-		52EAF891BEF61E6DCE54370AFC6DDE01 /* Base.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Base.xcassets; path = TPUIKit/Assets/Base.xcassets; sourceTree = "<group>"; };
-		530FAD1D895711F5D253C2B075D4DC31 /* TPUIBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBaseViewController.m; path = TPUIKit/Classes/Base/TPUIBaseViewController.m; sourceTree = "<group>"; };
+		5296937CFA32DF92D1DF52310D054E49 /* TPUIGradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGradientView.h; path = TPUIKit/Classes/GradientView/TPUIGradientView.h; sourceTree = "<group>"; };
 		531DA57DD8D6AF4697BBAE58D8D5E3C8 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		532469B017FFFA757F9E24DF9C2AC4A8 /* TPUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPUIKit.modulemap; sourceTree = "<group>"; };
 		5333D8F58B7BC773D0DF90E1CB7125C3 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		5492C45E21C1FB029241A4DC40E4C5C2 /* TPUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TPUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		553844E134CCB7C23995F73F66EC02C8 /* TPUIKitBase.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TPUIKitBase.bundle; path = "TPUIKit-TPUIKitBase.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DA15AFBA59855E226FAF3FB95A0E37 /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
-		5696005BC50C84A9D80F576CD752C82C /* TPUINavigator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUINavigator.h; path = TPUIKit/Classes/Navigator/TPUINavigator.h; sourceTree = "<group>"; };
-		575CD56DC42A7B4B4647836C09D85A77 /* TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPUIKit-Info.plist"; sourceTree = "<group>"; };
 		59520D5099436C21259CFFDF579308C2 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoFooter.h; path = MJRefresh/Base/MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		59A384CBF73FB926A45E952E531D2C49 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		5AD39DA500BC9AFDDE5A021398E7570C /* TPUIBackNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBackNavigationController.m; path = TPUIKit/Classes/Base/TPUIBackNavigationController.m; sourceTree = "<group>"; };
 		5C052834EB63787B037829B7312C877B /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		5D0F4335AD819A5E5AB41A686BBFB25A /* TPUIBaseTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBaseTableViewCell.h; path = TPUIKit/Classes/Base/TPUIBaseTableViewCell.h; sourceTree = "<group>"; };
+		5E5E09A504490FD520C5DBC1D3ECB8D4 /* TPUIScrollTopBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIScrollTopBar.h; path = TPUIKit/Classes/ScrollTable/TPUIScrollTopBar.h; sourceTree = "<group>"; };
 		5EF7A6737C6EAE4FC2F15FFB315A7F69 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
-		5F12E90B76327302A1810BD15C06482F /* TPUITabItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUITabItem.m; path = TPUIKit/Classes/Tabbar/TPUITabItem.m; sourceTree = "<group>"; };
 		5F15EA0C38731F50C6D8644AD534C93A /* Pods-TPUIKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPUIKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		5F409A08D167A64B2AC19A061E80EBA3 /* TPUISimButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUISimButton.m; path = TPUIKit/Classes/SimButton/TPUISimButton.m; sourceTree = "<group>"; };
 		5F99BE7D113E5DE5B58473B2B1133941 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		60879A7BF56EED2710FE87E28AFE7072 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshNormalHeader.h; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.h; sourceTree = "<group>"; };
 		615DED21F69A608E6D083A25717A3BD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6187D2AE94109023367B147ACA9FD3AE /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+MJExtension.m"; path = "MJRefresh/UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
-		61CB782370154B7318F94450886E753C /* TPUIRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIRefreshHeader.m; path = TPUIKit/Classes/Refresh/TPUIRefreshHeader.m; sourceTree = "<group>"; };
+		618E4B7347D32380BB259C9F6F7D5504 /* TPUIScrollTableVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIScrollTableVC.h; path = TPUIKit/Classes/ScrollTable/TPUIScrollTableVC.h; sourceTree = "<group>"; };
 		6201298B6C7E76ECA205EFC65C3EEDF4 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoStateFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
 		623017293998B50287335BA0F7A01EBA /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
 		62D4A73C152F1A5D01E73FF238B9F072 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
@@ -358,105 +355,116 @@
 		64728F929A5C3CB7B204F2DA45B0A46E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		6521FA485A5393B57B80507CCE849A85 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
 		655D59F15B5FA524A7530CF330509EC2 /* TPUIKitRefresh.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TPUIKitRefresh.bundle; path = "TPUIKit-TPUIKitRefresh.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		665A8582351EACCE7CF22BE4659A1DCB /* TPUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPUIKit-prefix.pch"; sourceTree = "<group>"; };
 		6765DC511F8ADA1CC4FC47F156C9577F /* Pods-TPUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		693C764FCCD9FDD3940558498E2139F4 /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
-		693E2D355E23E2BBB92BF4AC0B7B2261 /* UIBarButtonItem+TPUIButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TPUIButtonItem.m"; sourceTree = "<group>"; };
-		6A049B63996353258F206ECF90990497 /* TPUITabItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUITabItem.h; path = TPUIKit/Classes/Tabbar/TPUITabItem.h; sourceTree = "<group>"; };
+		69904C3E6D91B5A7DA25E1624486C683 /* Base.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Base.xcassets; path = TPUIKit/Assets/Base.xcassets; sourceTree = "<group>"; };
 		6A803CB2CC2C606DEE376E4B469D4B7A /* Pods-TPUIKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPUIKit_Example-Info.plist"; sourceTree = "<group>"; };
-		6F8386227CD65E3BD092C866387E205E /* TPUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIKit.h; path = TPUIKit/Classes/TPUIKit.h; sourceTree = "<group>"; };
-		7384D070717ADA5A7EC657E262EB674C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6AE6460643DA8BF92ABD64FD02ED2D51 /* TPUISimButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUISimButton.h; path = TPUIKit/Classes/SimButton/TPUISimButton.h; sourceTree = "<group>"; };
+		6AF1958274034471E63D809433366D4B /* TPUIScrollTableVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIScrollTableVC.m; path = TPUIKit/Classes/ScrollTable/TPUIScrollTableVC.m; sourceTree = "<group>"; };
+		6B1EBE0BF6566E2FDFEAA27DC073B821 /* TPUIRefreshAccets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIRefreshAccets.m; path = TPUIKit/Classes/Refresh/TPUIRefreshAccets.m; sourceTree = "<group>"; };
+		6B4FB8DD29031328F08D32C89696D732 /* TPUIGraphicView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGraphicView.m; path = TPUIKit/Classes/GraphicView/TPUIGraphicView.m; sourceTree = "<group>"; };
+		6D592FA21CCA8D838088A00012D5520C /* TPUITabbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUITabbar.m; path = TPUIKit/Classes/Tabbar/TPUITabbar.m; sourceTree = "<group>"; };
+		6EBB3A067773423B1C45583AFCE45FA5 /* TPUITabItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUITabItem.h; path = TPUIKit/Classes/Tabbar/TPUITabItem.h; sourceTree = "<group>"; };
+		72DA9134814131DC0E723E0BAE683CF2 /* TPUIToastAccets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIToastAccets.h; path = TPUIKit/Classes/Toast/TPUIToastAccets.h; sourceTree = "<group>"; };
+		76894E6879AA0958A2C4796384EC4AF1 /* Blank.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Blank.xcassets; path = TPUIKit/Assets/Blank.xcassets; sourceTree = "<group>"; };
 		76C97FBA0237603F9B2CD08667DB6E15 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
-		78DF09DF48101B24AE7431E66667F302 /* TPUIGradientButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGradientButton.h; path = TPUIKit/Classes/GradientView/TPUIGradientButton.h; sourceTree = "<group>"; };
+		79491AB5D9564F8E015B6B5AF87C7AC3 /* TPUIBlankAccets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBlankAccets.h; path = TPUIKit/Classes/Blank/TPUIBlankAccets.h; sourceTree = "<group>"; };
 		7AE17C84CA12F90A9976CFBA3CE5D3D2 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
+		7B1FE02E57D3799FA2A64E749C0AF49C /* TPUIBaseAccets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBaseAccets.h; path = TPUIKit/Classes/Base/TPUIBaseAccets.h; sourceTree = "<group>"; };
+		7B6ECA2B330D84BAF1CDB90996E6496E /* TPUIBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBaseViewController.m; path = TPUIKit/Classes/Base/TPUIBaseViewController.m; sourceTree = "<group>"; };
+		7CD02EF2E706324DCF21596017B1F1B1 /* TPUIToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIToast.h; path = TPUIKit/Classes/Toast/TPUIToast.h; sourceTree = "<group>"; };
 		7E14D46A8E114B7A453DCD53B099D71D /* Pods-TPUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		8009B2781EA0CE32560F9E032A851082 /* TPUIAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIAlert.m; path = TPUIKit/Classes/Alert/TPUIAlert.m; sourceTree = "<group>"; };
-		84CAC5189FCDADC1B34184AC0B32F783 /* TPUIMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIMacros.h; path = TPUIKit/Classes/Base/TPUIMacros.h; sourceTree = "<group>"; };
+		7FAB9079278453C48910759FAB7C874D /* TPUIMarginLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIMarginLabel.m; path = TPUIKit/Classes/MarginLabel/TPUIMarginLabel.m; sourceTree = "<group>"; };
+		7FCF267631423BCD9BCA5C59B0F63918 /* TPUIMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIMethodSwizzling.h; path = TPUIKit/Classes/Base/TPUIMethodSwizzling.h; sourceTree = "<group>"; };
+		81482FF434F177804502CD9D7135A525 /* TPUIBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBannerView.m; path = TPUIKit/Classes/Banner/TPUIBannerView.m; sourceTree = "<group>"; };
+		829D7AAFF053E2648758DDDD33C34E26 /* Toast.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Toast.xcassets; path = TPUIKit/Assets/Toast.xcassets; sourceTree = "<group>"; };
 		866D58797EDD35BB8B4DAEAF0C29B76E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8A0FCF696A4A08866D790076F938E873 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		8A6C56CD93E5C110E5A253C2F6A02D52 /* TPUIBannerPageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBannerPageView.h; path = TPUIKit/Classes/Banner/TPUIBannerPageView.h; sourceTree = "<group>"; };
 		8B34D9C8CB742E387C77FAF0A7BE5E2E /* TPUIKitToast.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TPUIKitToast.bundle; path = "TPUIKit-TPUIKitToast.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B41E907C65473923BB4D2EBA45C0607 /* TPUIMethodSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIMethodSwizzling.h; path = TPUIKit/Classes/Base/TPUIMethodSwizzling.h; sourceTree = "<group>"; };
 		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C144CDAE0D486E943DB99BA5CBE2A04 /* TPUINavigator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUINavigator.m; path = TPUIKit/Classes/Navigator/TPUINavigator.m; sourceTree = "<group>"; };
 		8CA4273FDC2116D690F7C99960BBBF6C /* Pods-TPUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8E812FACEACA7D526C433545E1EE4D81 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE46AD24A2ED6C02AF9D200E5CD2DCD /* TPUIAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIAlert.m; path = TPUIKit/Classes/Alert/TPUIAlert.m; sourceTree = "<group>"; };
+		91448F4D72494BC0488D3FBF05936585 /* Refresh.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Refresh.xcassets; path = TPUIKit/Assets/Refresh.xcassets; sourceTree = "<group>"; };
 		917AEE646D5E2F2A7DD67060A9A33905 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		9478D2B9414C9A146728D6E3FCDC937F /* TPUIToastAccets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIToastAccets.h; path = TPUIKit/Classes/Toast/TPUIToastAccets.h; sourceTree = "<group>"; };
-		957D12DCA2CA43718E28EDA568F37D0B /* Refresh.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Refresh.xcassets; path = TPUIKit/Assets/Refresh.xcassets; sourceTree = "<group>"; };
-		95BD35563D2197138CACCA0326CFC9A6 /* TPUIGradientView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGradientView.m; path = TPUIKit/Classes/GradientView/TPUIGradientView.m; sourceTree = "<group>"; };
-		96E46103BE9EC1ED41C0518395B4BAB1 /* TPUIToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIToast.h; path = TPUIKit/Classes/Toast/TPUIToast.h; sourceTree = "<group>"; };
+		91C21BCD882E6CDF7942D20024E5EA3E /* TPUIBlankAccets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBlankAccets.m; path = TPUIKit/Classes/Blank/TPUIBlankAccets.m; sourceTree = "<group>"; };
+		93D7456AB47CA9120832560B3AB6D9FB /* TPUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPUIKit-umbrella.h"; sourceTree = "<group>"; };
 		97471A6358749C25DC5BE8FBCDE97042 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		97AAF792EC1FBAC6B416D6610068EEBC /* TPUISimButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUISimButton.m; path = TPUIKit/Classes/SimButton/TPUISimButton.m; sourceTree = "<group>"; };
 		989AEEEB02B866C0A141125A14EEA3A7 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99756057C52482C1711A275D9E5ADE0B /* Pods-TPUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		99AF80933E99BD1CE3BAD4EF7AF6CC1F /* ResourceBundle-TPUIKitBlank-TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TPUIKitBlank-TPUIKit-Info.plist"; sourceTree = "<group>"; };
 		9A805E2F0C8D5AC776F9CF6FE5256572 /* MJRefresh.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MJRefresh.bundle; path = MJRefresh/MJRefresh.bundle; sourceTree = "<group>"; };
 		9B59D914AA8483AE94697637C8B57206 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		9CCB84ECDE5C2D88C73493F9C567342C /* MJRefreshConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshConst.m; path = MJRefresh/MJRefreshConst.m; sourceTree = "<group>"; };
-		9D6058C21FAAB674D14A8E4958C0A57E /* TPUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPUIKit-dummy.m"; sourceTree = "<group>"; };
 		9D72D70E8D02C51F76EE3A6D6BC2D125 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DC13E2A7E9F754EC2714453AE53E3B6 /* TPUIRefreshAccets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIRefreshAccets.h; path = TPUIKit/Classes/Refresh/TPUIRefreshAccets.h; sourceTree = "<group>"; };
 		9F70534725DE907FF7DE4271204E7AED /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		9FCE2A93A9DC720F86451E931373950A /* TPUIBaseTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBaseTableViewCell.m; path = TPUIKit/Classes/Base/TPUIBaseTableViewCell.m; sourceTree = "<group>"; };
-		A180386F037798C531B534374BE79859 /* TPUIAlertMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIAlertMaker.h; path = TPUIKit/Classes/Alert/TPUIAlertMaker.h; sourceTree = "<group>"; };
-		A7962CBBBC4D9AF4BEADBBD94A0D24C5 /* TPUIGraphicView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGraphicView.h; path = TPUIKit/Classes/GraphicView/TPUIGraphicView.h; sourceTree = "<group>"; };
-		A7AE7F6FADBF53A473626B72CABE8D06 /* TPUIBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBaseViewController.h; path = TPUIKit/Classes/Base/TPUIBaseViewController.h; sourceTree = "<group>"; };
+		A1251EE54E46DF249D66A4632F89515D /* ResourceBundle-TPUIKitRefresh-TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TPUIKitRefresh-TPUIKit-Info.plist"; sourceTree = "<group>"; };
 		A8B2872B5F9CBAC975CFD93AD6C31C85 /* Pods-TPUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		A8E086A222AF8E80C53C7A5691826A4C /* TPUIBaseAccets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBaseAccets.h; path = TPUIKit/Classes/Base/TPUIBaseAccets.h; sourceTree = "<group>"; };
 		A8E5978388437C584E1CB7577D527608 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		A9F1719D15F7FE0613FF8E54BCBE2945 /* MJRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.release.xcconfig; sourceTree = "<group>"; };
 		AC088F83BAA4FE82DC5F8F537ED2B744 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		AC1EA770945055426A6B8CA6BD5571D7 /* TPUIGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGradientLayer.m; path = TPUIKit/Classes/GradientView/TPUIGradientLayer.m; sourceTree = "<group>"; };
 		AC3C4EDDA633EBC8241C5DC7395FD459 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		AC9BB2CA99BFC7BBEC92E84DDC763116 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		B13EDA802D331B825B81316065F0F7EF /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoStateFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
-		B14839B03EC0D8A232A90BD94CB4A10D /* TPUIBaseAccets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBaseAccets.m; path = TPUIKit/Classes/Base/TPUIBaseAccets.m; sourceTree = "<group>"; };
-		B19DA7B3B6B209653B5A8EB141E9D932 /* Blank.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Blank.xcassets; path = TPUIKit/Assets/Blank.xcassets; sourceTree = "<group>"; };
 		B238900061A9580991845DB45F76B8C8 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoNormalFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
 		B303BFE7489ED1470467E5EE868E9481 /* UIView+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MJExtension.m"; path = "MJRefresh/UIView+MJExtension.m"; sourceTree = "<group>"; };
-		B4C0A7FC1A32D012533557E2E68A099B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		B5E4A3D8FAD0B696731422BD1CFFEEB5 /* TPUIBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBannerView.m; path = TPUIKit/Classes/Banner/TPUIBannerView.m; sourceTree = "<group>"; };
+		B589B2ED907E123584C66A399474E2D6 /* TPUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPUIKit.debug.xcconfig; sourceTree = "<group>"; };
 		BC9C8D8CC8ABDB8AE18296DE6B1BBAA4 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshNormalHeader.m; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.m; sourceTree = "<group>"; };
-		BE73BEC65D7DB3C490D5E683392B9D2D /* TPUIBlankAccets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBlankAccets.m; path = TPUIKit/Classes/Blank/TPUIBlankAccets.m; sourceTree = "<group>"; };
 		BF553DF875446CF12C505E7613D9F0B9 /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 		C0783DE1B18D2CADB20B2F37BA96D0C6 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		C2831B110C2DEC5390CCB991BF7E3228 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		C29A968AEE72A891B668221D44A3CDB1 /* Toast.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Toast.xcassets; path = TPUIKit/Assets/Toast.xcassets; sourceTree = "<group>"; };
+		C4295FA41287AD06B57FCE2E960FE125 /* TPUIBaseNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBaseNavigationController.m; path = TPUIKit/Classes/Base/TPUIBaseNavigationController.m; sourceTree = "<group>"; };
 		C4A38D30E5C3D947153FF5079ECFDBA4 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		C869CBE56BA8FF64F0B8F8B76B9CA53C /* TPUIAlertMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIAlertMaker.m; path = TPUIKit/Classes/Alert/TPUIAlertMaker.m; sourceTree = "<group>"; };
+		C751A2CFA6BA39D388E0252B350EC154 /* TPUINavigator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUINavigator.h; path = TPUIKit/Classes/Navigator/TPUINavigator.h; sourceTree = "<group>"; };
+		C9DEECF7FA2DB3AAAF789AFA1C7DF028 /* TPUIRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIRefreshHeader.h; path = TPUIKit/Classes/Refresh/TPUIRefreshHeader.h; sourceTree = "<group>"; };
 		CB070E4F64DC65F38B2F0B004DD0CE1B /* MJRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/Base/MJRefreshComponent.h; sourceTree = "<group>"; };
+		CCD863152A29E176D9EAA812AC2F4547 /* UIView+TPBlankView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TPBlankView.m"; path = "TPUIKit/Classes/Blank/UIView+TPBlankView.m"; sourceTree = "<group>"; };
 		CE6625ACC65D83FAD3F0628729EC11F4 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshGifHeader.h; path = MJRefresh/Custom/Header/MJRefreshGifHeader.h; sourceTree = "<group>"; };
 		CEC664968769A8BDF0DF4602FE2246CE /* TPUIKitBlank.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TPUIKitBlank.bundle; path = "TPUIKit-TPUIKitBlank.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE60DD4CEDF54157FFF6610801CF8C /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJRefresh.h"; path = "MJRefresh/UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
 		CF003BF3D1361EACAE6FF08399C4BE3C /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		CF9304C54953CFE7ADEED4B65B78FA9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CFD22D70C4D9C2BB381355DCC208A6AB /* TPUIAlertMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIAlertMaker.h; path = TPUIKit/Classes/Alert/TPUIAlertMaker.h; sourceTree = "<group>"; };
 		D04DA81AEB85083F33D58D5BECD1191D /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		D13A99134B0F5EB90B47131CBC8CC301 /* TPUIBackNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBackNavigationController.m; path = TPUIKit/Classes/Base/TPUIBackNavigationController.m; sourceTree = "<group>"; };
 		D1FFC42F10391EF1BEC3517C09FC7620 /* Pods-TPUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D3CB6B435B221FF0C7991CF8DC2ECCD4 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackGifFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
 		D40D595A4CC2D161713564276DA15C1B /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
 		D5434AE3F7D633AE9154E4144A7DB75D /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
-		D54BBAC5DF69E8769A3A47D29B91C7E1 /* TPUIBannerPageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBannerPageView.h; path = TPUIKit/Classes/Banner/TPUIBannerPageView.h; sourceTree = "<group>"; };
 		DA92F4CB13420449F115C8E6A620C1B4 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
-		DC2C7908CCF180088CBC0C216109DA45 /* ResourceBundle-TPUIKitBase-TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TPUIKitBase-TPUIKit-Info.plist"; sourceTree = "<group>"; };
+		DBE4E292AA2EBB0162FA2D2022BAB832 /* ResourceBundle-TPUIKitBase-TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TPUIKitBase-TPUIKit-Info.plist"; sourceTree = "<group>"; };
 		DC82204B515AEE7BCE503CDE34A8D6AC /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackStateFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
-		DC83E2ECBB1807A8BF20F8C99C98FB48 /* ResourceBundle-TPUIKitBlank-TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TPUIKitBlank-TPUIKit-Info.plist"; sourceTree = "<group>"; };
 		DD93750FD25337E2F476E27611C5E8F3 /* TPUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPUIKit.framework; path = TPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFBED0C331EF9124172B2A017F7987B /* TPUIBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBaseViewController.h; path = TPUIKit/Classes/Base/TPUIBaseViewController.h; sourceTree = "<group>"; };
 		DE0C56B04C722F8DB420C27ADA9EE203 /* MJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-umbrella.h"; sourceTree = "<group>"; };
+		DE344D74F5506E5C6C1C3C5ABF3FFAF3 /* TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPUIKit-Info.plist"; sourceTree = "<group>"; };
 		E08D02B34DC75F8656B11AFA1500581E /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
-		E1C8AD67106F531EC1CCC3B9EC8FA5E8 /* TPUIBannerPageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBannerPageView.m; path = TPUIKit/Classes/Banner/TPUIBannerPageView.m; sourceTree = "<group>"; };
 		E1D8AE82E43BFC9BE19C5276CFA15BC0 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		E37CA5B2F8902BE9BA9BB1F895EE0E15 /* TPUIGradientLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGradientLabel.m; path = TPUIKit/Classes/GradientView/TPUIGradientLabel.m; sourceTree = "<group>"; };
+		E387A5DF053FF9D48BB117603B4EF74D /* TPUIToastAccets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIToastAccets.m; path = TPUIKit/Classes/Toast/TPUIToastAccets.m; sourceTree = "<group>"; };
 		E393B85E7894EE508C159FF9AC1E9406 /* MJRefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.debug.xcconfig; sourceTree = "<group>"; };
 		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E50A0D8901416A62FD7E8348A8CF4FDA /* TPUITabbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUITabbar.h; path = TPUIKit/Classes/Tabbar/TPUITabbar.h; sourceTree = "<group>"; };
 		E598D9F827020AFFD99CA56C1BE0C304 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
+		E5DD900C6B16F9832CC5E1B8102E7BD6 /* TPUIGradientButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGradientButton.m; path = TPUIKit/Classes/GradientView/TPUIGradientButton.m; sourceTree = "<group>"; };
 		E9B606D063D31C39FDE12E09B3B7255D /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		EB9970F7BB1E53690B939C93BDB594E3 /* TPUIRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIRefreshFooter.m; path = TPUIKit/Classes/Refresh/TPUIRefreshFooter.m; sourceTree = "<group>"; };
-		ECA594B0681B7FE8CB6A8EB122F55FDC /* TPUIBlankView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBlankView.h; path = TPUIKit/Classes/Blank/TPUIBlankView.h; sourceTree = "<group>"; };
-		ED3D16CCA35DACBE3E605C33C1434678 /* TPUIGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGradientLayer.h; path = TPUIKit/Classes/GradientView/TPUIGradientLayer.h; sourceTree = "<group>"; };
-		EEEF445599CE24C9C3D1EFDA8C5A83B1 /* TPUIRefreshAccets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIRefreshAccets.m; path = TPUIKit/Classes/Refresh/TPUIRefreshAccets.m; sourceTree = "<group>"; };
+		EA30C0FFA678EABE1875C5C411679A67 /* TPUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TPUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ECD84BD115FD75C4EAFC1C64284AFE6E /* TPUIBaseAccets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBaseAccets.m; path = TPUIKit/Classes/Base/TPUIBaseAccets.m; sourceTree = "<group>"; };
+		EF31CCE8A5497871F4262E96A5958877 /* TPUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPUIKit.modulemap; sourceTree = "<group>"; };
 		F0065F411FE8F7B580A035AF663ACF75 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
 		F06C47B82E0557E24042F27D7D633290 /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
+		F3B3FF3944803C208B425B736D51CD5A /* TPUIBlankView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBlankView.h; path = TPUIKit/Classes/Blank/TPUIBlankView.h; sourceTree = "<group>"; };
 		F48312821094F69EB95BCE6A6A373730 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		F526690D56A536A3F03533F0F5053BFA /* TPUIGradientLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGradientLabel.m; path = TPUIKit/Classes/GradientView/TPUIGradientLabel.m; sourceTree = "<group>"; };
 		F6DCCFC168C373C677D63D31C522772E /* Pods-TPUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		FBD0A81BBAE0A2A0DBFFBF0FCD35A41E /* TPUIMarginLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIMarginLabel.h; path = TPUIKit/Classes/MarginLabel/TPUIMarginLabel.h; sourceTree = "<group>"; };
+		FABF890D054EC2678FBE802300DD0643 /* TPUIMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIMacros.h; path = TPUIKit/Classes/Base/TPUIMacros.h; sourceTree = "<group>"; };
+		FC78CC61FF1DEDEA54585100A5060CE0 /* UIBarButtonItem+TPUIButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TPUIButtonItem.m"; sourceTree = "<group>"; };
+		FCFD0911545E821D5E4ED67F254592C4 /* UIBarButtonItem+TPUIButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TPUIButtonItem.h"; sourceTree = "<group>"; };
 		FDBBF4622A91C7D1A4D819E87D1D930F /* MBProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		FF9114FB41EB8D167A6254AEC106C890 /* TPUIToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIToast.m; path = TPUIKit/Classes/Toast/TPUIToast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,22 +478,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BC5D980C4580FE84560251DB6EFFF67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		348DC364BFF927A86165FEBCA0AEB859 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B25295C403A59D714D1670EEF4AB9CE7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		373FBEDA24BBD637303F7BE880702998 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47DE4240875244BEE660C8F5DAB5980F /* Foundation.framework in Frameworks */,
-				18600F7BD20470149E1FBEEE0BC1C299 /* Masonry.framework in Frameworks */,
-				3ACD280B392CC463396649677BB3ADDD /* MBProgressHUD.framework in Frameworks */,
-				AC8EBFBF3A5DD250443834AE890B13F3 /* MJRefresh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +501,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4443D1424C096E44B75769B4F259151C /* Frameworks */ = {
+		473B420A9ACCDEC1F470BE89D012B590 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4747F708F2B12561FE9E363107EB95F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -521,21 +532,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD05EAC79AD04590DD52DD22C7105645 /* Frameworks */ = {
+		976229213E8DFE8F790C6B0CAAEE6425 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B4099D502B666A38F1237E5F9989CB /* Foundation.framework in Frameworks */,
+				A753FEA7F9480E421039FFA17AC94CB5 /* Masonry.framework in Frameworks */,
+				9033F8207D9E51B4DF2A1A159B6CEEB8 /* MBProgressHUD.framework in Frameworks */,
+				54FF91EBEF7218CB6CB3F1458153CF09 /* MJRefresh.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C69C5F6B19B4F91E781BB5086FBFAA2B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD20F57B81C68AE8AEFF0BFBBB52540A /* Frameworks */ = {
+		D7AB8F5413231067615763E40CE5F2D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -545,6 +553,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		082AB0B182D8D3CFD213F92E76D83300 /* Blank */ = {
+			isa = PBXGroup;
+			children = (
+				79491AB5D9564F8E015B6B5AF87C7AC3 /* TPUIBlankAccets.h */,
+				91C21BCD882E6CDF7942D20024E5EA3E /* TPUIBlankAccets.m */,
+				F3B3FF3944803C208B425B736D51CD5A /* TPUIBlankView.h */,
+				0BE0C0EBEBCA2B19BCCFCC2BBE167804 /* TPUIBlankView.m */,
+				167F3A6DBD8954A1DDB5C2AD707C866E /* UIView+TPBlankView.h */,
+				CCD863152A29E176D9EAA812AC2F4547 /* UIView+TPBlankView.m */,
+				3763E872E3552E838F5210F4E1435037 /* Resources */,
+			);
+			name = Blank;
+			sourceTree = "<group>";
+		};
 		14BDACE84B08BF1D32F6B0D42BFC466C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,13 +582,12 @@
 			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
-		16EB7F8C47881BF92C5ADEA092D317E4 /* Navigator */ = {
+		19425A905BC2E14423AEB78F3D1661B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5696005BC50C84A9D80F576CD752C82C /* TPUINavigator.h */,
-				8C144CDAE0D486E943DB99BA5CBE2A04 /* TPUINavigator.m */,
+				91448F4D72494BC0488D3FBF05936585 /* Refresh.xcassets */,
 			);
-			name = Navigator;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		1BADF005FB1BFFF77854B1973ECB8637 /* Support Files */ = {
@@ -584,32 +605,12 @@
 			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
-		243C351D8BC5DD818926BFF6F0287681 /* GraphicView */ = {
+		2D3CA2EEB20EF31FEE7D99507858F1F1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A7962CBBBC4D9AF4BEADBBD94A0D24C5 /* TPUIGraphicView.h */,
-				23562B466636B9418BC5CAC777D28DD1 /* TPUIGraphicView.m */,
+				69904C3E6D91B5A7DA25E1624486C683 /* Base.xcassets */,
 			);
-			name = GraphicView;
-			sourceTree = "<group>";
-		};
-		25A361C6410395C62055538B115E34D0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DC2C7908CCF180088CBC0C216109DA45 /* ResourceBundle-TPUIKitBase-TPUIKit-Info.plist */,
-				DC83E2ECBB1807A8BF20F8C99C98FB48 /* ResourceBundle-TPUIKitBlank-TPUIKit-Info.plist */,
-				28F7FEA7F27847EE1203BAEAFDFB07A9 /* ResourceBundle-TPUIKitRefresh-TPUIKit-Info.plist */,
-				3E858823DDE610C9FD96CD0085C3DFA0 /* ResourceBundle-TPUIKitToast-TPUIKit-Info.plist */,
-				532469B017FFFA757F9E24DF9C2AC4A8 /* TPUIKit.modulemap */,
-				9D6058C21FAAB674D14A8E4958C0A57E /* TPUIKit-dummy.m */,
-				575CD56DC42A7B4B4647836C09D85A77 /* TPUIKit-Info.plist */,
-				49CC3527FBF2D78C1FF8B536615FBC80 /* TPUIKit-prefix.pch */,
-				0686842A825584E579053888B2501A92 /* TPUIKit-umbrella.h */,
-				2BA4C15F8F476301B5983A7A107B39AF /* TPUIKit.debug.xcconfig */,
-				2EE395E48EB345432E863FF2B4B86B22 /* TPUIKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TPUIKit";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		309DF8B3EBC27D83465E5A1E13600AB9 /* Resources */ = {
@@ -620,44 +621,12 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		32D04F9D0F9C339279777A6C16C21675 /* MarginLabel */ = {
+		3763E872E3552E838F5210F4E1435037 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FBD0A81BBAE0A2A0DBFFBF0FCD35A41E /* TPUIMarginLabel.h */,
-				0A0FF778C24EBC2F01888D03801DCC70 /* TPUIMarginLabel.m */,
+				76894E6879AA0958A2C4796384EC4AF1 /* Blank.xcassets */,
 			);
-			name = MarginLabel;
-			sourceTree = "<group>";
-		};
-		342A6EAE344720F4BD74BA441FC555D5 /* TPUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				6F8386227CD65E3BD092C866387E205E /* TPUIKit.h */,
-				F33CBB651D49A67D5F9110022A07A2ED /* Alert */,
-				C8A916A4CD30E88602C4491987C2B9BA /* Banner */,
-				9B7F80824E0C12125DFD6EA844AA79E7 /* Base */,
-				A96B1C69AB84CB36E6561B538D4503B6 /* Blank */,
-				6559F198312806E89D57D12CC6989A75 /* GradientView */,
-				243C351D8BC5DD818926BFF6F0287681 /* GraphicView */,
-				32D04F9D0F9C339279777A6C16C21675 /* MarginLabel */,
-				16EB7F8C47881BF92C5ADEA092D317E4 /* Navigator */,
-				F2871D3F6F7F81DA1242DFBDA17B403C /* Pod */,
-				C35B58FA4671F09D2BED39690A2F5BDD /* Refresh */,
-				9D86D8289229BF3EDF063C27903928B5 /* SimButton */,
-				25A361C6410395C62055538B115E34D0 /* Support Files */,
-				529544A27FBDEC4A78DCB40127512415 /* Tabbar */,
-				7895C6F15B7B282002B7C189049D0834 /* Toast */,
-			);
-			name = TPUIKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		38A13BEEA318DCE2408BAA0B452F7656 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				342A6EAE344720F4BD74BA441FC555D5 /* TPUIKit */,
-			);
-			name = "Development Pods";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		422CF9593A9A26B0050934DA038D789D /* Frameworks */ = {
@@ -682,30 +651,48 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		529544A27FBDEC4A78DCB40127512415 /* Tabbar */ = {
+		4603FCCA05F7D03376BD10347ACDF511 /* GraphicView */ = {
 			isa = PBXGroup;
 			children = (
-				E50A0D8901416A62FD7E8348A8CF4FDA /* TPUITabbar.h */,
-				4AC216692478E835C1C0EB114C0773D9 /* TPUITabbar.m */,
-				6A049B63996353258F206ECF90990497 /* TPUITabItem.h */,
-				5F12E90B76327302A1810BD15C06482F /* TPUITabItem.m */,
+				19DB1154854007025801ADCE8168EBB1 /* TPUIGraphicView.h */,
+				6B4FB8DD29031328F08D32C89696D732 /* TPUIGraphicView.m */,
 			);
-			name = Tabbar;
+			name = GraphicView;
 			sourceTree = "<group>";
 		};
-		6559F198312806E89D57D12CC6989A75 /* GradientView */ = {
+		462A031812C36E0F955765101F65E61A /* Banner */ = {
 			isa = PBXGroup;
 			children = (
-				78DF09DF48101B24AE7431E66667F302 /* TPUIGradientButton.h */,
-				48BA8D0838D9BA0D88EFB7AC99AC331B /* TPUIGradientButton.m */,
-				2BBCDACBD752FB6BCDD3E597E0B5DE6B /* TPUIGradientLabel.h */,
-				E37CA5B2F8902BE9BA9BB1F895EE0E15 /* TPUIGradientLabel.m */,
-				ED3D16CCA35DACBE3E605C33C1434678 /* TPUIGradientLayer.h */,
-				2B3BFC49F2B0D31DCFD674577C055DB9 /* TPUIGradientLayer.m */,
-				509B4E05BA83FC9BFF4C9423605B2292 /* TPUIGradientView.h */,
-				95BD35563D2197138CACCA0326CFC9A6 /* TPUIGradientView.m */,
+				8A6C56CD93E5C110E5A253C2F6A02D52 /* TPUIBannerPageView.h */,
+				3FA894CDE2BC2E8550CC4ED15BFC36B4 /* TPUIBannerPageView.m */,
+				0DDC251519E620F73E4FFE0ADB68130F /* TPUIBannerView.h */,
+				81482FF434F177804502CD9D7135A525 /* TPUIBannerView.m */,
+			);
+			name = Banner;
+			sourceTree = "<group>";
+		};
+		465E2DCEE6DAB5447A182807DCCE3EAA /* GradientView */ = {
+			isa = PBXGroup;
+			children = (
+				12F1EE0732B50B180B68A7CE77B50BC8 /* TPUIGradientButton.h */,
+				E5DD900C6B16F9832CC5E1B8102E7BD6 /* TPUIGradientButton.m */,
+				3744115EB7ADF286B23BA482AB0DF820 /* TPUIGradientLabel.h */,
+				F526690D56A536A3F03533F0F5053BFA /* TPUIGradientLabel.m */,
+				1FD17B4C3780512C8AA4A7903C6882DA /* TPUIGradientLayer.h */,
+				AC1EA770945055426A6B8CA6BD5571D7 /* TPUIGradientLayer.m */,
+				5296937CFA32DF92D1DF52310D054E49 /* TPUIGradientView.h */,
+				224F6E2C4CA072C3B66F381636562D25 /* TPUIGradientView.m */,
 			);
 			name = GradientView;
+			sourceTree = "<group>";
+		};
+		4E7899FB660FE1A8E69D84F88E2A5189 /* SimButton */ = {
+			isa = PBXGroup;
+			children = (
+				6AE6460643DA8BF92ABD64FD02ED2D51 /* TPUISimButton.h */,
+				97AAF792EC1FBAC6B416D6610068EEBC /* TPUISimButton.m */,
+			);
+			name = SimButton;
 			sourceTree = "<group>";
 		};
 		65EA569EC9284DD91BB1A68E4F487300 /* Targets Support Files */ = {
@@ -717,12 +704,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		69827AC614536849E7B4C2B398AF4EA8 /* Resources */ = {
+		67DA3729393A3799EE64E2D693C92611 /* MarginLabel */ = {
 			isa = PBXGroup;
 			children = (
-				C29A968AEE72A891B668221D44A3CDB1 /* Toast.xcassets */,
+				45444A1CBA4DED19E32BFBD69012F33A /* TPUIMarginLabel.h */,
+				7FAB9079278453C48910759FAB7C874D /* TPUIMarginLabel.m */,
+			);
+			name = MarginLabel;
+			sourceTree = "<group>";
+		};
+		6ADD5C9599E76AD20649695171916412 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				829D7AAFF053E2648758DDDD33C34E26 /* Toast.xcassets */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		6EA1EC137DC3BA28279CA9891DF8288C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A33F679F82907E3033A7EE58D99C4E4F /* TPUIKit */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		6F50D6F661F45A2C948268961CB8E4F3 /* Products */ = {
@@ -742,16 +746,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7895C6F15B7B282002B7C189049D0834 /* Toast */ = {
+		797007149975E1D8298F83E1D2872895 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				96E46103BE9EC1ED41C0518395B4BAB1 /* TPUIToast.h */,
-				0BAA41502F7CA776D841E8FB27E89772 /* TPUIToast.m */,
-				9478D2B9414C9A146728D6E3FCDC937F /* TPUIToastAccets.h */,
-				46292E5C1B7C7B0A80890451D13D8018 /* TPUIToastAccets.m */,
-				69827AC614536849E7B4C2B398AF4EA8 /* Resources */,
+				FCFD0911545E821D5E4ED67F254592C4 /* UIBarButtonItem+TPUIButtonItem.h */,
+				FC78CC61FF1DEDEA54585100A5060CE0 /* UIBarButtonItem+TPUIButtonItem.m */,
 			);
-			name = Toast;
+			name = Category;
+			path = TPUIKit/Classes/Base/Category;
+			sourceTree = "<group>";
+		};
+		7F675BB1E61568F98E10C23148475F4C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2EE8C8551C5AA2BF3722390933830DEB /* TPUIBackNavigationController.h */,
+				D13A99134B0F5EB90B47131CBC8CC301 /* TPUIBackNavigationController.m */,
+				7B1FE02E57D3799FA2A64E749C0AF49C /* TPUIBaseAccets.h */,
+				ECD84BD115FD75C4EAFC1C64284AFE6E /* TPUIBaseAccets.m */,
+				2C80238F1DD2C8F8875CA2F57343B4C4 /* TPUIBaseNavigationController.h */,
+				C4295FA41287AD06B57FCE2E960FE125 /* TPUIBaseNavigationController.m */,
+				5D0F4335AD819A5E5AB41A686BBFB25A /* TPUIBaseTableViewCell.h */,
+				1B586E5659BD0E875C970203D959EDF4 /* TPUIBaseTableViewCell.m */,
+				DDFBED0C331EF9124172B2A017F7987B /* TPUIBaseViewController.h */,
+				7B6ECA2B330D84BAF1CDB90996E6496E /* TPUIBaseViewController.m */,
+				FABF890D054EC2678FBE802300DD0643 /* TPUIMacros.h */,
+				7FCF267631423BCD9BCA5C59B0F63918 /* TPUIMethodSwizzling.h */,
+				42196511602699464C3A5AEF5FA305E8 /* TPUIMethodSwizzling.m */,
+				797007149975E1D8298F83E1D2872895 /* Category */,
+				2D3CA2EEB20EF31FEE7D99507858F1F1 /* Resources */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		88FB94F06C99C77F1F456B29372BEE5D /* Pods-TPUIKit_Example */ = {
@@ -771,6 +795,17 @@
 			path = "Target Support Files/Pods-TPUIKit_Example";
 			sourceTree = "<group>";
 		};
+		8A32244C3A9EEBCE4A4F2F41A433DC7C /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				34141BFE9BA56170FFA9A05C9E3A8860 /* TPUITabbar.h */,
+				6D592FA21CCA8D838088A00012D5520C /* TPUITabbar.m */,
+				6EBB3A067773423B1C45583AFCE45FA5 /* TPUITabItem.h */,
+				1689CC886CB4879C722620051166344E /* TPUITabItem.m */,
+			);
+			name = Tabbar;
+			sourceTree = "<group>";
+		};
 		90D4EFFF8036721FFF98D49D6A415665 /* Pods-TPUIKit_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -787,65 +822,74 @@
 			path = "Target Support Files/Pods-TPUIKit_Tests";
 			sourceTree = "<group>";
 		};
-		9740FAD38563D97E456C8579EC486AED /* Resources */ = {
+		9343977B363FCC1A85FDBC3E9772ED10 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				52EAF891BEF61E6DCE54370AFC6DDE01 /* Base.xcassets */,
+				0C5759D4786DA821DD1AB62D26CF517A /* LICENSE */,
+				AC9BB2CA99BFC7BBEC92E84DDC763116 /* README.md */,
+				EA30C0FFA678EABE1875C5C411679A67 /* TPUIKit.podspec */,
 			);
-			name = Resources;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		9B7F80824E0C12125DFD6EA844AA79E7 /* Base */ = {
+		9A9F1E409345FA49F9F33F4B603688EC /* ScrollTable */ = {
 			isa = PBXGroup;
 			children = (
-				209C8A8D3880EF5ACDF491E073B420FF /* TPUIBackNavigationController.h */,
-				5AD39DA500BC9AFDDE5A021398E7570C /* TPUIBackNavigationController.m */,
-				A8E086A222AF8E80C53C7A5691826A4C /* TPUIBaseAccets.h */,
-				B14839B03EC0D8A232A90BD94CB4A10D /* TPUIBaseAccets.m */,
-				243EBC917A33B9BBEBB6386BBBA7304A /* TPUIBaseNavigationController.h */,
-				166EF59667062FF64C7F92A690CC1B67 /* TPUIBaseNavigationController.m */,
-				170581D0FE8B6B762CCE688AC649A205 /* TPUIBaseTableViewCell.h */,
-				9FCE2A93A9DC720F86451E931373950A /* TPUIBaseTableViewCell.m */,
-				A7AE7F6FADBF53A473626B72CABE8D06 /* TPUIBaseViewController.h */,
-				530FAD1D895711F5D253C2B075D4DC31 /* TPUIBaseViewController.m */,
-				84CAC5189FCDADC1B34184AC0B32F783 /* TPUIMacros.h */,
-				8B41E907C65473923BB4D2EBA45C0607 /* TPUIMethodSwizzling.h */,
-				0DBE74DD64A04E947E12CBAC0678D8F5 /* TPUIMethodSwizzling.m */,
-				F790BC179C4621FC3360C69D822C25E3 /* Category */,
-				9740FAD38563D97E456C8579EC486AED /* Resources */,
+				618E4B7347D32380BB259C9F6F7D5504 /* TPUIScrollTableVC.h */,
+				6AF1958274034471E63D809433366D4B /* TPUIScrollTableVC.m */,
+				5E5E09A504490FD520C5DBC1D3ECB8D4 /* TPUIScrollTopBar.h */,
+				1EA703D7DD5DE9F64F68C7E191DC7123 /* TPUIScrollTopBar.m */,
 			);
-			name = Base;
+			name = ScrollTable;
 			sourceTree = "<group>";
 		};
-		9D86D8289229BF3EDF063C27903928B5 /* SimButton */ = {
+		A33F679F82907E3033A7EE58D99C4E4F /* TPUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				3DFAF9129093AA20E71FC8EDBD9E28CD /* TPUISimButton.h */,
-				5F409A08D167A64B2AC19A061E80EBA3 /* TPUISimButton.m */,
+				1DC44346C9153D8FE5AB07E1A3D4F078 /* TPUIKit.h */,
+				AED39EF85715BA54FE5077702BC590BE /* Alert */,
+				462A031812C36E0F955765101F65E61A /* Banner */,
+				7F675BB1E61568F98E10C23148475F4C /* Base */,
+				082AB0B182D8D3CFD213F92E76D83300 /* Blank */,
+				465E2DCEE6DAB5447A182807DCCE3EAA /* GradientView */,
+				4603FCCA05F7D03376BD10347ACDF511 /* GraphicView */,
+				67DA3729393A3799EE64E2D693C92611 /* MarginLabel */,
+				FC0E11836B05E2A3F3FC77DC802F55D3 /* Navigator */,
+				9343977B363FCC1A85FDBC3E9772ED10 /* Pod */,
+				A5220DC7EE13E513520F147378AB22C8 /* Refresh */,
+				9A9F1E409345FA49F9F33F4B603688EC /* ScrollTable */,
+				4E7899FB660FE1A8E69D84F88E2A5189 /* SimButton */,
+				BFC8827E5A79718FF56FA4CD4EDEEC89 /* Support Files */,
+				8A32244C3A9EEBCE4A4F2F41A433DC7C /* Tabbar */,
+				D7E98D4177441BBD1BBBC4F1FA4BFC09 /* Toast */,
 			);
-			name = SimButton;
+			name = TPUIKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		A5F53134E96294C6520189383EB1254C /* Resources */ = {
+		A5220DC7EE13E513520F147378AB22C8 /* Refresh */ = {
 			isa = PBXGroup;
 			children = (
-				B19DA7B3B6B209653B5A8EB141E9D932 /* Blank.xcassets */,
+				4EEB1D1D725870F05FB07F14F0B4B8AA /* TPUIRefreshAccets.h */,
+				6B1EBE0BF6566E2FDFEAA27DC073B821 /* TPUIRefreshAccets.m */,
+				0621EEF5B1183DF5AC2661AA254FB8AF /* TPUIRefreshFooter.h */,
+				14439954C1956299494E9FF778930CA0 /* TPUIRefreshFooter.m */,
+				C9DEECF7FA2DB3AAAF789AFA1C7DF028 /* TPUIRefreshHeader.h */,
+				381201806820EA77F1EF0AE8D053CF0F /* TPUIRefreshHeader.m */,
+				19425A905BC2E14423AEB78F3D1661B8 /* Resources */,
 			);
-			name = Resources;
+			name = Refresh;
 			sourceTree = "<group>";
 		};
-		A96B1C69AB84CB36E6561B538D4503B6 /* Blank */ = {
+		AED39EF85715BA54FE5077702BC590BE /* Alert */ = {
 			isa = PBXGroup;
 			children = (
-				2EC7A57344F89437A9817F05F5916A73 /* TPUIBlankAccets.h */,
-				BE73BEC65D7DB3C490D5E683392B9D2D /* TPUIBlankAccets.m */,
-				ECA594B0681B7FE8CB6A8EB122F55FDC /* TPUIBlankView.h */,
-				18F6CBD950EEBA6830D9672F0077B745 /* TPUIBlankView.m */,
-				499D45DCC3CE950C4A8424B3C1FDDA38 /* UIView+TPBlankView.h */,
-				4736DD53BF70BE16CD5A5BE58FC1CC8B /* UIView+TPBlankView.m */,
-				A5F53134E96294C6520189383EB1254C /* Resources */,
+				1FA812A8D7DFAA370D4B063C8510EB56 /* TPUIAlert.h */,
+				8EE46AD24A2ED6C02AF9D200E5CD2DCD /* TPUIAlert.m */,
+				CFD22D70C4D9C2BB381355DCC208A6AB /* TPUIAlertMaker.h */,
+				1FEF4F21A50D6EF778070A2723EE7129 /* TPUIAlertMaker.m */,
 			);
-			name = Blank;
+			name = Alert;
 			sourceTree = "<group>";
 		};
 		AEEA9F4A610114D327F01F48DBFD5F2A /* Support Files */ = {
@@ -922,18 +966,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C35B58FA4671F09D2BED39690A2F5BDD /* Refresh */ = {
+		BFC8827E5A79718FF56FA4CD4EDEEC89 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9DC13E2A7E9F754EC2714453AE53E3B6 /* TPUIRefreshAccets.h */,
-				EEEF445599CE24C9C3D1EFDA8C5A83B1 /* TPUIRefreshAccets.m */,
-				2022E8DCB6B25ADE10ECAD66990F6B81 /* TPUIRefreshFooter.h */,
-				EB9970F7BB1E53690B939C93BDB594E3 /* TPUIRefreshFooter.m */,
-				3A7F2BB305002A3B54C6B528C1AD8333 /* TPUIRefreshHeader.h */,
-				61CB782370154B7318F94450886E753C /* TPUIRefreshHeader.m */,
-				E55426231D7D6F05129A3A56F0E2A043 /* Resources */,
+				DBE4E292AA2EBB0162FA2D2022BAB832 /* ResourceBundle-TPUIKitBase-TPUIKit-Info.plist */,
+				99AF80933E99BD1CE3BAD4EF7AF6CC1F /* ResourceBundle-TPUIKitBlank-TPUIKit-Info.plist */,
+				A1251EE54E46DF249D66A4632F89515D /* ResourceBundle-TPUIKitRefresh-TPUIKit-Info.plist */,
+				28278A01F7BC071DFA0F651EEB37CB59 /* ResourceBundle-TPUIKitToast-TPUIKit-Info.plist */,
+				EF31CCE8A5497871F4262E96A5958877 /* TPUIKit.modulemap */,
+				1BE05CAD9D0A3C2A2F91E1A8DE98A7E2 /* TPUIKit-dummy.m */,
+				DE344D74F5506E5C6C1C3C5ABF3FFAF3 /* TPUIKit-Info.plist */,
+				665A8582351EACCE7CF22BE4659A1DCB /* TPUIKit-prefix.pch */,
+				93D7456AB47CA9120832560B3AB6D9FB /* TPUIKit-umbrella.h */,
+				B589B2ED907E123584C66A399474E2D6 /* TPUIKit.debug.xcconfig */,
+				08968199872349ADDE6158794ECC3726 /* TPUIKit.release.xcconfig */,
 			);
-			name = Refresh;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TPUIKit";
 			sourceTree = "<group>";
 		};
 		C72ED92B433EC10622A0208C21495517 /* Masonry */ = {
@@ -970,22 +1019,11 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		C8A916A4CD30E88602C4491987C2B9BA /* Banner */ = {
-			isa = PBXGroup;
-			children = (
-				D54BBAC5DF69E8769A3A47D29B91C7E1 /* TPUIBannerPageView.h */,
-				E1C8AD67106F531EC1CCC3B9EC8FA5E8 /* TPUIBannerPageView.m */,
-				0882BD479DCFE056F7BBBFD8277590DB /* TPUIBannerView.h */,
-				B5E4A3D8FAD0B696731422BD1CFFEEB5 /* TPUIBannerView.m */,
-			);
-			name = Banner;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				38A13BEEA318DCE2408BAA0B452F7656 /* Development Pods */,
+				6EA1EC137DC3BA28279CA9891DF8288C /* Development Pods */,
 				422CF9593A9A26B0050934DA038D789D /* Frameworks */,
 				BDF01A889FADF34BF0BDE80B5D847E60 /* Pods */,
 				6F50D6F661F45A2C948268961CB8E4F3 /* Products */,
@@ -993,22 +1031,16 @@
 			);
 			sourceTree = "<group>";
 		};
-		E55426231D7D6F05129A3A56F0E2A043 /* Resources */ = {
+		D7E98D4177441BBD1BBBC4F1FA4BFC09 /* Toast */ = {
 			isa = PBXGroup;
 			children = (
-				957D12DCA2CA43718E28EDA568F37D0B /* Refresh.xcassets */,
+				7CD02EF2E706324DCF21596017B1F1B1 /* TPUIToast.h */,
+				FF9114FB41EB8D167A6254AEC106C890 /* TPUIToast.m */,
+				72DA9134814131DC0E723E0BAE683CF2 /* TPUIToastAccets.h */,
+				E387A5DF053FF9D48BB117603B4EF74D /* TPUIToastAccets.m */,
+				6ADD5C9599E76AD20649695171916412 /* Resources */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		F2871D3F6F7F81DA1242DFBDA17B403C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B4C0A7FC1A32D012533557E2E68A099B /* LICENSE */,
-				7384D070717ADA5A7EC657E262EB674C /* README.md */,
-				5492C45E21C1FB029241A4DC40E4C5C2 /* TPUIKit.podspec */,
-			);
-			name = Pod;
+			name = Toast;
 			sourceTree = "<group>";
 		};
 		F300C11DF9B85D29EFF2625EFFC702C8 /* iOS */ = {
@@ -1022,74 +1054,64 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F33CBB651D49A67D5F9110022A07A2ED /* Alert */ = {
+		FC0E11836B05E2A3F3FC77DC802F55D3 /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
-				1F2714369A6047AE1BEAB8CBB16404B3 /* TPUIAlert.h */,
-				8009B2781EA0CE32560F9E032A851082 /* TPUIAlert.m */,
-				A180386F037798C531B534374BE79859 /* TPUIAlertMaker.h */,
-				C869CBE56BA8FF64F0B8F8B76B9CA53C /* TPUIAlertMaker.m */,
+				C751A2CFA6BA39D388E0252B350EC154 /* TPUINavigator.h */,
+				327C5DC5188C96A990F7467D8CE72C21 /* TPUINavigator.m */,
 			);
-			name = Alert;
-			sourceTree = "<group>";
-		};
-		F790BC179C4621FC3360C69D822C25E3 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				34E72DFF9DD831F84E4BC98EA86D8140 /* UIBarButtonItem+TPUIButtonItem.h */,
-				693E2D355E23E2BBB92BF4AC0B7B2261 /* UIBarButtonItem+TPUIButtonItem.m */,
-			);
-			name = Category;
-			path = TPUIKit/Classes/Base/Category;
+			name = Navigator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		01F4F5D7CE696531E26A9F0715D82ADD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E404842AF3CFBE177A9306E9FEAAD3E4 /* TPUIAlert.h in Headers */,
+				FDC662C6F7B4C93432FE181EE16E1ABB /* TPUIAlertMaker.h in Headers */,
+				4ED5FC6690E85711EB662AA49DA64931 /* TPUIBackNavigationController.h in Headers */,
+				2E0E14F1DBBE654D48800462F9BE7EFD /* TPUIBannerPageView.h in Headers */,
+				D593C2154C70DBDD1C22B7F1339355FE /* TPUIBannerView.h in Headers */,
+				1A8CB513EEF04BBC2B3C6DA5CBC4D8A7 /* TPUIBaseAccets.h in Headers */,
+				ECE7EA322E34D49AA6BA214B2E186496 /* TPUIBaseNavigationController.h in Headers */,
+				DF4FCC2D8113124B2071DF1F03DBBFE3 /* TPUIBaseTableViewCell.h in Headers */,
+				5F8FD471DA51AC90DBBE7D332292EA0E /* TPUIBaseViewController.h in Headers */,
+				923484DC262E3072501287810F2C03AA /* TPUIBlankAccets.h in Headers */,
+				0443E3045F6154ED02B12BBC5C3FDC95 /* TPUIBlankView.h in Headers */,
+				760F911A76E8CCC004001BCFCD197645 /* TPUIGradientButton.h in Headers */,
+				C8B1B31A4F492C5D1568131E01BDB6E4 /* TPUIGradientLabel.h in Headers */,
+				9B23B6E6768BF6DFCE405F8239A243DB /* TPUIGradientLayer.h in Headers */,
+				76604625A3264E8CE18500C932C8FE3C /* TPUIGradientView.h in Headers */,
+				36A2589F7282670393088D1D28D07CD7 /* TPUIGraphicView.h in Headers */,
+				4A6344D3E07654EB1889062A8B7992AC /* TPUIKit-umbrella.h in Headers */,
+				794D3B3425CC60D2DBD3066F9C1D6383 /* TPUIKit.h in Headers */,
+				90A261F9B0A7D2573E9B08677FF24104 /* TPUIMacros.h in Headers */,
+				0301909A5BBECD21E24E98C119618491 /* TPUIMarginLabel.h in Headers */,
+				B9AF64E72B94E598279AFB964C10C9AE /* TPUIMethodSwizzling.h in Headers */,
+				3574C524338AB0E134F4CFE3D9106B5F /* TPUINavigator.h in Headers */,
+				EBA2D15028B43B52876304FD11670196 /* TPUIRefreshAccets.h in Headers */,
+				0F0A02615FCFB95474F4149261095248 /* TPUIRefreshFooter.h in Headers */,
+				C2951B22F21CABA7156EEFCF47B117A3 /* TPUIRefreshHeader.h in Headers */,
+				4C6F6518DAF63440CFEC517119EC0A9E /* TPUIScrollTableVC.h in Headers */,
+				326E342812E64E8DEC188E4866031A31 /* TPUIScrollTopBar.h in Headers */,
+				082EC92EFB43AC7F9623B798BD5F578C /* TPUISimButton.h in Headers */,
+				573DBD5DC694D28319537891DBC51B54 /* TPUITabbar.h in Headers */,
+				977FE52D639FE0C5865715CEE0249C04 /* TPUITabItem.h in Headers */,
+				FF8F58E3490BF3CBBB9D97BE7DB2483B /* TPUIToast.h in Headers */,
+				97B5037397C02AFBA93143B3567B4934 /* TPUIToastAccets.h in Headers */,
+				AB71381908B7045A87B0A169BB48BA9F /* UIBarButtonItem+TPUIButtonItem.h in Headers */,
+				8C8B1F2BD8A6C54986B883338C7CB68A /* UIView+TPBlankView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0D998EFDC69DA1B8E62F0777FB57E3EE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				208179E90202621AB6829760FFFA93BF /* Pods-TPUIKit_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A84DA0A6D32BFDB5AA15FF31740C8C4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4292EDFCB7BEF54687FA4A03A26F2E5 /* TPUIAlert.h in Headers */,
-				C88E4B2C1BC0B9D83B7B58730C90D0D3 /* TPUIAlertMaker.h in Headers */,
-				C9DAD50ACA677459D959DA95867FB912 /* TPUIBackNavigationController.h in Headers */,
-				5BC0A094F650684ED3298FB4E3791406 /* TPUIBannerPageView.h in Headers */,
-				99765511A4DDECBA95EAB33C519C6E29 /* TPUIBannerView.h in Headers */,
-				B03E7E7589AC01B866D44FF93CB7BE30 /* TPUIBaseAccets.h in Headers */,
-				A114AAAC5377743FD24B20F054EFDB9F /* TPUIBaseNavigationController.h in Headers */,
-				CFECBB6DEA4C2CCB89BC44EF0916AA61 /* TPUIBaseTableViewCell.h in Headers */,
-				A292E5B0A3F0783FDFF400129316981D /* TPUIBaseViewController.h in Headers */,
-				4D454EE3F755DF90ECC5F13698086B6A /* TPUIBlankAccets.h in Headers */,
-				51AE731B6A6C0D70867978277DB6317F /* TPUIBlankView.h in Headers */,
-				D419FA5092EAC55CD0175027EFAFAA77 /* TPUIGradientButton.h in Headers */,
-				B397061ACF9C4C5BC023FBA7FA437F8B /* TPUIGradientLabel.h in Headers */,
-				6F8C9F47B599D1E8C3426843E23D225F /* TPUIGradientLayer.h in Headers */,
-				823C5F2F429111D9A1311BF078992E98 /* TPUIGradientView.h in Headers */,
-				9AC9DF1904C624BED0C374337DF8A097 /* TPUIGraphicView.h in Headers */,
-				AEABD9C3FBB67462F1DF18B609AFFE93 /* TPUIKit-umbrella.h in Headers */,
-				21D5B3A18722B9AFF643737D50457177 /* TPUIKit.h in Headers */,
-				368C3CD9BBA66806A0646F11E227D4DF /* TPUIMacros.h in Headers */,
-				C23F019D5423CE739A379733BDFA2250 /* TPUIMarginLabel.h in Headers */,
-				FA5CF815EA29481D3581091261E5CE2A /* TPUIMethodSwizzling.h in Headers */,
-				E511681CBC35EAFB8400404598A8CB30 /* TPUINavigator.h in Headers */,
-				437B50A5E4007D481031EEF82EA44821 /* TPUIRefreshAccets.h in Headers */,
-				51E51226C48BAF02EC1B5EEC4618DA25 /* TPUIRefreshFooter.h in Headers */,
-				E027E592505B8A8FA31A9A74B047C4DE /* TPUIRefreshHeader.h in Headers */,
-				5B0FCEE4F6AF55F1E408D18EB913F632 /* TPUISimButton.h in Headers */,
-				AEBE77FD0E2DD41A3C039302482102E5 /* TPUITabbar.h in Headers */,
-				E7BD6CD7E6BD797308FC0FF0C7185224 /* TPUITabItem.h in Headers */,
-				4BB6DE7F7EFE0D673D83A3A9DE7F4139 /* TPUIToast.h in Headers */,
-				B7A007ACA9DB3D3ACE94FA862A4D98D9 /* TPUIToastAccets.h in Headers */,
-				F66A8A98837E86B7FB277C38C8EEED97 /* UIBarButtonItem+TPUIButtonItem.h in Headers */,
-				E68BFD12D83A7C2F4CB0C17635037EE1 /* UIView+TPBlankView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1166,11 +1188,11 @@
 /* Begin PBXNativeTarget section */
 		0EC358D96914005896ABFB46BCB0F384 /* TPUIKit-TPUIKitToast */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A9670898CB5C68FA5BD228791D3F23D /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitToast" */;
+			buildConfigurationList = FEB3127275DB8B207E3100BAAFE3FE45 /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitToast" */;
 			buildPhases = (
-				5F0017AA0C897B407A67C8651DD09654 /* Sources */,
-				CD20F57B81C68AE8AEFF0BFBBB52540A /* Frameworks */,
-				D0C5A77FE6AFB91EA618013B24AF6252 /* Resources */,
+				9C24B4C6E16534BDBCA3DFA4A0ACED85 /* Sources */,
+				1BC5D980C4580FE84560251DB6EFFF67 /* Frameworks */,
+				431660416EB021D26C62892643A9D408 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1183,23 +1205,23 @@
 		};
 		1026C137FD16446CA28CAD8CFB5E5449 /* TPUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45161E1297790A9C41AB21D581C054D2 /* Build configuration list for PBXNativeTarget "TPUIKit" */;
+			buildConfigurationList = 9523432A7A50056E3EE8473015BAD9BF /* Build configuration list for PBXNativeTarget "TPUIKit" */;
 			buildPhases = (
-				1A84DA0A6D32BFDB5AA15FF31740C8C4 /* Headers */,
-				5FFB20443A9476D43AC3075A33C99E76 /* Sources */,
-				373FBEDA24BBD637303F7BE880702998 /* Frameworks */,
-				556B91EAB15E92710CD9BB3898C0BF6B /* Resources */,
+				01F4F5D7CE696531E26A9F0715D82ADD /* Headers */,
+				6A8EE475CBA3957CCF33A32FC6DCA1C1 /* Sources */,
+				976229213E8DFE8F790C6B0CAAEE6425 /* Frameworks */,
+				B6DBA4D60BD0C0454FA4415038BF0E04 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D47B5DD3205C79C6F65D5F04750D2A03 /* PBXTargetDependency */,
-				40423CE7544053F8D89C72B2FA96B4A8 /* PBXTargetDependency */,
-				433CD42D69ED60F986B15FC9081FBD77 /* PBXTargetDependency */,
-				57CAB440F59A716EFCEA22BF0091E822 /* PBXTargetDependency */,
-				27663331F9F86E787A35A3072489640E /* PBXTargetDependency */,
-				F375F0CB824828DAA64C0289649AC421 /* PBXTargetDependency */,
-				A90864C4460563BB9C6CD8ACE0DADA4F /* PBXTargetDependency */,
+				A14EDDA033461B9FB257C304671025A0 /* PBXTargetDependency */,
+				D44F1B73191CED44B6E64FE0851F9FCC /* PBXTargetDependency */,
+				63190AF94CBDAC89CBF0E9ABD480E582 /* PBXTargetDependency */,
+				4F915F08F98E61276A284ABCF954AEE8 /* PBXTargetDependency */,
+				3408DB970A7DE71625E9447D0C0148EB /* PBXTargetDependency */,
+				604E22B6C9F6B6159B03B0A7A9A06363 /* PBXTargetDependency */,
+				8BC0F2EC8A68A4C4AD8BDA224335E3B8 /* PBXTargetDependency */,
 			);
 			name = TPUIKit;
 			productName = TPUIKit;
@@ -1226,11 +1248,11 @@
 		};
 		5D0A65CB47E8C3E158E7A80F23991180 /* TPUIKit-TPUIKitRefresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F80D2B2685C4835B1516B87A1B71DDF5 /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitRefresh" */;
+			buildConfigurationList = 4B8F0F6717FA2A3EEE6B969B10B61898 /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitRefresh" */;
 			buildPhases = (
-				C3B9AA2C0F6D459C8481CA6461AFA723 /* Sources */,
-				BD05EAC79AD04590DD52DD22C7105645 /* Frameworks */,
-				6D8437F88AE9F5F02612F0FF972C8D13 /* Resources */,
+				0A94BBB1205D7A3DF09658CAF3A9E40B /* Sources */,
+				D7AB8F5413231067615763E40CE5F2D8 /* Frameworks */,
+				07CE3F61C88028FC72D25E3ECEA5D6F1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1261,11 +1283,11 @@
 		};
 		773ED8272A0AB1347575BED06913FBF2 /* TPUIKit-TPUIKitBase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE4E9A6E8B7F92B1E1E14A7EA5E1077E /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitBase" */;
+			buildConfigurationList = 1DE130F269C1E5EE1651B4A315B49E5A /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitBase" */;
 			buildPhases = (
-				5E35914FF3087B2E89F044C1F04294BE /* Sources */,
-				C69C5F6B19B4F91E781BB5086FBFAA2B /* Frameworks */,
-				38378C435C21A751F8000161DCF9C033 /* Resources */,
+				33FEC380515800855F62E195A36730B6 /* Sources */,
+				473B420A9ACCDEC1F470BE89D012B590 /* Frameworks */,
+				89E80CD7108538F24843F9CD80FAD385 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1315,11 +1337,11 @@
 		};
 		92182B4A5FBF9927B181081F48498926 /* TPUIKit-TPUIKitBlank */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C9EBC624F8466999F936A6F153040E7 /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitBlank" */;
+			buildConfigurationList = AEE575E44EE69A092F68826610C876F7 /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitBlank" */;
 			buildPhases = (
-				FB32C47A48A76B606568390F39757421 /* Sources */,
-				4443D1424C096E44B75769B4F259151C /* Frameworks */,
-				AEEE287C0F034A29179015689DAF17DC /* Resources */,
+				56284B982A29F997307B7408E30ADAB3 /* Sources */,
+				4747F708F2B12561FE9E363107EB95F1 /* Frameworks */,
+				3BCBF5B85322EAD087AB47D0E523A8FD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1389,6 +1411,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		07CE3F61C88028FC72D25E3ECEA5D6F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DD3CCC7F2523FCF70FE6387275945E4 /* Refresh.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12B71874E14DE7C85B77B5B946F60813 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1396,11 +1426,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38378C435C21A751F8000161DCF9C033 /* Resources */ = {
+		3BCBF5B85322EAD087AB47D0E523A8FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F4B48041B49CB3BDD2629D3AE7FD7C /* Base.xcassets in Resources */,
+				443A1DCC082168114CB908CE74C9FD62 /* Blank.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1412,21 +1442,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		431660416EB021D26C62892643A9D408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3914C812851D12E4AFB9BADD8734FE1E /* Toast.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		556B91EAB15E92710CD9BB3898C0BF6B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ECDF1814866AAAEA0173ED8A8F17A790 /* TPUIKitBase.bundle in Resources */,
-				F65F64EAFB7D2467F4D2A385753FBD5D /* TPUIKitBlank.bundle in Resources */,
-				CEF67BE2F0B6621E3E54E490334A7F3B /* TPUIKitRefresh.bundle in Resources */,
-				4711510CC54D0AFEC7588CEC5EB7101B /* TPUIKitToast.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1437,14 +1464,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D8437F88AE9F5F02612F0FF972C8D13 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				570C13355253E9B100070E2F1022DA71 /* Refresh.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		895ED1B8779C1D82DF681CBFF67AC570 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1452,19 +1471,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEEE287C0F034A29179015689DAF17DC /* Resources */ = {
+		89E80CD7108538F24843F9CD80FAD385 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69C8C468D21E7B3519F4F844F454FDC7 /* Blank.xcassets in Resources */,
+				4ECC489B4982EFF0185CCBE9B3D93A04 /* Base.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0C5A77FE6AFB91EA618013B24AF6252 /* Resources */ = {
+		B6DBA4D60BD0C0454FA4415038BF0E04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C5698F4D30C2C1C902473690601F1F /* Toast.xcassets in Resources */,
+				D08EF346A5E6A78B81DF0CC085DD6794 /* TPUIKitBase.bundle in Resources */,
+				DF9DD5BD7AA0DB8CA274DE06197D85A9 /* TPUIKitBlank.bundle in Resources */,
+				8EBBA2E7373EF504B00B7E03B550B75F /* TPUIKitRefresh.bundle in Resources */,
+				8BFFEDAE4F6E1913FDF7F481CCC415AF /* TPUIKitToast.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1489,54 +1511,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E35914FF3087B2E89F044C1F04294BE /* Sources */ = {
+		0A94BBB1205D7A3DF09658CAF3A9E40B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F0017AA0C897B407A67C8651DD09654 /* Sources */ = {
+		33FEC380515800855F62E195A36730B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FFB20443A9476D43AC3075A33C99E76 /* Sources */ = {
+		56284B982A29F997307B7408E30ADAB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9795AA2AD66EC1986C75CC3C8061D82 /* TPUIAlert.m in Sources */,
-				DE34827644F36AE8B5A2BCDBE659EC51 /* TPUIAlertMaker.m in Sources */,
-				ACC1B70F67953E87DDEEB9039A2AB7C0 /* TPUIBackNavigationController.m in Sources */,
-				B7598D62A2D72DBEA426F75DBBBAA70B /* TPUIBannerPageView.m in Sources */,
-				659672AA568D901C346FC8C597DB8B5B /* TPUIBannerView.m in Sources */,
-				01E0742159352EE5C4AA2D3C4DEB2587 /* TPUIBaseAccets.m in Sources */,
-				8D87C9952B4A745F79D6C00FCA55E0D0 /* TPUIBaseNavigationController.m in Sources */,
-				2CEE81D4DC119942CBEA18DC315A934B /* TPUIBaseTableViewCell.m in Sources */,
-				0A69F92916A5FF0C86AB212C7EE29CAD /* TPUIBaseViewController.m in Sources */,
-				C31EFB30407D5077BB26ADB40990E027 /* TPUIBlankAccets.m in Sources */,
-				50BB46BC66AC7617B2A62EA24DACBB72 /* TPUIBlankView.m in Sources */,
-				065A4F6A28D534779C2BCC42AAD8921E /* TPUIGradientButton.m in Sources */,
-				8FEC69F3C82278F4FA4BAC62D50E4339 /* TPUIGradientLabel.m in Sources */,
-				CFFEB8A6941DB4DA99066E41896FE4EE /* TPUIGradientLayer.m in Sources */,
-				CFA2A52FAB08D90EEB4600A880649FB1 /* TPUIGradientView.m in Sources */,
-				051FE55DF6B30390F5D64AD8E234E229 /* TPUIGraphicView.m in Sources */,
-				3FE1C2D3EDC191D4A4048F6570D50FB4 /* TPUIKit-dummy.m in Sources */,
-				A7F4B0EEB6C994AF09C9A53C3D1C90C7 /* TPUIMarginLabel.m in Sources */,
-				3F18ED9246CBC98FFB16FE3ADE19C4F0 /* TPUIMethodSwizzling.m in Sources */,
-				FDA11799171AC341F213E7647D6627C6 /* TPUINavigator.m in Sources */,
-				11C11F95A0EE14149BFF78BF1FE3DF97 /* TPUIRefreshAccets.m in Sources */,
-				E4C039AF549FB7A6887850BBEF376E47 /* TPUIRefreshFooter.m in Sources */,
-				46636A188461010F0FD06293397E730E /* TPUIRefreshHeader.m in Sources */,
-				85B31DA82AA63393DCE208A3E3DBD6F5 /* TPUISimButton.m in Sources */,
-				335530D3D4A925F2E551122288569462 /* TPUITabbar.m in Sources */,
-				F1C1731262F452BF1765A31CAD1872A0 /* TPUITabItem.m in Sources */,
-				75E0684A3615CE575D96DC12CF5FDD95 /* TPUIToast.m in Sources */,
-				B3C364DD23CBF0F661914D0F0F5E21DA /* TPUIToastAccets.m in Sources */,
-				B5B8885816602C95700D9FEC5E67322A /* UIBarButtonItem+TPUIButtonItem.m in Sources */,
-				9ACB6777BF87C944195352753F307CF4 /* UIView+TPBlankView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8EE475CBA3957CCF33A32FC6DCA1C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E41CF3FB7150B8BADECAA90737F1E7B /* TPUIAlert.m in Sources */,
+				681F70C8A4CCA7410E42A6F8038B446C /* TPUIAlertMaker.m in Sources */,
+				EAAC7F4EEE52FDF6693465FCFB03E792 /* TPUIBackNavigationController.m in Sources */,
+				FC9F32A4DFF65D93F0B1AD639D81E792 /* TPUIBannerPageView.m in Sources */,
+				16DB61C8A3F967F6EC5E6717C01C08F9 /* TPUIBannerView.m in Sources */,
+				450FCE21025531243B3EC3C6C63170F0 /* TPUIBaseAccets.m in Sources */,
+				D4EFBFF98922552636632726A9844338 /* TPUIBaseNavigationController.m in Sources */,
+				94B56E7DE2CB2520C6934500BD23D37D /* TPUIBaseTableViewCell.m in Sources */,
+				8E314022C97DD2F500C6C66B42171519 /* TPUIBaseViewController.m in Sources */,
+				B89F403EB817A94FA2B6D09A84FCC55C /* TPUIBlankAccets.m in Sources */,
+				65DB6B269CA7CE8B0C0A31CDF86C43D2 /* TPUIBlankView.m in Sources */,
+				FFDDC6C200E3AA7E85E7BD40FEB09A29 /* TPUIGradientButton.m in Sources */,
+				8709A81B839D626C372CD137B34EFBB7 /* TPUIGradientLabel.m in Sources */,
+				BB66BCDC8DC72A90BCD3B4522161CC9C /* TPUIGradientLayer.m in Sources */,
+				CB19E837657CE5775BD659C742BDDDAE /* TPUIGradientView.m in Sources */,
+				F51419C63282F054557F6ACE3BE4FA6E /* TPUIGraphicView.m in Sources */,
+				62D03E2F04C526C87B298DADC6F8600D /* TPUIKit-dummy.m in Sources */,
+				8CD9BB8F4A587140C1D861A70ABB4FB5 /* TPUIMarginLabel.m in Sources */,
+				0697E0A142292AC8CD59A9EC626FACED /* TPUIMethodSwizzling.m in Sources */,
+				55CBB004E5AF707A1644E5D699C1AF08 /* TPUINavigator.m in Sources */,
+				38C00EB35F295C26F542B8C39CCFE78A /* TPUIRefreshAccets.m in Sources */,
+				18EA4B91D1247E6F02D504AC71074011 /* TPUIRefreshFooter.m in Sources */,
+				B29B737C2534656EFF4EC5CFD831B87A /* TPUIRefreshHeader.m in Sources */,
+				15570B424FE1F801E4BDA1ECE28B7F27 /* TPUIScrollTableVC.m in Sources */,
+				55AC4077F0B874F367DEA3548C27AF52 /* TPUIScrollTopBar.m in Sources */,
+				1B21BCC5FB3FD3EC7884233C2C8A2E19 /* TPUISimButton.m in Sources */,
+				0C28041B9135D8968C6307464597813C /* TPUITabbar.m in Sources */,
+				4B3AE32843469880050FEBBBB39209AB /* TPUITabItem.m in Sources */,
+				D5358459E0DE822716796BAEB0B113AB /* TPUIToast.m in Sources */,
+				11A3F5269233510D2C824F24036E95AD /* TPUIToastAccets.m in Sources */,
+				8F06A47E9B04746CE3D58ED06E268379 /* UIBarButtonItem+TPUIButtonItem.m in Sources */,
+				0F5794DB3A1C6DE8FB4EE71C8C09BAE5 /* UIView+TPBlankView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1548,18 +1579,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C24B4C6E16534BDBCA3DFA4A0ACED85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC9F7BACECE4C065C81E4A085553AAC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6A3B4E0FA5DE11893067D816CEE8349C /* Pods-TPUIKit_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3B9AA2C0F6D459C8481CA6461AFA723 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1599,21 +1630,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB32C47A48A76B606568390F39757421 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		27663331F9F86E787A35A3072489640E /* PBXTargetDependency */ = {
+		3408DB970A7DE71625E9447D0C0148EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "TPUIKit-TPUIKitBlank";
 			target = 92182B4A5FBF9927B181081F48498926 /* TPUIKit-TPUIKitBlank */;
-			targetProxy = 2DD7455A10AB8D4DA85071EF65756BDB /* PBXContainerItemProxy */;
+			targetProxy = DAEE241A12F15805A9238C60BB4DE161 /* PBXContainerItemProxy */;
 		};
 		3BA6014EFA470E1E2B395A4D152D1C13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1621,29 +1645,17 @@
 			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
 			targetProxy = DB5F01B48005AB27D54F1876314B0B36 /* PBXContainerItemProxy */;
 		};
-		40423CE7544053F8D89C72B2FA96B4A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MJRefresh;
-			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
-			targetProxy = 6FF6E808F9D8B7A159EADA60F9C586E2 /* PBXContainerItemProxy */;
-		};
-		433CD42D69ED60F986B15FC9081FBD77 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 549EB9E23902501DD26427AD294370BC /* PBXContainerItemProxy */;
-		};
 		4B3FC6844ABD027E988A30224DED31F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TPUIKit_Example";
 			target = F3E5FE8B51A3A845B8970EC0B41047F8 /* Pods-TPUIKit_Example */;
 			targetProxy = 65DDC3BBEFC0FA9F748DD2F0C17EB54D /* PBXContainerItemProxy */;
 		};
-		57CAB440F59A716EFCEA22BF0091E822 /* PBXTargetDependency */ = {
+		4F915F08F98E61276A284ABCF954AEE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "TPUIKit-TPUIKitBase";
 			target = 773ED8272A0AB1347575BED06913FBF2 /* TPUIKit-TPUIKitBase */;
-			targetProxy = 4E62F3CBB0E062E4C278144B7AEFA62E /* PBXContainerItemProxy */;
+			targetProxy = EAEDA571184BA787F8581CA1134036B9 /* PBXContainerItemProxy */;
 		};
 		602C21D77C7496ABD587DAE88009EEB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1651,11 +1663,29 @@
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
 			targetProxy = 598B9A0959CD57900EC4253776D02586 /* PBXContainerItemProxy */;
 		};
-		A90864C4460563BB9C6CD8ACE0DADA4F /* PBXTargetDependency */ = {
+		604E22B6C9F6B6159B03B0A7A9A06363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TPUIKit-TPUIKitRefresh";
+			target = 5D0A65CB47E8C3E158E7A80F23991180 /* TPUIKit-TPUIKitRefresh */;
+			targetProxy = 1CF9C6F2B98CB5E63A0EB3ECAD6758DD /* PBXContainerItemProxy */;
+		};
+		63190AF94CBDAC89CBF0E9ABD480E582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = FB4F41EC38B8EDC49FEB6C488D097F1B /* PBXContainerItemProxy */;
+		};
+		8BC0F2EC8A68A4C4AD8BDA224335E3B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "TPUIKit-TPUIKitToast";
 			target = 0EC358D96914005896ABFB46BCB0F384 /* TPUIKit-TPUIKitToast */;
-			targetProxy = EDC57A1D53366CE8609EBCF27A2C9887 /* PBXContainerItemProxy */;
+			targetProxy = 7240A4BF3AE49CB5A1313ACF2AE6F84D /* PBXContainerItemProxy */;
+		};
+		A14EDDA033461B9FB257C304671025A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
+			targetProxy = EA933232D260472B80FB781DD6A2A9DC /* PBXContainerItemProxy */;
 		};
 		C3C2EC0D391EEA53101C9E6BE07E0EE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1663,17 +1693,11 @@
 			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
 			targetProxy = 430BA7A670DC1E6396145C8606441E6F /* PBXContainerItemProxy */;
 		};
-		D47B5DD3205C79C6F65D5F04750D2A03 /* PBXTargetDependency */ = {
+		D44F1B73191CED44B6E64FE0851F9FCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
-			targetProxy = C47C5D98CF9DB29C375CB9CC9C83EAA1 /* PBXContainerItemProxy */;
-		};
-		F375F0CB824828DAA64C0289649AC421 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "TPUIKit-TPUIKitRefresh";
-			target = 5D0A65CB47E8C3E158E7A80F23991180 /* TPUIKit-TPUIKitRefresh */;
-			targetProxy = 1CA1201E623C76476399CD00B3B6E293 /* PBXContainerItemProxy */;
+			name = MJRefresh;
+			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
+			targetProxy = 0AEE51564890988538F75A810CCF8766 /* PBXContainerItemProxy */;
 		};
 		F4AE36B9921C9254991EB6418CF3D6B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1715,6 +1739,23 @@
 			};
 			name = Release;
 		};
+		06A94838D701A8082DC0C48638554451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B589B2ED907E123584C66A399474E2D6 /* TPUIKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
+				IBSC_MODULE = TPUIKit;
+				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitRefresh-TPUIKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TPUIKitRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		0B6A1D4BB220833F99A6D2E0B02026B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E393B85E7894EE508C159FF9AC1E9406 /* MJRefresh.debug.xcconfig */;
@@ -1745,9 +1786,9 @@
 			};
 			name = Debug;
 		};
-		0BFE12D892FE40295C573CFE01F2ED20 /* Release */ = {
+		1DE889E2EF1938193DD0E6001C88E287 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EE395E48EB345432E863FF2B4B86B22 /* TPUIKit.release.xcconfig */;
+			baseConfigurationReference = 08968199872349ADDE6158794ECC3726 /* TPUIKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1775,6 +1816,23 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		20B5804DFEA3B9E7F65871AE61F98C9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B589B2ED907E123584C66A399474E2D6 /* TPUIKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
+				IBSC_MODULE = TPUIKit;
+				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitBase-TPUIKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TPUIKitBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
 		};
 		2957EC4C67CD05C6E82C3E9B6885085E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1840,6 +1898,23 @@
 			};
 			name = Debug;
 		};
+		36DB45679A7EBBE88760B98BC4F1CAD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08968199872349ADDE6158794ECC3726 /* TPUIKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
+				IBSC_MODULE = TPUIKit;
+				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitToast-TPUIKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TPUIKitToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1900,50 +1975,16 @@
 			};
 			name = Release;
 		};
-		5BE0B487F792804CAABEF1E726346E94 /* Release */ = {
+		6A54F5446FE52083D195EC98DA0A656D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EE395E48EB345432E863FF2B4B86B22 /* TPUIKit.release.xcconfig */;
+			baseConfigurationReference = B589B2ED907E123584C66A399474E2D6 /* TPUIKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
 				IBSC_MODULE = TPUIKit;
-				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitBase-TPUIKit-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitToast-TPUIKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = TPUIKitBase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		5D8F702ADC2C8FB2C6FC31666C0E1FB3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EE395E48EB345432E863FF2B4B86B22 /* TPUIKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
-				IBSC_MODULE = TPUIKit;
-				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitBlank-TPUIKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = TPUIKitBlank;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		64ADB1DB8E015CD20C0FEC0500AD238F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA4C15F8F476301B5983A7A107B39AF /* TPUIKit.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
-				IBSC_MODULE = TPUIKit;
-				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitBlank-TPUIKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = TPUIKitBlank;
+				PRODUCT_NAME = TPUIKitToast;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2049,16 +2090,16 @@
 			};
 			name = Debug;
 		};
-		8C8A18EA5B998594CA139BFA22D35D14 /* Debug */ = {
+		86F50CF7E000CC98FC51A5E26F26EC3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA4C15F8F476301B5983A7A107B39AF /* TPUIKit.debug.xcconfig */;
+			baseConfigurationReference = B589B2ED907E123584C66A399474E2D6 /* TPUIKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
 				IBSC_MODULE = TPUIKit;
-				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitToast-TPUIKit-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitBlank-TPUIKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = TPUIKitToast;
+				PRODUCT_NAME = TPUIKitBlank;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2066,35 +2107,39 @@
 			};
 			name = Debug;
 		};
-		8FE07F916F10BA0A524DDD5DAE31C55E /* Debug */ = {
+		88ED7B0E83B0C434FA2D1E19A99A843F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA4C15F8F476301B5983A7A107B39AF /* TPUIKit.debug.xcconfig */;
+			baseConfigurationReference = 08968199872349ADDE6158794ECC3726 /* TPUIKit.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TPUIKit/TPUIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPUIKit/TPUIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
+				IBSC_MODULE = TPUIKit;
+				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitBlank-TPUIKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPUIKit/TPUIKit.modulemap";
-				PRODUCT_MODULE_NAME = TPUIKit;
-				PRODUCT_NAME = TPUIKit;
+				PRODUCT_NAME = TPUIKitBlank;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
+		};
+		932EABEF068490E9F6F3AB1A8EF84686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08968199872349ADDE6158794ECC3726 /* TPUIKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
+				IBSC_MODULE = TPUIKit;
+				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitBase-TPUIKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TPUIKitBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		933C252AC1697174177192BE69B419F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2156,9 +2201,9 @@
 			};
 			name = Debug;
 		};
-		9ABD07AB91B26A6AE57C98E01CD73D75 /* Release */ = {
+		BB2DAFF2B1F2BD1CAC7E140E5D9D52F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EE395E48EB345432E863FF2B4B86B22 /* TPUIKit.release.xcconfig */;
+			baseConfigurationReference = 08968199872349ADDE6158794ECC3726 /* TPUIKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
@@ -2204,37 +2249,33 @@
 			};
 			name = Release;
 		};
-		E1CBCE8619AB8D00C2BB341EA74D18E1 /* Debug */ = {
+		DEE599C516D4C6EC518AA8D745828321 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA4C15F8F476301B5983A7A107B39AF /* TPUIKit.debug.xcconfig */;
+			baseConfigurationReference = B589B2ED907E123584C66A399474E2D6 /* TPUIKit.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
-				IBSC_MODULE = TPUIKit;
-				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitRefresh-TPUIKit-Info.plist";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPUIKit/TPUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPUIKit/TPUIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = TPUIKitRefresh;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPUIKit/TPUIKit.modulemap";
+				PRODUCT_MODULE_NAME = TPUIKit;
+				PRODUCT_NAME = TPUIKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		E7731589C279B38FB9B12E390FADC55D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA4C15F8F476301B5983A7A107B39AF /* TPUIKit.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
-				IBSC_MODULE = TPUIKit;
-				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitBase-TPUIKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = TPUIKitBase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -2305,40 +2346,14 @@
 			};
 			name = Debug;
 		};
-		F66DBCD7F73BEFCED7FF6FB8F4D274AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EE395E48EB345432E863FF2B4B86B22 /* TPUIKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TPUIKit";
-				IBSC_MODULE = TPUIKit;
-				INFOPLIST_FILE = "Target Support Files/TPUIKit/ResourceBundle-TPUIKitToast-TPUIKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = TPUIKitToast;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3C9EBC624F8466999F936A6F153040E7 /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitBlank" */ = {
+		1DE130F269C1E5EE1651B4A315B49E5A /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				64ADB1DB8E015CD20C0FEC0500AD238F /* Debug */,
-				5D8F702ADC2C8FB2C6FC31666C0E1FB3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		45161E1297790A9C41AB21D581C054D2 /* Build configuration list for PBXNativeTarget "TPUIKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8FE07F916F10BA0A524DDD5DAE31C55E /* Debug */,
-				0BFE12D892FE40295C573CFE01F2ED20 /* Release */,
+				20B5804DFEA3B9E7F65871AE61F98C9C /* Debug */,
+				932EABEF068490E9F6F3AB1A8EF84686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2348,6 +2363,15 @@
 			buildConfigurations = (
 				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
 				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B8F0F6717FA2A3EEE6B969B10B61898 /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A94838D701A8082DC0C48638554451 /* Debug */,
+				BB2DAFF2B1F2BD1CAC7E140E5D9D52F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2379,29 +2403,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A9670898CB5C68FA5BD228791D3F23D /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitToast" */ = {
+		9523432A7A50056E3EE8473015BAD9BF /* Build configuration list for PBXNativeTarget "TPUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8C8A18EA5B998594CA139BFA22D35D14 /* Debug */,
-				F66DBCD7F73BEFCED7FF6FB8F4D274AE /* Release */,
+				DEE599C516D4C6EC518AA8D745828321 /* Debug */,
+				1DE889E2EF1938193DD0E6001C88E287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE4E9A6E8B7F92B1E1E14A7EA5E1077E /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitBase" */ = {
+		AEE575E44EE69A092F68826610C876F7 /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitBlank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7731589C279B38FB9B12E390FADC55D /* Debug */,
-				5BE0B487F792804CAABEF1E726346E94 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F80D2B2685C4835B1516B87A1B71DDF5 /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitRefresh" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E1CBCE8619AB8D00C2BB341EA74D18E1 /* Debug */,
-				9ABD07AB91B26A6AE57C98E01CD73D75 /* Release */,
+				86F50CF7E000CC98FC51A5E26F26EC3D /* Debug */,
+				88ED7B0E83B0C434FA2D1E19A99A843F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2420,6 +2435,15 @@
 			buildConfigurations = (
 				F0765744EB689DE0D878E68A4D5CED4F /* Debug */,
 				7628F4B565ABDE3A758D3A946F6D949E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEB3127275DB8B207E3100BAAFE3FE45 /* Build configuration list for PBXNativeTarget "TPUIKit-TPUIKitToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A54F5446FE52083D195EC98DA0A656D /* Debug */,
+				36DB45679A7EBBE88760B98BC4F1CAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
