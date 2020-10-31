@@ -44,3 +44,8 @@
 
 // Tabbar
 #import "TPUITabbar.h"
+
+
+// ScrollTabbar
+#import "TPUIScrollTableVC.h"
+#import "TPUITabBannerVC.h"
