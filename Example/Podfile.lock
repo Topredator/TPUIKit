@@ -2,6 +2,16 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.7)
+  - TPFoundation (1.0.0):
+    - TPFoundation/Base (= 1.0.0)
+    - TPFoundation/Category (= 1.0.0)
+    - TPFoundation/Utils (= 1.0.0)
+  - TPFoundation/Base (1.0.0)
+  - TPFoundation/Category (1.0.0):
+    - TPFoundation/Base
+  - TPFoundation/Utils (1.0.0):
+    - TPFoundation/Base
+    - TPFoundation/Category
   - TPUIKit (1.0.6):
     - TPUIKit/Alert (= 1.0.6)
     - TPUIKit/Banner (= 1.0.6)
@@ -48,6 +58,7 @@ PODS:
     - TPUIKit/Base
 
 DEPENDENCIES:
+  - TPFoundation
   - TPUIKit (from `../`)
 
 SPEC REPOS:
@@ -55,6 +66,8 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+  trunk:
+    - TPFoundation
 
 EXTERNAL SOURCES:
   TPUIKit:
@@ -64,8 +77,9 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  TPFoundation: 39712a1b08b0e51902bb98ce23b174a088584d64
   TPUIKit: 80badc69f27b075262509c27a9a72a61e8287c47
 
-PODFILE CHECKSUM: a3e213d27700fd3486ce83b1e02e7eeff091c4c4
+PODFILE CHECKSUM: 87642774b5fd0ecbb4de07fd217a91f61931357f
 
 COCOAPODS: 1.9.3

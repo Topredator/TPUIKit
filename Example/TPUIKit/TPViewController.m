@@ -9,6 +9,7 @@
 #import "TPViewController.h"
 //#import "TPUIKit.h"
 #import "TPTestViewController.h"
+#import "TPCellVC.h"
 @interface TPViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *myTable;
 @property (nonatomic, strong) NSMutableArray *datas;
@@ -64,7 +65,9 @@
             }
             break;
             case 2: {
-                [TPUIToast showSuccess];
+                TPCellVC *vc = [TPCellVC new];
+                [TPUINavigator pushViewController:vc animated:YES];
+//                [TPUIToast showSuccess];
             }
             break;
             case 3: {
