@@ -10,6 +10,13 @@
 /// 默认距两边的距离
 static CGFloat kBtnGap = 5;
 
+@interface TPUISimButton ()
+/// 是否存在图片
+@property (nonatomic, assign) BOOL isExistImage;
+/// 是否存在title
+@property (nonatomic, assign) BOOL isExistTitle;
+@end
+
 @implementation TPUISimButton
 
 - (void)setExtInteractEdge:(NSInteger)extInteractEdge {
@@ -22,12 +29,20 @@ static CGFloat kBtnGap = 5;
     return CGRectContainsPoint(CGRectMake(self.bounds.origin.x - self.extInteractInsets.left, self.bounds.origin.y - self.extInteractInsets.top, self.bounds.size.width + self.extInteractInsets.left + self.extInteractInsets.right, self.bounds.size.height + self.extInteractInsets.top + self.extInteractInsets.bottom), point);
 }
 
-
+- (void)setTitle:(NSString *)title forState:(UIControlState)state {
+    [super setTitle:title forState:state];
+    self.isExistTitle = (title != nil);
+}
+- (void)setImage:(UIImage *)image forState:(UIControlState)state {
+    [super setImage:image forState:state];
+    self.isExistImage = (image != nil);
+}
 - (void)layoutSubviews {
     [super layoutSubviews];
+    if (!self.isExistImage || !self.isExistTitle) return;
     if (_iconPosition != TPUISimButtonIconPositionDefault) {
         [self.titleLabel sizeToFit];
-        
+        [self.imageView sizeToFit];
         // icon在文案 左或者右
         if (_iconPosition == TPUISimButtonIconPositionLeft || _iconPosition == TPUISimButtonIconPositionRight) {
             // width

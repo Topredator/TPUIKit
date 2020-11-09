@@ -33,6 +33,7 @@
 #import "TPUIGraphicView.h"
 #import "TPUIMarginLabel.h"
 #import "TPUINavigator.h"
+#import "TPPageControl.h"
 #import "TPUIRefreshAccets.h"
 #import "TPUIRefreshFooter.h"
 #import "TPUIRefreshHeader.h"

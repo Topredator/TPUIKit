@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TPUIKit'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'A short description of TPUIKit.'
 
 # This description is used to generate tags and improve search results.
@@ -109,7 +109,11 @@ TODO: Add long description of the pod here.
        ss.dependency 'Masonry'
    end
    
-   
+   s.subspec 'PageControl' do |ss|
+       ss.source_files = 'TPUIKit/Classes/PageControl/**/*'
+       ss.dependency 'TPUIKit/Base'
+       ss.dependency 'Masonry'
+   end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
