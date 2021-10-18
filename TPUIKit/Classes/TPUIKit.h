@@ -10,6 +10,7 @@
 // Banner
 #import "TPUIBannerView.h"
 // Base
+#import "TPUI.h"
 #import "TPUIBaseViewController.h"
 #import "TPUIBaseTableViewCell.h"
 #import "TPUIBaseNavigationController.h"

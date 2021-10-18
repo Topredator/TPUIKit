@@ -9,7 +9,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, TPUIFontWeight) {
+    FontThin,
+    FontRegular,
+    FontMedium,
+    FontSemibold,
+    FontLight
+};
+
+
 @interface TPUI : NSObject
+#pragma mark ------------------------  System  ---------------------------
 /// 屏幕 宽度
 + (CGFloat)tp_screenWidth;
 /// 屏幕 高度
@@ -26,6 +36,25 @@ NS_ASSUME_NONNULL_BEGIN
 + (CGFloat)tp_bottomBarHeight;
 /// 底部安全区域高度
 + (CGFloat)tp_bottomSafeAreaHeight;
+
+#pragma mark ------------------------  R&G&B  ---------------------------
+/// 随机色
++ (UIColor *)tp_randomColor;
+/// RGB
++ (UIColor *)r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue;
+/// RGBA
++ (UIColor *)r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue a:(CGFloat)alpha;
++ (UIColor *)rgba:(CGFloat)t;
++ (UIColor *)rgba:(CGFloat)t alpha:(CGFloat)alpha;
+/// hex color
++ (UIColor *)hexColor:(CGFloat)hex;
++ (UIColor *)hexColor:(CGFloat)hex alpha:(CGFloat)alpha;
+
+/// 调整scrollview insets
++ (void)tp_adjustsInsets:(UIScrollView *)scrollView vc:(UIViewController *)vc;
+
+/// Font
++ (UIFont *)tp_font:(CGFloat)fontSize weight:(TPUIFontWeight)weight;
 
 @end
 

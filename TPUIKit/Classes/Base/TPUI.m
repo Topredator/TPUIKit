@@ -41,4 +41,79 @@
 + (CGFloat)tp_bottomBarHeight { return self.tp_statusBarHeight > 20.0 ? 83.0 : 49.0; }
 /// 底部安全区域高度
 + (CGFloat)tp_bottomSafeAreaHeight { return self.tp_statusBarHeight > 20.0 ? 34.0 : 0.0; }
+
+
++ (UIColor *)tp_randomColor {
+    return [self r:arc4random_uniform(255) g:arc4random_uniform(255) b:arc4random_uniform(255)];
+}
+/// RGB
++ (UIColor *)r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue {
+    return [self r:red g:green b:blue a:1.0];
+}
+/// RGBA
++ (UIColor *)r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue a:(CGFloat)alpha {
+    return [UIColor colorWithRed:(red) / 255.0 green:(green) / 255.0 blue:(blue) / 255.0 alpha:alpha];
+}
++ (UIColor *)rgba:(CGFloat)t {
+    return [self r:t g:t b:t];
+}
++ (UIColor *)rgba:(CGFloat)t alpha:(CGFloat)alpha {
+    return [self r:t g:t b:t a:alpha];
+}
+/// hex color
++ (UIColor *)hexColor:(unsigned long)hex {
+    return [self hexColor:hex alpha:1.0];
+}
++ (UIColor *)hexColor:(unsigned long)hex alpha:(CGFloat)alpha {
+    return [self r:(CGFloat)((hex & 0xFF0000) >> 16)
+                 g:(CGFloat)((hex & 0xFF00) >> 8)
+                 b:(CGFloat)((hex & 0xFF))
+                 a:alpha];
+}
+
+
++ (UIFont *)tp_font:(CGFloat)fontSize weight:(TPUIFontWeight)weight {
+    if (weight < FontThin || weight > FontLight) weight = FontRegular;
+        NSString *fontName = @"PingFangSC-Regular";
+        switch (weight) {
+            case FontThin:
+                fontName = @"PingFangSC-Thin";
+                break;
+            case FontMedium:
+                fontName = @"PingFangSC-Medium";
+                break;
+            case FontSemibold:
+                fontName = @"PingFangSC-Semibold";
+                break;
+            case FontLight:
+                fontName = @"PingFangSC-Light";
+                break;
+            case FontRegular:
+                fontName = @"PingFangSC-Regular";
+                break;
+        }
+        UIFont *font = [UIFont fontWithName:fontName size:fontSize];
+        return font ?: [UIFont systemFontOfSize:fontSize];
+}
+
+
+
++ (void)tp_adjustsInsets:(UIScrollView *)scrollView vc:(UIViewController *)vc {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {
+        NSMethodSignature *signature = [UIScrollView instanceMethodSignatureForSelector:@selector(setContentInsetAdjustmentBehavior:)];
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+        NSInteger argumet = 2;
+        invocation.target = scrollView;
+        invocation.selector = @selector(setContentInsetAdjustmentBehavior:);
+        [invocation setArgument:&argumet atIndex:2];
+        [invocation invoke];
+    } else {
+        vc.automaticallyAdjustsScrollViewInsets = NO;
+    }
+#pragma clang diagnostic pop
+}
+
+
 @end

@@ -6,7 +6,7 @@
 //
 
 #import "TPUITabbar.h"
-#import "TPUIBaseAccets.h"
+#import "TPUI.h"
 @interface TPUITabbar () {
     CGFloat _scrollViewLastOffsetX;
 }
@@ -75,8 +75,8 @@
     self.clipsToBounds = YES;
     
     _selectedItemIndex = 0;
-    _itemTitleFont = [TPUIBaseAccets PFMediumFont:15];
-    _itemTitleSelectedFont = [TPUIBaseAccets PFMediumFont:17];
+    _itemTitleFont = [TPUI tp_font:15 weight:FontMedium];
+    _itemTitleSelectedFont = [TPUI tp_font:17 weight:FontMedium];
     _itemTitleColor = [UIColor colorWithRed:102 / 255.0 green:102 / 255.0 blue:102 / 255.0 alpha:1];
     _itemTitleSelectedColor = [UIColor colorWithRed:41 / 255.0 green:143 / 255.0 blue:237 / 255.0 alpha:1];
     

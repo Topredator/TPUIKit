@@ -6,14 +6,14 @@
 //
 
 #import "TPUIScrollTopBar.h"
-#import "TPUIMacros.h"
+#import "TPUI.h"
 #import "TPUIBaseAccets.h"
 const CGFloat kTPUIScrollTopBarHeight = 45;
 
 @implementation TPUIScrollTopBar
 
 + (instancetype)tabbar {
-    return [[self alloc] initWithFrame:CGRectMake(0, 0, TPUIScreenWidth, kTPUIScrollTopBarHeight)];
+    return [[self alloc] initWithFrame:CGRectMake(0, 0, TPUI.tp_screenWidth, kTPUIScrollTopBarHeight)];
 }
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -30,12 +30,12 @@ const CGFloat kTPUIScrollTopBarHeight = 45;
     return self;
 }
 - (void)commonInit {
-    self.itemTitleColor = TPUIT(102);
-    self.itemTitleSelectedColor = TPUIT(51);
-    self.itemTitleFont = [TPUIBaseAccets PFMediumFont:15];
-    self.itemTitleSelectedFont = [TPUIBaseAccets PFMediumFont:15];
+    self.itemTitleColor = [TPUI rgba:102];
+    self.itemTitleSelectedColor = [TPUI rgba:51];
+    self.itemTitleFont = [TPUI tp_font:15 weight:FontMedium];
+    self.itemTitleSelectedFont = [TPUI tp_font:15 weight:FontMedium];
     self.indicatorScrollFollowContent = YES;
-    self.indicatorColor = TPUIRGB(39, 119, 248);
+    self.indicatorColor = [TPUI r:39 g:119 b:248];
     [self setIndicatorWidthFixTextAndMarginTop:kTPUIScrollTopBarHeight - 2 marginBottom:0 tapSwitchAnimated:YES];
 }
 @end

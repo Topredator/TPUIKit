@@ -6,7 +6,7 @@
 //
 
 #import "TPUITabBannerVC.h"
-#import "TPUIMacros.h"
+#import "TPUI.h"
 #import "TPUIBaseAccets.h"
 #import <Masonry/Masonry.h>
 @interface TPUITabBannerVC ()
@@ -147,16 +147,16 @@
 }
 - (TPUITabbar *)tabbar {
     if (!_tabbar) {
-        _tabbar = [[TPUITabbar alloc] initWithFrame:CGRectMake(0, 0, TPUIScreenWidth, 40)];
-        _tabbar.itemTitleColor = TPUIT(153);
-        _tabbar.itemTitleSelectedColor = TPUIT(51);
-        _tabbar.itemTitleFont = [TPUIBaseAccets PFRegularFont:16];
-        _tabbar.itemTitleSelectedFont = [TPUIBaseAccets PFMediumFont:20];
+        _tabbar = [[TPUITabbar alloc] initWithFrame:CGRectMake(0, 0, TPUI.tp_screenWidth, 40)];
+        _tabbar.itemTitleColor = [TPUI rgba:153];
+        _tabbar.itemTitleSelectedColor = [TPUI rgba:51];
+        _tabbar.itemTitleFont = [TPUI tp_font:16 weight:FontRegular];
+        _tabbar.itemTitleSelectedFont = [TPUI tp_font:20 weight:FontMedium];
         _tabbar.indicatorColor = UIColor.clearColor;
         _tabbar.leadAndTrailSpace = 6;
         [_tabbar setScrollEnabledAndItemFitTextWidthWithSpacing:30];
         _tabbar.indicatorRadius = 1.5;
-        _tabbar.indicatorColor = TPUIRGB(39, 119, 248);
+        _tabbar.indicatorColor = [TPUI r:39 g:119 b:248];
         [_tabbar setIndicatorPosition:TPUIIndicatorPositionMake(0, 15, 3) tapSwitchAnimated:YES];
         _tabbar.delegate = self;
     }

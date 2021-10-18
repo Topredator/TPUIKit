@@ -6,7 +6,7 @@
 //
 
 #import "TPUIScrollTableVC.h"
-#import "TPUIMacros.h"
+#import "TPUI.h"
 #import <Masonry/Masonry.h>
 @interface TPUIScrollTableVC ()
 /// 管控 点击tabbarItem时，动画执行scroll，指示器动画错乱
@@ -26,10 +26,10 @@
     [self.view addSubview:self.banner];
     [self.view addSubview:self.topTabBar];
     if (isFlag) {
-        self.topTabBar.frame = CGRectMake(0, TPUITopBarHeight, TPUIScreenWidth, kTPUIScrollTopBarHeight);
+        self.topTabBar.frame = CGRectMake(0, TPUI.tp_topBarHeight, TPUI.tp_screenWidth, kTPUIScrollTopBarHeight);
     }
     [self.banner mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(UIEdgeInsetsMake(isFlag ? kTPUIScrollTopBarHeight + TPUITopBarHeight : kTPUIScrollTopBarHeight, 0, 0, 0));
+        make.edges.mas_equalTo(UIEdgeInsetsMake(isFlag ? kTPUIScrollTopBarHeight + TPUI.tp_topBarHeight : kTPUIScrollTopBarHeight, 0, 0, 0));
     }];
 }
 - (void)setViewControllers:(NSArray *)viewControllers {
@@ -54,7 +54,7 @@
     if (self.isClickItem) return;
     CGFloat x = scrollView.contentOffset.x;
     NSInteger maxIndex = (NSInteger)(self.viewControllers.count - 1);
-    if (x >= 0 && x <= TPUIScreenWidth * maxIndex) {
+    if (x >= 0 && x <= TPUI.tp_screenWidth * maxIndex) {
         [self.topTabBar updateSubViewsWhenParentScrollViewScroll:scrollView];
     }
 }
@@ -93,7 +93,7 @@
         _banner = [[TPUIBannerView alloc] initWithFrame:CGRectZero];
         _banner.delegate = self;
         _banner.pageControl.hidden = YES;
-        TPUIAdjustsScrollViewInsets_NO(_banner.scrollView, self);
+        [TPUI tp_adjustsInsets:_banner.scrollView vc:self];
     }
     return _banner;
 }
