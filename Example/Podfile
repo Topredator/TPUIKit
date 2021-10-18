@@ -3,7 +3,8 @@ use_frameworks!
 platform :ios, '9.0'
 target 'TPUIKit_Example' do
   pod 'TPUIKit', :path => '../'
-  pod 'TPFoundation'
+  pod 'TPFoundation', :path => '../../TPFoundation/'
+  
   target 'TPUIKit_Tests' do
     inherit! :search_paths
   end

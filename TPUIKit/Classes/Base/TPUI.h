@@ -47,14 +47,18 @@ typedef NS_ENUM(NSInteger, TPUIFontWeight) {
 + (UIColor *)rgba:(CGFloat)t;
 + (UIColor *)rgba:(CGFloat)t alpha:(CGFloat)alpha;
 /// hex color
-+ (UIColor *)hexColor:(CGFloat)hex;
-+ (UIColor *)hexColor:(CGFloat)hex alpha:(CGFloat)alpha;
++ (UIColor *)tp_hexColor:(CGFloat)hex;
++ (UIColor *)tp_hexColor:(CGFloat)hex alpha:(CGFloat)alpha;
 
 /// 调整scrollview insets
 + (void)tp_adjustsInsets:(UIScrollView *)scrollView vc:(UIViewController *)vc;
 
 /// Font
 + (UIFont *)tp_font:(CGFloat)fontSize weight:(TPUIFontWeight)weight;
+
+/// 从 bundle中 获取image
++ (UIImage *)tp_imageName:(NSString *)imageName
+                bundleName:(NSString *)bundleName;
 
 @end
 

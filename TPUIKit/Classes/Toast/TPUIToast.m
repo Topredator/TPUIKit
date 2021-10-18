@@ -6,9 +6,8 @@
 //
 
 #import "TPUIToast.h"
-
+#import "TPUI.h"
 #define kTPWindow [UIApplication sharedApplication].keyWindow
-#import "TPUIToastAccets.h"
 
 @implementation TPUIToast
 
@@ -49,7 +48,7 @@
     TPUIToast *toast = [TPUIToast showHUDAddedTo:view animated:YES];
     toast.mode = MBProgressHUDModeCustomView;
     toast.square = YES;
-    toast.customView = [[UIImageView alloc] initWithImage:[TPUIToastAccets imageName:@"iconSuccess"]];
+    toast.customView = [[UIImageView alloc] initWithImage:[TPUI tp_imageName:@"iconSuccess" bundleName:@"TPUIKitToast"]];
     toast.detailsLabel.text = success ?: @"";
     [toast hideAnimated:YES afterDelay:[self durationForDisplayString:success ?: @""]];
     return toast;
@@ -146,7 +145,8 @@
     toast.detailsLabel.text = text ?: @"";
     toast.detailsLabel.textColor = UIColor.whiteColor;
     if (icon) {
-        toast.customView = [[UIImageView alloc] initWithImage:[TPUIToastAccets imageName:icon]];
+        
+        toast.customView = [[UIImageView alloc] initWithImage:[TPUI tp_imageName:icon bundleName:@"TPUIKitToast"]];
         toast.mode = MBProgressHUDModeCustomView;
     }
     /// 隐藏时，从父视图上移除
@@ -158,7 +158,8 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 38, 36)];
     NSMutableArray *images = [NSMutableArray array];
     for (NSInteger i = 0; i <= 49; i++) {
-        [images addObject:[TPUIToastAccets imageName:[NSString stringWithFormat:@"loading1_000%02ld", i]]];
+        [images addObject:[TPUI tp_imageName:[NSString stringWithFormat:@"loading1_000%02ld", i]
+                                  bundleName:@"TPUIKitToast"]];
     }
     imageView.animationImages = images;
     imageView.contentMode = UIViewContentModeScaleAspectFill;

@@ -7,7 +7,6 @@
 
 #import "TPUIScrollTopBar.h"
 #import "TPUI.h"
-#import "TPUIBaseAccets.h"
 const CGFloat kTPUIScrollTopBarHeight = 45;
 
 @implementation TPUIScrollTopBar

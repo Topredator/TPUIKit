@@ -2,63 +2,70 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.7)
-  - TPFoundation (1.0.1):
-    - TPFoundation/Base (= 1.0.1)
-    - TPFoundation/Category (= 1.0.1)
-    - TPFoundation/Utils (= 1.0.1)
-  - TPFoundation/Base (1.0.1)
-  - TPFoundation/Category (1.0.1):
+  - TPFoundation (1.0.2):
+    - TPFoundation/Base (= 1.0.2)
+    - TPFoundation/Category (= 1.0.2)
+    - TPFoundation/Utils (= 1.0.2)
+  - TPFoundation/Base (1.0.2)
+  - TPFoundation/Category (1.0.2):
     - TPFoundation/Base
-  - TPFoundation/Utils (1.0.1):
+  - TPFoundation/Utils (1.0.2):
     - TPFoundation/Base
     - TPFoundation/Category
-  - TPUIKit (1.0.6):
-    - TPUIKit/Alert (= 1.0.6)
-    - TPUIKit/Banner (= 1.0.6)
-    - TPUIKit/Base (= 1.0.6)
-    - TPUIKit/Blank (= 1.0.6)
-    - TPUIKit/GradientView (= 1.0.6)
-    - TPUIKit/GraphicView (= 1.0.6)
-    - TPUIKit/MarginLabel (= 1.0.6)
-    - TPUIKit/Navigator (= 1.0.6)
-    - TPUIKit/PageControl (= 1.0.6)
-    - TPUIKit/Refresh (= 1.0.6)
-    - TPUIKit/ScrollTable (= 1.0.6)
-    - TPUIKit/SimButton (= 1.0.6)
-    - TPUIKit/Tabbar (= 1.0.6)
-    - TPUIKit/Toast (= 1.0.6)
-  - TPUIKit/Alert (1.0.6)
-  - TPUIKit/Banner (1.0.6)
-  - TPUIKit/Base (1.0.6)
-  - TPUIKit/Blank (1.0.6):
+  - TPUIKit (1.0.7):
+    - TPUIKit/Alert (= 1.0.7)
+    - TPUIKit/Banner (= 1.0.7)
+    - TPUIKit/Base (= 1.0.7)
+    - TPUIKit/Blank (= 1.0.7)
+    - TPUIKit/Category (= 1.0.7)
+    - TPUIKit/GradientView (= 1.0.7)
+    - TPUIKit/GraphicView (= 1.0.7)
+    - TPUIKit/MarginLabel (= 1.0.7)
+    - TPUIKit/Navigator (= 1.0.7)
+    - TPUIKit/PageControl (= 1.0.7)
+    - TPUIKit/QRCode (= 1.0.7)
+    - TPUIKit/Refresh (= 1.0.7)
+    - TPUIKit/ScreenShot (= 1.0.7)
+    - TPUIKit/ScrollTable (= 1.0.7)
+    - TPUIKit/SimButton (= 1.0.7)
+    - TPUIKit/Tabbar (= 1.0.7)
+    - TPUIKit/Toast (= 1.0.7)
+  - TPUIKit/Alert (1.0.7)
+  - TPUIKit/Banner (1.0.7)
+  - TPUIKit/Base (1.0.7)
+  - TPUIKit/Blank (1.0.7):
     - Masonry
     - TPUIKit/Base
-  - TPUIKit/GradientView (1.0.6)
-  - TPUIKit/GraphicView (1.0.6):
+  - TPUIKit/Category (1.0.7):
+    - TPUIKit/Base
+  - TPUIKit/GradientView (1.0.7)
+  - TPUIKit/GraphicView (1.0.7):
     - Masonry
-  - TPUIKit/MarginLabel (1.0.6)
-  - TPUIKit/Navigator (1.0.6)
-  - TPUIKit/PageControl (1.0.6):
+  - TPUIKit/MarginLabel (1.0.7)
+  - TPUIKit/Navigator (1.0.7)
+  - TPUIKit/PageControl (1.0.7):
     - Masonry
     - TPUIKit/Base
-  - TPUIKit/Refresh (1.0.6):
+  - TPUIKit/QRCode (1.0.7)
+  - TPUIKit/Refresh (1.0.7):
     - Masonry
     - MJRefresh (~> 3.1.14)
     - TPUIKit/Base
-  - TPUIKit/ScrollTable (1.0.6):
+  - TPUIKit/ScreenShot (1.0.7)
+  - TPUIKit/ScrollTable (1.0.7):
     - Masonry
     - TPUIKit/Banner
     - TPUIKit/Base
     - TPUIKit/Tabbar
-  - TPUIKit/SimButton (1.0.6)
-  - TPUIKit/Tabbar (1.0.6):
+  - TPUIKit/SimButton (1.0.7)
+  - TPUIKit/Tabbar (1.0.7):
     - TPUIKit/Base
-  - TPUIKit/Toast (1.0.6):
+  - TPUIKit/Toast (1.0.7):
     - MBProgressHUD (~> 1.1.0)
     - TPUIKit/Base
 
 DEPENDENCIES:
-  - TPFoundation
+  - TPFoundation (from `../../TPFoundation/`)
   - TPUIKit (from `../`)
 
 SPEC REPOS:
@@ -66,9 +73,10 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
-    - TPFoundation
 
 EXTERNAL SOURCES:
+  TPFoundation:
+    :path: "../../TPFoundation/"
   TPUIKit:
     :path: "../"
 
@@ -76,9 +84,9 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  TPFoundation: ab805389c45a61cfefbb820cf946a6b2102c2e15
-  TPUIKit: 80badc69f27b075262509c27a9a72a61e8287c47
+  TPFoundation: fb839e9142900e45c3c32546ac2aec21bedc3bd1
+  TPUIKit: 22fdf8254b2105338bb7d28fda8998b28fc303ce
 
-PODFILE CHECKSUM: 87642774b5fd0ecbb4de07fd217a91f61931357f
+PODFILE CHECKSUM: 532cac001f7ae163bf843d0ca0863cc0734fae79
 
 COCOAPODS: 1.10.1

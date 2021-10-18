@@ -6,12 +6,15 @@
 //
 
 #import "UIBarButtonItem+TPUIButtonItem.h"
-#import "TPUIBaseAccets.h"
+#import "TPUI.h"
 @implementation UIBarButtonItem (TPUIButtonItem)
 + (UIBarButtonItem *)tp_backItemWithTarget:(id)target action:(SEL)action {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:[TPUIBaseAccets imageName:@"TP_common_blackBack"] forState:UIControlStateNormal];
-    [btn setImage:[TPUIBaseAccets imageName:@"TP_common_blackBack"] forState:UIControlStateHighlighted];
+    
+    [btn setImage:[TPUI tp_imageName:@"TP_common_blackBack" bundleName:@"TPUIKitBase"]
+         forState:UIControlStateNormal];
+    [btn setImage:[TPUI tp_imageName:@"TP_common_blackBack" bundleName:@"TPUIKitBase"]
+         forState:UIControlStateHighlighted];
     btn.frame = CGRectMake(0, 0, 30, 30);
     btn.contentEdgeInsets = UIEdgeInsetsMake(0, -15, 0, 0);
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];

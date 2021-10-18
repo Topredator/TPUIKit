@@ -1,6 +1,6 @@
 {
   "name": "TPUIKit",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "summary": "A short description of TPUIKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Topredator/TPUIKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Topredator/TPUIKit.git",
-    "tag": "1.0.6"
+    "tag": "1.0.7"
   },
   "platforms": {
     "ios": "8.0"
@@ -26,6 +26,15 @@
       "resource_bundles": {
         "TPUIKitBase": [
           "TPUIKit/Assets/Base.xcassets"
+        ]
+      }
+    },
+    {
+      "name": "Category",
+      "source_files": "TPUIKit/Classes/Category/**/*",
+      "dependencies": {
+        "TPUIKit/Base": [
+
         ]
       }
     },
@@ -154,6 +163,14 @@
 
         ]
       }
+    },
+    {
+      "name": "QRCode",
+      "source_files": "TPUIKit/Classes/QRCode/**/*"
+    },
+    {
+      "name": "ScreenShot",
+      "source_files": "TPUIKit/Classes/ScreenShot/**/*"
     }
   ]
 }

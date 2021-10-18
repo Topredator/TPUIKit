@@ -61,10 +61,10 @@
     return [self r:t g:t b:t a:alpha];
 }
 /// hex color
-+ (UIColor *)hexColor:(unsigned long)hex {
-    return [self hexColor:hex alpha:1.0];
++ (UIColor *)tp_hexColor:(unsigned long)hex {
+    return [self tp_hexColor:hex alpha:1.0];
 }
-+ (UIColor *)hexColor:(unsigned long)hex alpha:(CGFloat)alpha {
++ (UIColor *)tp_hexColor:(unsigned long)hex alpha:(CGFloat)alpha {
     return [self r:(CGFloat)((hex & 0xFF0000) >> 16)
                  g:(CGFloat)((hex & 0xFF00) >> 8)
                  b:(CGFloat)((hex & 0xFF))
@@ -96,7 +96,12 @@
         return font ?: [UIFont systemFontOfSize:fontSize];
 }
 
-
++ (UIImage *)tp_imageName:(NSString *)imageName
+               bundleName:(NSString *)bundleName {
+    NSString *bundlePath = [[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:[NSString stringWithFormat:@"/%@.bundle", bundleName]];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    return [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
+}
 
 + (void)tp_adjustsInsets:(UIScrollView *)scrollView vc:(UIViewController *)vc {
 #pragma clang diagnostic push

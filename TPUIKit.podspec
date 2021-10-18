@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TPUIKit'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'A short description of TPUIKit.'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,10 @@ TODO: Add long description of the pod here.
       ss.resource_bundle = {
         'TPUIKitBase' => ['TPUIKit/Assets/Base.xcassets']
       }
+  end
+  s.subspec 'Category' do |ss|
+      ss.source_files = 'TPUIKit/Classes/Category/**/*'
+      ss.dependency 'TPUIKit/Base'
   end
   
   s.subspec 'GradientView' do |ss|
@@ -113,6 +117,12 @@ TODO: Add long description of the pod here.
        ss.source_files = 'TPUIKit/Classes/PageControl/**/*'
        ss.dependency 'TPUIKit/Base'
        ss.dependency 'Masonry'
+   end
+   s.subspec 'QRCode' do |ss|
+       ss.source_files = 'TPUIKit/Classes/QRCode/**/*'
+   end
+   s.subspec 'ScreenShot' do |ss|
+       ss.source_files = 'TPUIKit/Classes/ScreenShot/**/*'
    end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

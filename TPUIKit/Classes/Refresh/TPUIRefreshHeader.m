@@ -7,7 +7,7 @@
 
 #import "TPUIRefreshHeader.h"
 #import <Masonry/Masonry.h>
-#import "TPUIRefreshAccets.h"
+#import "TPUI.h"
 @implementation TPUIRefreshHeader
 - (void)prepare {
     [super prepare];
@@ -34,11 +34,12 @@
     
     // 设置Gif
     
-    NSArray *idleImages = @[[TPUIRefreshAccets imageName:@"loading1_00000"]];
+    NSArray *idleImages = @[[TPUI tp_imageName:@"loading1_00000" bundleName:@"TPUIKitRefresh"]];
     // 设置即将刷新状态的动画图片
     NSMutableArray *refreshingImages = [NSMutableArray array];
     for (NSInteger i = 0; i <= 49; i++) {
-        UIImage *image = [TPUIRefreshAccets imageName:[NSString stringWithFormat:@"loading1_000%02ld", i]];
+        UIImage *image = [TPUI tp_imageName:[NSString stringWithFormat:@"loading1_000%02ld", i]
+                                 bundleName:@"TPUIKitRefresh"];
         [refreshingImages addObject:image];
     }
     // 设置不同状态的图片

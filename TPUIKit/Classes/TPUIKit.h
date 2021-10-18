@@ -15,7 +15,12 @@
 #import "TPUIBaseTableViewCell.h"
 #import "TPUIBaseNavigationController.h"
 #import "TPUIBackNavigationController.h"
-
+// Category
+#import "UIImage+TPUIExtension.h"
+#import "UIScrollView+TPUIExtension.h"
+#import "UIView+TPUIExtension.h"
+#import "UIView+TPUILayout.h"
+#import "UIViewController+TPUIPresentStyle.h"
 // GradientView
 #import "TPUIGradientView.h"
 #import "TPUIGradientButton.h"
@@ -50,3 +55,8 @@
 // ScrollTabbar
 #import "TPUIScrollTableVC.h"
 #import "TPUITabBannerVC.h"
+
+// QRCode
+#import "TPUIQRCode.h"
+// ScreenShot
+#import "TPUIScreenShot.h"

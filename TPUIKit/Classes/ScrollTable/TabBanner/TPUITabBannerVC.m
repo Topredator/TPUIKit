@@ -7,7 +7,6 @@
 
 #import "TPUITabBannerVC.h"
 #import "TPUI.h"
-#import "TPUIBaseAccets.h"
 #import <Masonry/Masonry.h>
 @interface TPUITabBannerVC ()
 /// 能否滑动
