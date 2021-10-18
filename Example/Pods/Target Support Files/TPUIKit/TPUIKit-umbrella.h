@@ -16,6 +16,7 @@
 #import "TPUIBannerPageView.h"
 #import "TPUIBannerView.h"
 #import "UIBarButtonItem+TPUIButtonItem.h"
+#import "TPUI.h"
 #import "TPUIBackNavigationController.h"
 #import "TPUIBaseAccets.h"
 #import "TPUIBaseNavigationController.h"
