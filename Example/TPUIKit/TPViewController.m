@@ -7,9 +7,10 @@
 //
 
 #import "TPViewController.h"
-//#import "TPUIKit.h"
 #import "TPTestViewController.h"
 #import "TPCellVC.h"
+#import <TPFoundation/TPFoundation.h>
+
 @interface TPViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *myTable;
 @property (nonatomic, strong) NSMutableArray *datas;
@@ -18,24 +19,34 @@
 
 @implementation TPViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSArray *data = @[@"加载", @"你好啊", @"成功", @"请求成功", @"失败", @"请求失败", @"显示信息", @"测试Navigator", @"显示blank", @"显示带有刷新按钮的blank", @"activityBlank", @"隐藏blank"];
+    NSArray *data = @[@"加载",
+                      @"你好啊",
+                      @"成功",
+                      @"请求成功",
+                      @"失败",
+                      @"请求失败",
+                      @"显示信息",
+                      @"测试Navigator",
+                      @"显示blank",
+                      @"显示带有刷新按钮的blank",
+                      @"activityBlank",
+                      @"隐藏blank"];
     [self.datas addObjectsFromArray:data];
     self.myTable.mj_header = [TPUIRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
     self.myTable.mj_footer = [TPUIRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMore)];
 }
 - (void)refresh {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    [TPGCDQueue executeInMainQueue:^{
         [self.myTable.mj_header endRefreshing];
-    });
+    } afterDelaySecs:1.5];
 }
 - (void)loadMore {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    [TPGCDQueue executeInMainQueue:^{
         [self.myTable.mj_footer endRefreshing];
-    });
+    } afterDelaySecs:1.5];
 }
 #pragma mark ==================  tableview datasource and delegate  ==================
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -52,22 +63,21 @@
     switch (row) {
             case 0: {
                 [TPUIToast showLoading];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [TPGCDQueue executeInMainQueue:^{
                     [TPUIToast hideToast];
-                });
+                } afterDelaySecs:1.5];
             }
             break;
             case 1:{
                 [TPUIToast showLoadingWithString:@"你好啊"];
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [TPGCDQueue executeInMainQueue:^{
                     [TPUIToast hideToast];
-                });
+                } afterDelaySecs:1.5];
             }
             break;
             case 2: {
                 TPCellVC *vc = [TPCellVC new];
                 [TPUINavigator pushViewController:vc animated:YES];
-//                [TPUIToast showSuccess];
             }
             break;
             case 3: {
@@ -121,6 +131,12 @@
         default:
             break;
     }
+}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return nil;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.01;
 }
 #pragma mark ==================  lazy method  ==================
 - (NSMutableArray *)datas {

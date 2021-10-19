@@ -56,7 +56,6 @@ TODO: Add long description of the pod here.
   
   s.subspec 'Refresh' do |ss|
       ss.source_files = 'TPUIKit/Classes/Refresh/**/*'
-      #      ss.resources = 'TPUIKit/Assets/Refresh.xcassets'
       ss.resource_bundle = {
           'TPUIKitRefresh' => ['TPUIKit/Assets/Refresh.xcassets']
       }
@@ -72,7 +71,6 @@ TODO: Add long description of the pod here.
       ss.resource_bundle = {
           'TPUIKitToast' => ['TPUIKit/Assets/Toast.xcassets']
       }
-#      ss.resources = 'TPUIKit/Assets/Toast.xcassets'
   end
   
   s.subspec 'Blank' do |ss|

@@ -88,17 +88,18 @@
 + (void)showLoadingWithString:(NSString *)string {
     [self hideToast];
     TPUIToast *toast = [TPUIToast showHUDAddedTo:kTPWindow animated:YES];
-    toast.minSize = CGSizeMake(120, 120);
-    toast.mode = MBProgressHUDModeCustomView;
+    toast.minSize = CGSizeMake(80, 80);
     UIImageView *imageView = [self fetchToastImageView];
+    toast.mode = MBProgressHUDModeCustomView;
     toast.customView = imageView;
+    
     toast.square = YES;
     if (string) {
         toast.detailsLabel.text = string;
         toast.detailsLabel.textColor = UIColor.whiteColor;
         toast.detailsLabel.font = [UIFont systemFontOfSize:14];
     }
-    [imageView startAnimating];
+    
 }
 /// 显示成功提示框，自动隐藏
 + (void)showSuccess {
@@ -155,16 +156,17 @@
 }
 
 + (UIImageView *)fetchToastImageView {
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 38, 36)];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 20)];
     NSMutableArray *images = [NSMutableArray array];
     for (NSInteger i = 0; i <= 49; i++) {
         [images addObject:[TPUI tp_imageName:[NSString stringWithFormat:@"loading1_000%02ld", i]
                                   bundleName:@"TPUIKitToast"]];
     }
     imageView.animationImages = images;
-    imageView.contentMode = UIViewContentModeScaleAspectFill;
     imageView.animationDuration = 3.f;
     imageView.animationRepeatCount = 0;
+    [imageView startAnimating];
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
     return imageView;
 }
 
