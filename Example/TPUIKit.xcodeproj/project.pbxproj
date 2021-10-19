@@ -11,6 +11,14 @@
 		1E65B7001F12614AC34F0348 /* Pods_TPUIKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62FF577CD423581D609CB3E /* Pods_TPUIKit_Tests.framework */; };
 		539C31D125591BF300921235 /* TPCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 539C31D025591BF300921235 /* TPCellVC.m */; };
 		539C31E325591D4E00921235 /* TPCellRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 539C31E225591D4E00921235 /* TPCellRow.m */; };
+		53F44D87271EA8C7006D4538 /* TPBaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44D86271EA8C7006D4538 /* TPBaseTableVC.m */; };
+		53F44D8B271EAA9B006D4538 /* TPRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44D8A271EAA9B006D4538 /* TPRootVC.m */; };
+		53F44D94271EAED7006D4538 /* TPAppDelegate+TPWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44D93271EAED7006D4538 /* TPAppDelegate+TPWindow.m */; };
+		53F44D99271EB3CC006D4538 /* TPFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44D98271EB3CC006D4538 /* TPFunctionVC.m */; };
+		53F44D9C271EB407006D4538 /* TPClassifyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44D9B271EB407006D4538 /* TPClassifyVC.m */; };
+		53F44DA2271EC263006D4538 /* TPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DA1271EC263006D4538 /* TPItem.m */; };
+		53F44DA5271EC3E4006D4538 /* TPFunctionRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DA4271EC3E4006D4538 /* TPFunctionRow.m */; };
+		53F44DA8271EC839006D4538 /* TPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DA7271EC839006D4538 /* TPNavigationController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -49,6 +57,22 @@
 		539C31D025591BF300921235 /* TPCellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPCellVC.m; sourceTree = "<group>"; };
 		539C31E125591D4E00921235 /* TPCellRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPCellRow.h; sourceTree = "<group>"; };
 		539C31E225591D4E00921235 /* TPCellRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPCellRow.m; sourceTree = "<group>"; };
+		53F44D85271EA8C7006D4538 /* TPBaseTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPBaseTableVC.h; sourceTree = "<group>"; };
+		53F44D86271EA8C7006D4538 /* TPBaseTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPBaseTableVC.m; sourceTree = "<group>"; };
+		53F44D89271EAA9B006D4538 /* TPRootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPRootVC.h; sourceTree = "<group>"; };
+		53F44D8A271EAA9B006D4538 /* TPRootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPRootVC.m; sourceTree = "<group>"; };
+		53F44D92271EAED6006D4538 /* TPAppDelegate+TPWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TPAppDelegate+TPWindow.h"; sourceTree = "<group>"; };
+		53F44D93271EAED7006D4538 /* TPAppDelegate+TPWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TPAppDelegate+TPWindow.m"; sourceTree = "<group>"; };
+		53F44D97271EB3CC006D4538 /* TPFunctionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFunctionVC.h; sourceTree = "<group>"; };
+		53F44D98271EB3CC006D4538 /* TPFunctionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFunctionVC.m; sourceTree = "<group>"; };
+		53F44D9A271EB407006D4538 /* TPClassifyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPClassifyVC.h; sourceTree = "<group>"; };
+		53F44D9B271EB407006D4538 /* TPClassifyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPClassifyVC.m; sourceTree = "<group>"; };
+		53F44DA0271EC263006D4538 /* TPItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPItem.h; sourceTree = "<group>"; };
+		53F44DA1271EC263006D4538 /* TPItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPItem.m; sourceTree = "<group>"; };
+		53F44DA3271EC3E4006D4538 /* TPFunctionRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFunctionRow.h; sourceTree = "<group>"; };
+		53F44DA4271EC3E4006D4538 /* TPFunctionRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFunctionRow.m; sourceTree = "<group>"; };
+		53F44DA6271EC839006D4538 /* TPNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPNavigationController.h; sourceTree = "<group>"; };
+		53F44DA7271EC839006D4538 /* TPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPNavigationController.m; sourceTree = "<group>"; };
 		5C179766CE81F129AA036A19 /* Pods-TPUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPUIKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TPUIKit_Example/Pods-TPUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TPUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +132,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53F44D8C271EAC9E006D4538 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				53F44D89271EAA9B006D4538 /* TPRootVC.h */,
+				53F44D8A271EAA9B006D4538 /* TPRootVC.m */,
+				53F44D85271EA8C7006D4538 /* TPBaseTableVC.h */,
+				53F44D86271EA8C7006D4538 /* TPBaseTableVC.m */,
+				53F44DA6271EC839006D4538 /* TPNavigationController.h */,
+				53F44DA7271EC839006D4538 /* TPNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		53F44D8D271EACC0006D4538 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				53F44D96271EB38B006D4538 /* Classify */,
+				53F44D95271EB36B006D4538 /* Function */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		53F44D90271EAE8F006D4538 /* AppEnv */ = {
+			isa = PBXGroup;
+			children = (
+				53F44D91271EAEB6006D4538 /* Category */,
+				53F44D8C271EAC9E006D4538 /* Base */,
+			);
+			path = AppEnv;
+			sourceTree = "<group>";
+		};
+		53F44D91271EAEB6006D4538 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				53F44D92271EAED6006D4538 /* TPAppDelegate+TPWindow.h */,
+				53F44D93271EAED7006D4538 /* TPAppDelegate+TPWindow.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		53F44D95271EB36B006D4538 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				53F44D9F271EBF26006D4538 /* Model */,
+				53F44D9D271EBF16006D4538 /* View */,
+				53F44D97271EB3CC006D4538 /* TPFunctionVC.h */,
+				53F44D98271EB3CC006D4538 /* TPFunctionVC.m */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		53F44D96271EB38B006D4538 /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				53F44D9E271EBF1E006D4538 /* View */,
+				53F44D9A271EB407006D4538 /* TPClassifyVC.h */,
+				53F44D9B271EB407006D4538 /* TPClassifyVC.m */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		53F44D9D271EBF16006D4538 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53F44DA3271EC3E4006D4538 /* TPFunctionRow.h */,
+				53F44DA4271EC3E4006D4538 /* TPFunctionRow.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53F44D9E271EBF1E006D4538 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53F44D9F271EBF26006D4538 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53F44DA0271EC263006D4538 /* TPItem.h */,
+				53F44DA1271EC263006D4538 /* TPItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +255,8 @@
 		6003F593195388D20070C39A /* Example for TPUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				53F44D90271EAE8F006D4538 /* AppEnv */,
+				53F44D8D271EACC0006D4538 /* Feature */,
 				94E7641F22238C060091FA5B /* invalidName@2x.png */,
 				94E7641E22238C060091FA5B /* invalidName@3x.png */,
 				6003F59C195388D20070C39A /* TPAppDelegate.h */,
@@ -395,11 +507,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F44D87271EA8C7006D4538 /* TPBaseTableVC.m in Sources */,
 				94E7641D2223882C0091FA5B /* TPTestViewController.m in Sources */,
+				53F44DA5271EC3E4006D4538 /* TPFunctionRow.m in Sources */,
 				6003F59E195388D20070C39A /* TPAppDelegate.m in Sources */,
 				539C31E325591D4E00921235 /* TPCellRow.m in Sources */,
+				53F44D99271EB3CC006D4538 /* TPFunctionVC.m in Sources */,
 				6003F5A7195388D20070C39A /* TPViewController.m in Sources */,
+				53F44DA2271EC263006D4538 /* TPItem.m in Sources */,
 				539C31D125591BF300921235 /* TPCellVC.m in Sources */,
+				53F44D94271EAED7006D4538 /* TPAppDelegate+TPWindow.m in Sources */,
+				53F44D9C271EB407006D4538 /* TPClassifyVC.m in Sources */,
+				53F44DA8271EC839006D4538 /* TPNavigationController.m in Sources */,
+				53F44D8B271EAA9B006D4538 /* TPRootVC.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

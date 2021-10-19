@@ -111,7 +111,6 @@
             break;
         case 9: {
             TPUITextBlankView *blank = [TPUITextBlankView showInView:tableView animated:YES];
-            blank.imageView.image = [UIImage imageNamed:@""];
             blank.textLabel.text = @"显示成功";
             blank.subTextLabel.text = @"你需要显示什么";
             __weak typeof(blank) blankView = blank;

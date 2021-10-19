@@ -7,12 +7,11 @@
 //
 
 #import "TPAppDelegate.h"
-
+#import "TPAppDelegate+TPWindow.h"
 @implementation TPAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self initWindow];
     return YES;
 }
 

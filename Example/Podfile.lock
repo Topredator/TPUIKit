@@ -65,7 +65,8 @@ PODS:
     - TPUIKit/Base
 
 DEPENDENCIES:
-  - TPFoundation (from `../../TPFoundation/`)
+  - Masonry
+  - TPFoundation
   - TPUIKit (from `../`)
 
 SPEC REPOS:
@@ -73,10 +74,9 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - TPFoundation
 
 EXTERNAL SOURCES:
-  TPFoundation:
-    :path: "../../TPFoundation/"
   TPUIKit:
     :path: "../"
 
@@ -87,6 +87,6 @@ SPEC CHECKSUMS:
   TPFoundation: fb839e9142900e45c3c32546ac2aec21bedc3bd1
   TPUIKit: 22fdf8254b2105338bb7d28fda8998b28fc303ce
 
-PODFILE CHECKSUM: 532cac001f7ae163bf843d0ca0863cc0734fae79
+PODFILE CHECKSUM: 13a08e46b199af8716bcc371fc819ae7b7a5e13e
 
 COCOAPODS: 1.10.1

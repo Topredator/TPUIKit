@@ -19,8 +19,12 @@
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (self.childViewControllers.count > 0) {
-        viewController.hidesBottomBarWhenPushed = YES;
+        if (self.viewControllers.count == 1) {
+            viewController.hidesBottomBarWhenPushed = YES;
+        }
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem tp_backItemWithTarget:viewController action:@selector(backAction:)];
+    } else {
+        viewController.hidesBottomBarWhenPushed = NO;
     }
     [super pushViewController:viewController animated:animated];
 }
