@@ -25,6 +25,9 @@
     row.item = item;
     return row;
 }
+- (void)tp_tableViewCellWillDisplay:(__kindof UITableViewCell *)cell proxy:(TPTableViewProxy *)proxy indexPath:(NSIndexPath *)indexPath {
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+}
 - (void)tp_tableViewPreparedCell:(__kindof UITableViewCell *)cell proxy:(TPTableViewProxy *)proxy indexPath:(NSIndexPath *)indexPath {
     cell.textLabel.text = self.item.name;
 }

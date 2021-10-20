@@ -31,7 +31,8 @@
         [TPItem itemName:@"Blank" type:Blank],
         [TPItem itemName:@"Toast" type:Toast],
         [TPItem itemName:@"Tabbar" type:Tabbar],
-        [TPItem itemName:@"Banner" type:Banner]
+        [TPItem itemName:@"Banner" type:Banner],
+        [TPItem itemName:@"Menu" type:Menu]
     ];
     TPTableSection *section = [self tableSection];
     for (TPItem *item in items) {

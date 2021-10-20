@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 渐变背景色 View
 @interface TPUIGradientView : UIView
-- (void)tpAddGradient:(TPUIGradientLayer *)layer;
+- (void)tp_addGradient:(TPUIGradientLayer *)layer;
 @end
 
 NS_ASSUME_NONNULL_END

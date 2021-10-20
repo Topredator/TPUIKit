@@ -19,6 +19,11 @@
 		53F44DA2271EC263006D4538 /* TPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DA1271EC263006D4538 /* TPItem.m */; };
 		53F44DA5271EC3E4006D4538 /* TPFunctionRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DA4271EC3E4006D4538 /* TPFunctionRow.m */; };
 		53F44DA8271EC839006D4538 /* TPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DA7271EC839006D4538 /* TPNavigationController.m */; };
+		53F44DAC271FAB7F006D4538 /* TPScrollContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DAB271FAB7F006D4538 /* TPScrollContainer.m */; };
+		53F44DB0271FABC2006D4538 /* TPTabbarPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DAF271FABC2006D4538 /* TPTabbarPageVC.m */; };
+		53F44DB4271FAD21006D4538 /* TPBannerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DB3271FAD21006D4538 /* TPBannerVC.m */; };
+		53F44DB7271FADA1006D4538 /* TPBannerPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DB6271FADA1006D4538 /* TPBannerPage.m */; };
+		53F44DD527201380006D4538 /* TPMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44DD427201380006D4538 /* TPMenuVC.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -73,6 +78,16 @@
 		53F44DA4271EC3E4006D4538 /* TPFunctionRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFunctionRow.m; sourceTree = "<group>"; };
 		53F44DA6271EC839006D4538 /* TPNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPNavigationController.h; sourceTree = "<group>"; };
 		53F44DA7271EC839006D4538 /* TPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPNavigationController.m; sourceTree = "<group>"; };
+		53F44DAA271FAB7F006D4538 /* TPScrollContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPScrollContainer.h; sourceTree = "<group>"; };
+		53F44DAB271FAB7F006D4538 /* TPScrollContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPScrollContainer.m; sourceTree = "<group>"; };
+		53F44DAE271FABC2006D4538 /* TPTabbarPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPTabbarPageVC.h; sourceTree = "<group>"; };
+		53F44DAF271FABC2006D4538 /* TPTabbarPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPTabbarPageVC.m; sourceTree = "<group>"; };
+		53F44DB2271FAD21006D4538 /* TPBannerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPBannerVC.h; sourceTree = "<group>"; };
+		53F44DB3271FAD21006D4538 /* TPBannerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPBannerVC.m; sourceTree = "<group>"; };
+		53F44DB5271FADA1006D4538 /* TPBannerPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPBannerPage.h; sourceTree = "<group>"; };
+		53F44DB6271FADA1006D4538 /* TPBannerPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPBannerPage.m; sourceTree = "<group>"; };
+		53F44DD327201380006D4538 /* TPMenuVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPMenuVC.h; sourceTree = "<group>"; };
+		53F44DD427201380006D4538 /* TPMenuVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPMenuVC.m; sourceTree = "<group>"; };
 		5C179766CE81F129AA036A19 /* Pods-TPUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPUIKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TPUIKit_Example/Pods-TPUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TPUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -175,10 +190,9 @@
 		53F44D95271EB36B006D4538 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				53F44DA9271FAB5F006D4538 /* VC */,
 				53F44D9F271EBF26006D4538 /* Model */,
 				53F44D9D271EBF16006D4538 /* View */,
-				53F44D97271EB3CC006D4538 /* TPFunctionVC.h */,
-				53F44D98271EB3CC006D4538 /* TPFunctionVC.m */,
 			);
 			path = Function;
 			sourceTree = "<group>";
@@ -216,6 +230,49 @@
 				53F44DA1271EC263006D4538 /* TPItem.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		53F44DA9271FAB5F006D4538 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				53F44DD227201368006D4538 /* Menu */,
+				53F44DB1271FAD04006D4538 /* Banner */,
+				53F44DAD271FABA4006D4538 /* Tabbar */,
+				53F44D97271EB3CC006D4538 /* TPFunctionVC.h */,
+				53F44D98271EB3CC006D4538 /* TPFunctionVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		53F44DAD271FABA4006D4538 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				53F44DAA271FAB7F006D4538 /* TPScrollContainer.h */,
+				53F44DAB271FAB7F006D4538 /* TPScrollContainer.m */,
+				53F44DAE271FABC2006D4538 /* TPTabbarPageVC.h */,
+				53F44DAF271FABC2006D4538 /* TPTabbarPageVC.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		53F44DB1271FAD04006D4538 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				53F44DB2271FAD21006D4538 /* TPBannerVC.h */,
+				53F44DB3271FAD21006D4538 /* TPBannerVC.m */,
+				53F44DB5271FADA1006D4538 /* TPBannerPage.h */,
+				53F44DB6271FADA1006D4538 /* TPBannerPage.m */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		53F44DD227201368006D4538 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				53F44DD327201380006D4538 /* TPMenuVC.h */,
+				53F44DD427201380006D4538 /* TPMenuVC.m */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -508,15 +565,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				53F44D87271EA8C7006D4538 /* TPBaseTableVC.m in Sources */,
+				53F44DB0271FABC2006D4538 /* TPTabbarPageVC.m in Sources */,
 				94E7641D2223882C0091FA5B /* TPTestViewController.m in Sources */,
 				53F44DA5271EC3E4006D4538 /* TPFunctionRow.m in Sources */,
+				53F44DB7271FADA1006D4538 /* TPBannerPage.m in Sources */,
+				53F44DAC271FAB7F006D4538 /* TPScrollContainer.m in Sources */,
 				6003F59E195388D20070C39A /* TPAppDelegate.m in Sources */,
 				539C31E325591D4E00921235 /* TPCellRow.m in Sources */,
 				53F44D99271EB3CC006D4538 /* TPFunctionVC.m in Sources */,
 				6003F5A7195388D20070C39A /* TPViewController.m in Sources */,
 				53F44DA2271EC263006D4538 /* TPItem.m in Sources */,
+				53F44DB4271FAD21006D4538 /* TPBannerVC.m in Sources */,
 				539C31D125591BF300921235 /* TPCellVC.m in Sources */,
 				53F44D94271EAED7006D4538 /* TPAppDelegate+TPWindow.m in Sources */,
+				53F44DD527201380006D4538 /* TPMenuVC.m in Sources */,
 				53F44D9C271EB407006D4538 /* TPClassifyVC.m in Sources */,
 				53F44DA8271EC839006D4538 /* TPNavigationController.m in Sources */,
 				53F44D8B271EAA9B006D4538 /* TPRootVC.m in Sources */,

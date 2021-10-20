@@ -19,6 +19,11 @@
     "ios": "8.0"
   },
   "source_files": "TPUIKit/Classes/TPUIKit.h",
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  },
   "subspecs": [
     {
       "name": "Base",
@@ -171,6 +176,29 @@
     {
       "name": "ScreenShot",
       "source_files": "TPUIKit/Classes/ScreenShot/**/*"
+    },
+    {
+      "name": "ShadowCell",
+      "source_files": "TPUIKit/Classes/ShadowCell/**/*",
+      "resource_bundles": {
+        "TPUIShadowCell": [
+          "TPUIKit/Assets/ShadowCell.xcassets"
+        ]
+      },
+      "dependencies": {
+        "TPUIKit/Base": [
+
+        ]
+      }
+    },
+    {
+      "name": "Menu",
+      "source_files": "TPUIKit/Classes/Menu/**/*",
+      "dependencies": {
+        "TPUIKit/Base": [
+
+        ]
+      }
     }
   ]
 }

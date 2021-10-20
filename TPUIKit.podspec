@@ -122,7 +122,18 @@ TODO: Add long description of the pod here.
    s.subspec 'ScreenShot' do |ss|
        ss.source_files = 'TPUIKit/Classes/ScreenShot/**/*'
    end
+   s.subspec 'ShadowCell' do |ss|
+       ss.source_files = 'TPUIKit/Classes/ShadowCell/**/*'
+       ss.resource_bundle = {
+           'TPUIShadowCell' => ['TPUIKit/Assets/ShadowCell.xcassets']
+       }
+       ss.dependency 'TPUIKit/Base'
+   end
+   s.subspec 'Menu' do |ss|
+       ss.source_files = 'TPUIKit/Classes/Menu/**/*'
+       ss.dependency 'TPUIKit/Base'
+   end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'Masonry'
 end

@@ -12,7 +12,7 @@
 + (Class)layerClass {
     return [TPUIGradientLayer class];
 }
-- (void)tpAddGradient:(TPUIGradientLayer *)layer {
+- (void)tp_addGradient:(TPUIGradientLayer *)layer {
     if ([self.layer isKindOfClass:[TPUIGradientLayer class]]) {
         [(TPUIGradientLayer *)self.layer setColors:layer.colors];
         [(TPUIGradientLayer *)self.layer setStartPoint:layer.startPoint];

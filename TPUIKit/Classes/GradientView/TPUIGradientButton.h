@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 渐变 背景色 button
 @interface TPUIGradientButton : UIButton
-- (void)tpAddGradient:(TPUIGradientLayer *)layer;
+- (void)tp_addGradient:(TPUIGradientLayer *)layer;
 @end
 
 NS_ASSUME_NONNULL_END

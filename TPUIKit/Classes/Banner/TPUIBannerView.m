@@ -145,6 +145,7 @@ static char kTPUIBannerPageViewPageIndexKey;
     
     // 滚动到指定分页
     if (scroll) {
+        self.pageControl.hidden = !(self.scrollDirection == TPUIBannerDirectionHorizontal);
         if (self.scrollDirection == TPUIBannerDirectionHorizontal) { // 竖屏或者竖直
             CGFloat offset = currentIndex * self.scrollView.frame.size.width;
             if (offset != self.scrollView.contentOffset.x) {
@@ -159,7 +160,8 @@ static char kTPUIBannerPageViewPageIndexKey;
             }
         }
     }
-    self.pageControl.currentPage = [self currentPageIndex];
+    
+    self.pageControl.currentPage = [self normalPageIndex:currentIndex];
     // 如果当前滑动的比例，需要加载视图
     if ([self shouldLoadPagesAtPageRate:pageRate]) {
         _currentPageRate = pageRate;

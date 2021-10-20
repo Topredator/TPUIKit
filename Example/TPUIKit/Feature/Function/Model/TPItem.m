@@ -9,6 +9,9 @@
 #import "TPItem.h"
 #import <TPUIKit/TPUIKit.h>
 #import <TPFoundation/TPFoundation.h>
+#import "TPScrollContainer.h"
+#import "TPBannerVC.h"
+#import "TPMenuVC.h"
 @implementation TPItem
 + (instancetype)itemName:(NSString *)name type:(ItemType)type {
     TPItem *item = [self new];
@@ -18,7 +21,17 @@
 }
 - (void)execute {
     switch (self.type) {
-        case Alert: break;
+        case Alert: {
+            [TPUIAlert alertSheetShow:^(TPUIAlertMaker *make) {
+                make.title(@"Alert 测试").message(@"测试系统alert");
+                make.cancleOption(@"取消");
+                TPUIAlertOption *option = [TPUIAlertOption optionWithTitle:@"警告" block:^{
+                    NSLog(@"警告!!!");
+                } actionStyle:UIAlertActionStyleDestructive];
+                make.addOption(option);
+                make.addOption(TPUIAlertBlockOption(@"确定", nil));
+            }];
+        } break;
         case Blank: {
             TPUITextBlankView *blank = [TPUITextBlankView showInView:[TPUINavigator currentViewController].view animated:YES];
             blank.textLabel.text = @"显示成功";
@@ -34,8 +47,15 @@
                 [TPUIToast hideToast];
             } afterDelaySecs:1.5];
         } break;
-        case Tabbar: break;
-        case Banner: break;
+        case Tabbar: {
+            [TPUINavigator pushViewController:TPScrollContainer.new animated:YES];
+        } break;
+        case Banner: {
+            [TPUINavigator pushViewController:TPBannerVC.new animated:YES];
+        } break;
+        case Menu: {
+            [TPUINavigator pushViewController:TPMenuVC.new animated:YES];
+        } break;
         default: break;
     }
 }

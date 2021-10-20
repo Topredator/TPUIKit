@@ -14,7 +14,8 @@ typedef NS_ENUM(NSInteger, ItemType) {
     Blank,
     Toast,
     Tabbar,
-    Banner
+    Banner,
+    Menu
 };
 
 @interface TPItem : NSObject

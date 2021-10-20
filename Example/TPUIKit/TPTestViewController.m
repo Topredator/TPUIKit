@@ -58,7 +58,7 @@
 - (TPUIGradientView *)gradientView {
     if (!_gradientView) {
         _gradientView = [[TPUIGradientView alloc] initWithFrame:CGRectZero];
-        [_gradientView tpAddGradient:TPCreateGradientLayer(UIColor.redColor, UIColor.blueColor, TPUIGradientDirectionLeftToRight)];
+        [_gradientView tp_addGradient:TPCreateGradientLayer(UIColor.redColor, UIColor.blueColor, TPUIGradientDirectionLeftToRight)];
     }
     return _gradientView;
 }
