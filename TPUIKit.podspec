@@ -133,6 +133,10 @@ TODO: Add long description of the pod here.
        ss.source_files = 'TPUIKit/Classes/Menu/**/*'
        ss.dependency 'TPUIKit/Base'
    end
+   s.subspec 'RichTextView' do |ss|
+       ss.source_files = 'TPUIKit/Classes/RichTextView/**/*'
+       ss.dependency 'TPUIKit/Base'
+   end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'Masonry'

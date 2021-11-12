@@ -1,6 +1,6 @@
 {
   "name": "TPUIKit",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "summary": "A short description of TPUIKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Topredator/TPUIKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Topredator/TPUIKit.git",
-    "tag": "1.0.7"
+    "tag": "1.0.8"
   },
   "platforms": {
     "ios": "8.0"
@@ -194,6 +194,15 @@
     {
       "name": "Menu",
       "source_files": "TPUIKit/Classes/Menu/**/*",
+      "dependencies": {
+        "TPUIKit/Base": [
+
+        ]
+      }
+    },
+    {
+      "name": "RichTextView",
+      "source_files": "TPUIKit/Classes/RichTextView/**/*",
       "dependencies": {
         "TPUIKit/Base": [
 

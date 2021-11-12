@@ -2,85 +2,89 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.7)
-  - TPFoundation (1.0.2):
-    - TPFoundation/Base (= 1.0.2)
-    - TPFoundation/Category (= 1.0.2)
-    - TPFoundation/Utils (= 1.0.2)
-  - TPFoundation/Base (1.0.2)
-  - TPFoundation/Category (1.0.2):
+  - TPFoundation (1.0.4):
+    - TPFoundation/Base (= 1.0.4)
+    - TPFoundation/Category (= 1.0.4)
+    - TPFoundation/Utils (= 1.0.4)
+  - TPFoundation/Base (1.0.4)
+  - TPFoundation/Category (1.0.4):
     - TPFoundation/Base
-  - TPFoundation/Utils (1.0.2):
+  - TPFoundation/Utils (1.0.4):
     - TPFoundation/Base
     - TPFoundation/Category
-  - TPUIKit (1.0.7):
+  - TPUIKit (1.0.8):
     - Masonry
-    - TPUIKit/Alert (= 1.0.7)
-    - TPUIKit/Banner (= 1.0.7)
-    - TPUIKit/Base (= 1.0.7)
-    - TPUIKit/Blank (= 1.0.7)
-    - TPUIKit/Category (= 1.0.7)
-    - TPUIKit/GradientView (= 1.0.7)
-    - TPUIKit/GraphicView (= 1.0.7)
-    - TPUIKit/MarginLabel (= 1.0.7)
-    - TPUIKit/Menu (= 1.0.7)
-    - TPUIKit/Navigator (= 1.0.7)
-    - TPUIKit/PageControl (= 1.0.7)
-    - TPUIKit/QRCode (= 1.0.7)
-    - TPUIKit/Refresh (= 1.0.7)
-    - TPUIKit/ScreenShot (= 1.0.7)
-    - TPUIKit/ScrollTable (= 1.0.7)
-    - TPUIKit/ShadowCell (= 1.0.7)
-    - TPUIKit/SimButton (= 1.0.7)
-    - TPUIKit/Tabbar (= 1.0.7)
-    - TPUIKit/Toast (= 1.0.7)
-  - TPUIKit/Alert (1.0.7):
+    - TPUIKit/Alert (= 1.0.8)
+    - TPUIKit/Banner (= 1.0.8)
+    - TPUIKit/Base (= 1.0.8)
+    - TPUIKit/Blank (= 1.0.8)
+    - TPUIKit/Category (= 1.0.8)
+    - TPUIKit/GradientView (= 1.0.8)
+    - TPUIKit/GraphicView (= 1.0.8)
+    - TPUIKit/MarginLabel (= 1.0.8)
+    - TPUIKit/Menu (= 1.0.8)
+    - TPUIKit/Navigator (= 1.0.8)
+    - TPUIKit/PageControl (= 1.0.8)
+    - TPUIKit/QRCode (= 1.0.8)
+    - TPUIKit/Refresh (= 1.0.8)
+    - TPUIKit/RichTextView (= 1.0.8)
+    - TPUIKit/ScreenShot (= 1.0.8)
+    - TPUIKit/ScrollTable (= 1.0.8)
+    - TPUIKit/ShadowCell (= 1.0.8)
+    - TPUIKit/SimButton (= 1.0.8)
+    - TPUIKit/Tabbar (= 1.0.8)
+    - TPUIKit/Toast (= 1.0.8)
+  - TPUIKit/Alert (1.0.8):
     - Masonry
-  - TPUIKit/Banner (1.0.7):
+  - TPUIKit/Banner (1.0.8):
     - Masonry
-  - TPUIKit/Base (1.0.7):
+  - TPUIKit/Base (1.0.8):
     - Masonry
-  - TPUIKit/Blank (1.0.7):
-    - Masonry
-    - TPUIKit/Base
-  - TPUIKit/Category (1.0.7):
+  - TPUIKit/Blank (1.0.8):
     - Masonry
     - TPUIKit/Base
-  - TPUIKit/GradientView (1.0.7):
-    - Masonry
-  - TPUIKit/GraphicView (1.0.7):
-    - Masonry
-  - TPUIKit/MarginLabel (1.0.7):
-    - Masonry
-  - TPUIKit/Menu (1.0.7):
+  - TPUIKit/Category (1.0.8):
     - Masonry
     - TPUIKit/Base
-  - TPUIKit/Navigator (1.0.7):
+  - TPUIKit/GradientView (1.0.8):
     - Masonry
-  - TPUIKit/PageControl (1.0.7):
+  - TPUIKit/GraphicView (1.0.8):
+    - Masonry
+  - TPUIKit/MarginLabel (1.0.8):
+    - Masonry
+  - TPUIKit/Menu (1.0.8):
     - Masonry
     - TPUIKit/Base
-  - TPUIKit/QRCode (1.0.7):
+  - TPUIKit/Navigator (1.0.8):
     - Masonry
-  - TPUIKit/Refresh (1.0.7):
+  - TPUIKit/PageControl (1.0.8):
+    - Masonry
+    - TPUIKit/Base
+  - TPUIKit/QRCode (1.0.8):
+    - Masonry
+  - TPUIKit/Refresh (1.0.8):
     - Masonry
     - MJRefresh (~> 3.1.14)
     - TPUIKit/Base
-  - TPUIKit/ScreenShot (1.0.7):
+  - TPUIKit/RichTextView (1.0.8):
     - Masonry
-  - TPUIKit/ScrollTable (1.0.7):
+    - TPUIKit/Base
+  - TPUIKit/ScreenShot (1.0.8):
+    - Masonry
+  - TPUIKit/ScrollTable (1.0.8):
     - Masonry
     - TPUIKit/Banner
     - TPUIKit/Base
     - TPUIKit/Tabbar
-  - TPUIKit/ShadowCell (1.0.7):
+  - TPUIKit/ShadowCell (1.0.8):
     - Masonry
     - TPUIKit/Base
-  - TPUIKit/SimButton (1.0.7):
+  - TPUIKit/SimButton (1.0.8):
     - Masonry
-  - TPUIKit/Tabbar (1.0.7):
+  - TPUIKit/Tabbar (1.0.8):
     - Masonry
     - TPUIKit/Base
-  - TPUIKit/Toast (1.0.7):
+  - TPUIKit/Toast (1.0.8):
     - Masonry
     - MBProgressHUD (~> 1.1.0)
     - TPUIKit/Base
@@ -105,8 +109,8 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
-  TPFoundation: fb839e9142900e45c3c32546ac2aec21bedc3bd1
-  TPUIKit: aabff956e17f4f4c09baf01cd410249736741ed9
+  TPFoundation: d34fbaadcf101c3019461bd74eeab4473c1b05df
+  TPUIKit: 4025cc7b6a4321b3d047bc48ad50d2d03e4a1f88
 
 PODFILE CHECKSUM: 13a08e46b199af8716bcc371fc819ae7b7a5e13e
 

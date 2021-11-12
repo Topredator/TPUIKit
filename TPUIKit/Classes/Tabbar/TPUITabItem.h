@@ -14,9 +14,6 @@
 //  Created by Topredator on 2019/6/22.
 //
 
-#import <UIKit/UIKit.h>
-
-
 typedef NS_ENUM(NSInteger, TPUITabItemBadgeStyle) {
     TPUITabItemBadgeStyleNumber = 0, // 数字样式
     TPUITabItemBadgeStyleDot = 1, // 圆点样式
