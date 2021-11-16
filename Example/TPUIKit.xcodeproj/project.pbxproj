@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1731A84C36934B67AF374E45 /* Pods_TPUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638900EE2A0F2D58A77DB592 /* Pods_TPUIKit_Example.framework */; };
 		1E65B7001F12614AC34F0348 /* Pods_TPUIKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F62FF577CD423581D609CB3E /* Pods_TPUIKit_Tests.framework */; };
+		5324707F27423E3A004191F1 /* TPClassifyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5324707E27423E3A004191F1 /* TPClassifyItem.m */; };
+		5324708327423EE1004191F1 /* TPRichTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5324708227423EE1004191F1 /* TPRichTextVC.m */; };
+		5324708627423F22004191F1 /* TPClassifyRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5324708527423F22004191F1 /* TPClassifyRow.m */; };
 		539C31D125591BF300921235 /* TPCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 539C31D025591BF300921235 /* TPCellVC.m */; };
 		539C31E325591D4E00921235 /* TPCellRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 539C31E225591D4E00921235 /* TPCellRow.m */; };
 		53F44D87271EA8C7006D4538 /* TPBaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F44D86271EA8C7006D4538 /* TPBaseTableVC.m */; };
@@ -58,6 +61,12 @@
 		19EAC3F828AF1205CC1352B2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		35376D21691B5E8AB70E3D54 /* Pods-TPUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPUIKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TPUIKit_Tests/Pods-TPUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		367F2F2884D0402C9FDD8AD1 /* Pods-TPUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPUIKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TPUIKit_Example/Pods-TPUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5324707D27423E3A004191F1 /* TPClassifyItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPClassifyItem.h; sourceTree = "<group>"; };
+		5324707E27423E3A004191F1 /* TPClassifyItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPClassifyItem.m; sourceTree = "<group>"; };
+		5324708127423EE1004191F1 /* TPRichTextVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPRichTextVC.h; sourceTree = "<group>"; };
+		5324708227423EE1004191F1 /* TPRichTextVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPRichTextVC.m; sourceTree = "<group>"; };
+		5324708427423F22004191F1 /* TPClassifyRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPClassifyRow.h; sourceTree = "<group>"; };
+		5324708527423F22004191F1 /* TPClassifyRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPClassifyRow.m; sourceTree = "<group>"; };
 		539C31CF25591BF300921235 /* TPCellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPCellVC.h; sourceTree = "<group>"; };
 		539C31D025591BF300921235 /* TPCellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPCellVC.m; sourceTree = "<group>"; };
 		539C31E125591D4E00921235 /* TPCellRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPCellRow.h; sourceTree = "<group>"; };
@@ -147,6 +156,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5324707C27423E20004191F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5324707D27423E3A004191F1 /* TPClassifyItem.h */,
+				5324707E27423E3A004191F1 /* TPClassifyItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5324708027423EB8004191F1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				53F44D9A271EB407006D4538 /* TPClassifyVC.h */,
+				53F44D9B271EB407006D4538 /* TPClassifyVC.m */,
+				5324708127423EE1004191F1 /* TPRichTextVC.h */,
+				5324708227423EE1004191F1 /* TPRichTextVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		53F44D8C271EAC9E006D4538 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,9 +229,9 @@
 		53F44D96271EB38B006D4538 /* Classify */ = {
 			isa = PBXGroup;
 			children = (
+				5324708027423EB8004191F1 /* VC */,
+				5324707C27423E20004191F1 /* Model */,
 				53F44D9E271EBF1E006D4538 /* View */,
-				53F44D9A271EB407006D4538 /* TPClassifyVC.h */,
-				53F44D9B271EB407006D4538 /* TPClassifyVC.m */,
 			);
 			path = Classify;
 			sourceTree = "<group>";
@@ -219,6 +248,8 @@
 		53F44D9E271EBF1E006D4538 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5324708427423F22004191F1 /* TPClassifyRow.h */,
+				5324708527423F22004191F1 /* TPClassifyRow.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -572,7 +603,9 @@
 				53F44DAC271FAB7F006D4538 /* TPScrollContainer.m in Sources */,
 				6003F59E195388D20070C39A /* TPAppDelegate.m in Sources */,
 				539C31E325591D4E00921235 /* TPCellRow.m in Sources */,
+				5324708627423F22004191F1 /* TPClassifyRow.m in Sources */,
 				53F44D99271EB3CC006D4538 /* TPFunctionVC.m in Sources */,
+				5324708327423EE1004191F1 /* TPRichTextVC.m in Sources */,
 				6003F5A7195388D20070C39A /* TPViewController.m in Sources */,
 				53F44DA2271EC263006D4538 /* TPItem.m in Sources */,
 				53F44DB4271FAD21006D4538 /* TPBannerVC.m in Sources */,
@@ -580,6 +613,7 @@
 				53F44D94271EAED7006D4538 /* TPAppDelegate+TPWindow.m in Sources */,
 				53F44DD527201380006D4538 /* TPMenuVC.m in Sources */,
 				53F44D9C271EB407006D4538 /* TPClassifyVC.m in Sources */,
+				5324707F27423E3A004191F1 /* TPClassifyItem.m in Sources */,
 				53F44DA8271EC839006D4538 /* TPNavigationController.m in Sources */,
 				53F44D8B271EAA9B006D4538 /* TPRootVC.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

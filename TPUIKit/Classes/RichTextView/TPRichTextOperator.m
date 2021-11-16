@@ -8,6 +8,30 @@
 #import "TPRichTextOperator.h"
 #import "TPRichTextLabelConfig.h"
 #import "TPRichTextEmoji.h"
+#import <CoreText/CoreText.h>
+
+
+void TPDelegateDeallocCallback(void *refcon) {}
+/// 上行 高度
+CGFloat TPDelegateGetAscentCallback(void *config) {
+    TPRichTextOperator *operator = (__bridge TPRichTextOperator *)config;
+    return operator.config.font.ascender;
+}
+/// 下行 高度
+CGFloat TPDelegateGetDescentCallback(void *config) {
+    TPRichTextOperator *operator = (__bridge TPRichTextOperator *)config;
+    return operator.config.font.descender;
+}
+/// 宽度
+CGFloat TPDelegateGetWidthCallback(void *config) {
+    TPRichTextOperator *operator = (__bridge TPRichTextOperator *)config;
+    return operator.config.faceSize.width;
+}
+/// tag图片宽度
+CGFloat TPDelegateGetTagImgWidthCallback(void *config) {
+    TPRichTextOperator *operator = (__bridge TPRichTextOperator *)config;
+    return operator.config.tagImgSize.width;
+}
 
 @interface TPRichTextOperator ()
 @property (nonatomic, copy) NSDictionary *emojis;
@@ -33,7 +57,16 @@
 }
 - (void)operateAttributeString:(NSMutableAttributedString *)attString {
     [self.regularResults removeAllObjects];
-    
+    // tag image/video/link
+    [self operateTagWithAttString:attString];
+    // url
+    [self operateUrlWithAttString:attString];
+    // email
+    [self operateEmailWithAttString:attString];
+    // phone
+    [self operatePhoneWithAttString:attString];
+    // @、#、$、<at>、<subject>、<key>
+    [self operateOtherAttrString:attString emojisDelegate:self];
 }
 #pragma mark ------------------------  image / video / link  ---------------------------
 - (void)operateTagWithAttString:(NSMutableAttributedString *)attString {
@@ -91,12 +124,16 @@
         content = attributeArray[3];
         
         NSString *tagName = @"[linka]";
+        NSString *pre = nil;
         if ([tagType isEqualToString:@"link"]) {
             tagName = @"[linka]";
+            pre = @"L";
         } else if ([tagType isEqualToString:@"image"]) {
             tagName = @"[linkp]";
+            pre = @"I";
         } else if ([tagType isEqualToString:@"video"]) {
             tagName = @"[linkv]";
+            pre = @"V";
         } else {
             continue;
         }
@@ -112,7 +149,7 @@
                           range:range];
         // 自定义添加  属性key
         [attString addAttribute:@"keyAttribute"
-                          value:[NSString stringWithFormat:@"T%@{%@}", content, [NSValue valueWithRange:range]]
+                          value:[NSString stringWithFormat:@"%@%@{%@}", pre, content, [NSValue valueWithRange:range]]
                           range:range];
         
         [self.regularResults addObject:[NSValue valueWithRange:range]];
@@ -278,10 +315,12 @@
         }
     }
 }
-#pragma mark ------------------------  @ #xx# <key></key> <subject></subject> <at></at> ---------------------------
-- (void)operateOtherAttrString:(NSMutableAttributedString *)attString {
+#pragma mark ------------------------  @ #xx# <key></key> <subject></subject> <at></at>  [搞笑] ---------------------------
+- (void)operateOtherAttrString:(NSMutableAttributedString *)attString emojisDelegate:(id)emojisDelegate {
     NSMutableString * attStr = attString.mutableString;
-    NSString *regularStr = @"<key>((?!<\\/key>).)*<\\/key>|<subject>((?!<\\/subject>).)*<\\/subject>|<at>((?!<\\/at>).)*<\\/at>|[\\$#@]\\{((?!\\}).)*\\}|\\[[a-zA-Z0-9_\\u3400-\\u9FFF]+\\]";
+//    NSString *regularStr = @"<key>((?!<\\/key>).)*<\\/key>|<subject>((?!<\\/subject>).)*<\\/subject>|<at>((?!<\\/at>).)*<\\/at>|[\\$#@]\\{((?!\\}).)*\\}|\\[[a-zA-Z0-9_\\u3400-\\u9FFF]+\\]";
+     // @"<tag type='[a-zA-Z0-9_]*' value='((?!<\\/tag>).)*'>((?!<\\/tag>).)*</tag>";
+    NSString *regularStr = @"<key value='((?!<\\/key>).)*'>((?!<\\/key>).)*<\\/key>|<subject value='((?!<\\/subject>).)*'>((?!<\\/subject>).)*<\\/subject>|<at value='((?!<\\/at>).)*'>((?!<\\/at>).)*<\\/at>|[\\$#@]\\{((?!\\}).)*\\}|\\[[a-zA-Z0-9_\\u3400-\\u9FFF]+\\]";
     NSError *error = nil;
     NSRegularExpression *expression = [NSRegularExpression regularExpressionWithPattern:regularStr
                                                                                 options:NSRegularExpressionCaseInsensitive
@@ -305,57 +344,182 @@
         NSString *subString = [attStr substringWithRange:NSMakeRange(startIndex, matchRange.length)];
         NSString *content = nil;
         NSString *replaceStr = nil;
-        if ([subString hasPrefix:@"<at>"]) {
-            content = [subString substringWithRange:NSMakeRange(4, subString.length - 9)];
-            replaceStr = [NSString stringWithFormat:@"@%@", content];
-            
+        if ([subString hasPrefix:@"<at"]) { // <at value='123'>哈哈</at>
+            NSArray *contentArray = [subString componentsSeparatedByString:@"'>"];
+            if (contentArray.count < 2) continue;
+            NSArray *tempArray = [contentArray[0] componentsSeparatedByString:@"'"];
+            if (tempArray.count < 2) continue;
+            content = tempArray[1];
+            // 哈哈</at>
+            NSString *t_str = contentArray[1];
+            // 哈哈
+            replaceStr = [NSString stringWithFormat:@"@%@", [t_str substringWithRange:NSMakeRange(0, t_str.length - 5)]];
             [attString replaceCharactersInRange:NSMakeRange(startIndex, matchRange.length)
                                      withString:replaceStr];
-            NSRange range = NSMakeRange(startIndex, matchRange.length - 8);
+            NSRange range = NSMakeRange(startIndex, replaceStr.length);
+            
             [attString addAttribute:NSForegroundColorAttributeName
                               value:(id)self.config.atColor.CGColor
                               range:range];
             [attString addAttribute:@"keyAttribute"
                               value:[NSString stringWithFormat:@"@%@{%@}", content, [NSValue valueWithRange:range]]
                               range:range];
-            forIndex += 8;
+            forIndex += subString.length - replaceStr.length;
             continue;
-        } else if ([subString hasPrefix:@"<subject>"]) {
-            content = [subString substringWithRange:NSMakeRange(9, subString.length-19)];
-            
-            replaceStr = [NSString stringWithFormat:@"#%@#",content];
-            
-            [attString replaceCharactersInRange:NSMakeRange(startIndex, matchRange.length) withString:replaceStr];
-            
-            NSRange range = NSMakeRange(startIndex, matchRange.length-17);//9
+        } else if ([subString hasPrefix:@"<subject"]) { // <subject value='123'>哈哈</subject>
+            NSArray *contentArray = [subString componentsSeparatedByString:@"'>"];
+            if (contentArray.count < 2) continue;
+            NSArray *tempArray = [contentArray[0] componentsSeparatedByString:@"'"];
+            if (tempArray.count < 2) continue;
+            content = tempArray[1];
+            // 哈哈</subject>
+            NSString *t_str = contentArray[1];
+            // #哈哈#
+            replaceStr = [NSString stringWithFormat:@"#%@#", [t_str substringWithRange:NSMakeRange(0, t_str.length - 10)]];
+            [attString replaceCharactersInRange:NSMakeRange(startIndex, matchRange.length)
+                                     withString:replaceStr];
+            NSRange range = NSMakeRange(startIndex, replaceStr.length);
             
             [attString addAttribute:NSForegroundColorAttributeName
                               value:(id)self.config.subjectColor.CGColor
                               range:range];
             [attString addAttribute:@"keyAttribute"
-                              value:[NSString stringWithFormat:@"#%@{%@}",content,[NSValue valueWithRange:range]]
+                              value:[NSString stringWithFormat:@"#%@{%@}", content, [NSValue valueWithRange:range]]
                               range:range];
+            forIndex += subString.length - replaceStr.length;
             
-            forIndex += 17;
             continue;
-        } else if ([subString hasPrefix:@"<key>"]) {
-            content = [subString substringWithRange:NSMakeRange(5, subString.length-11)];
+        } else if ([subString hasPrefix:@"<key"]) { // <key value='123'>哈哈</key>
             
-            replaceStr = [NSString stringWithFormat:@"%@",content];
-            
-            [attString replaceCharactersInRange:NSMakeRange(startIndex, matchRange.length) withString:replaceStr];
-            
-            NSRange range = NSMakeRange(startIndex, matchRange.length-11);
+            NSArray *contentArray = [subString componentsSeparatedByString:@"'>"];
+            if (contentArray.count < 2) continue;
+            NSArray *tempArray = [contentArray[0] componentsSeparatedByString:@"'"];
+            if (tempArray.count < 2) continue;
+            content = tempArray[1];
+            // 哈哈</key>
+            NSString *t_str = contentArray[1];
+            // 哈哈
+            replaceStr = [NSString stringWithFormat:@"%@", [t_str substringWithRange:NSMakeRange(0, t_str.length - 6)]];
+            [attString replaceCharactersInRange:NSMakeRange(startIndex, matchRange.length)
+                                     withString:replaceStr];
+            NSRange range = NSMakeRange(startIndex, replaceStr.length);
             
             [attString addAttribute:NSForegroundColorAttributeName
                               value:(id)self.config.keyColor.CGColor
                               range:range];
             [attString addAttribute:@"keyAttribute"
-                              value:[NSString stringWithFormat:@"$%@{%@}",content, [NSValue valueWithRange:range]]
+                              value:[NSString stringWithFormat:@"$%@{%@}", content, [NSValue valueWithRange:range]]
                               range:range];
-
-            forIndex += 11;
+            forIndex += subString.length - replaceStr.length;
             continue;
+        }
+        
+        char firstChar = [subString characterAtIndex:0];
+        switch (firstChar) {
+            case '@': {
+                // @{Topredator: 123}
+                content = [subString substringWithRange:NSMakeRange(2, subString.length - 3)];
+                /*
+                @[
+                    @"Topredator",
+                    @"123"
+                ]
+                 */
+                NSArray *contentArray = [content componentsSeparatedByString:@":"];
+                NSInteger tempLength = 0;
+                if (contentArray.count > 1) {
+                    replaceStr = [NSString stringWithFormat:@"@%@", contentArray[0]];
+                    tempLength = ((NSString *)contentArray[1]).length + 1;
+                    forIndex += tempLength;
+                } else {
+                    replaceStr = [NSString stringWithFormat:@"@%@", content];
+                }
+                [attString replaceCharactersInRange:NSMakeRange(startIndex, matchRange.length)
+                                         withString:replaceStr];
+                NSRange range = NSMakeRange(startIndex, matchRange.length - 2 - tempLength);
+                [attString addAttribute:NSForegroundColorAttributeName
+                                  value:(id)self.config.atColor.CGColor
+                                  range:range];
+                [attString addAttribute:@"keyAttribute"
+                                  value:[NSString stringWithFormat:@"@%@{%@}", content, [NSValue valueWithRange:range]]
+                                  range:range];
+                forIndex += 2;
+            }
+                break;
+            case '$': {
+                content = [subString substringWithRange:NSMakeRange(2, subString.length - 3)];
+                NSArray *contentArray = [content componentsSeparatedByString:@":"];
+                NSInteger tempLength = 0;
+                if (contentArray.count > 1) {
+                    replaceStr = [NSString stringWithFormat:@"%@", contentArray[0]];
+                    tempLength = ((NSString *)contentArray[1]).length + 1;
+                    forIndex += tempLength;
+                } else {
+                    replaceStr = [NSString stringWithFormat:@"%@", content];
+                }
+                [attString replaceCharactersInRange:NSMakeRange(startIndex, matchRange.length)
+                                         withString:replaceStr];
+                NSRange range = NSMakeRange(startIndex, matchRange.length - 3 - tempLength);
+                [attString addAttribute:NSForegroundColorAttributeName
+                                  value:(id)self.config.keyColor.CGColor
+                                  range:range];
+                [attString addAttribute:@"keyAttribute"
+                                  value:[NSString stringWithFormat:@"$%@{%@}", content, [NSValue valueWithRange:range]]
+                                  range:range];
+                forIndex += 3;
+            }
+                break;
+            case '#': {
+                content = [subString substringWithRange:NSMakeRange(2, subString.length - 3)];
+                NSArray *contentArray = [content componentsSeparatedByString:@":"];
+                NSInteger tempLength = 0;
+                if (contentArray.count > 1) {
+                    replaceStr = [NSString stringWithFormat:@"#%@#", contentArray[0]];
+                    tempLength = ((NSString *)contentArray[1]).length + 1;
+                    forIndex += tempLength;
+                } else {
+                    replaceStr = [NSString stringWithFormat:@"#%@#", content];
+                }
+                [attString replaceCharactersInRange:NSMakeRange(startIndex, matchRange.length)
+                                         withString:replaceStr];
+                NSRange range = NSMakeRange(startIndex, matchRange.length - 1 - tempLength);
+                [attString addAttribute:NSForegroundColorAttributeName
+                                  value:(id)self.config.subjectColor.CGColor
+                                  range:range];
+                [attString addAttribute:@"keyAttribute"
+                                  value:[NSString stringWithFormat:@"#%@{%@}", content, [NSValue valueWithRange:range]]
+                                  range:range];
+                forIndex += 1;
+            }
+                break;
+            case '[': {
+                NSString *imageName = self.emojis[subString];
+                if (!imageName || !imageName.length) continue;
+                CTRunDelegateCallbacks imageCallbacks;
+                imageCallbacks.version = kCTRunDelegateVersion1;
+                imageCallbacks.dealloc = TPDelegateDeallocCallback;
+                imageCallbacks.getAscent = TPDelegateGetAscentCallback;
+                imageCallbacks.getDescent = TPDelegateGetDescentCallback;
+                if ([subString characterAtIndex:1] == 'l') {
+                    imageCallbacks.getWidth = TPDelegateGetTagImgWidthCallback;
+                } else {
+                    imageCallbacks.getWidth = TPDelegateGetWidthCallback;
+                }
+                [attString replaceCharactersInRange:NSMakeRange(startIndex, matchRange.length)
+                                         withString:@" "];
+                CTRunDelegateRef delegate = CTRunDelegateCreate(&imageCallbacks, (__bridge void *)emojisDelegate);
+                [attString addAttribute:(NSString *)kCTRunDelegateAttributeName
+                                  value:(__bridge  id)delegate
+                                  range:NSMakeRange(startIndex, 1)];
+                CFRelease(delegate);
+                [attString addAttribute:@"keyAttribute"
+                                  value:[NSString stringWithFormat:@"F:%@(%ld, %lu)", imageName, (long)startIndex, (unsigned long)matchRange.length] range:NSMakeRange(startIndex, 1)];
+                forIndex += subString.length - 1;
+            }
+                break;
+            
+            default:
+                break;
         }
     }
 }

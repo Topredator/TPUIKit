@@ -7,7 +7,7 @@
 //
 
 #import "TPClassifyVC.h"
-
+#import "TPClassifyRow.h"
 @interface TPClassifyVC ()
 
 @end
@@ -28,6 +28,13 @@
     }];
 }
 - (void)loadData {
-    
+    NSArray *items = @[
+        [TPClassifyItem itemName:@"RichText" type:RichText],
+    ];
+    TPTableSection *section = [TPTableSection section];
+    for (TPClassifyItem *item in items) {
+        [section tp_safetyAddObject:[TPClassifyRow itemRow:item]];
+    }
+    [self reloadData:@[section]];
 }
 @end

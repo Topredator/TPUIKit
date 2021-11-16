@@ -60,3 +60,8 @@
 #import "TPUIQRCode.h"
 // ScreenShot
 #import "TPUIScreenShot.h"
+
+// RichText
+#import "TPTextDisplayView.h"
+#import "TPRichTextLabelConfig.h"
+#import "TPRichTextEmoji.h"

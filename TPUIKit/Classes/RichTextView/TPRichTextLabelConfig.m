@@ -29,7 +29,8 @@
     self.keyColor = [UIColor blueColor];
     self.urlColor = [UIColor blueColor];
     
-    self.emailColor= [UIColor blueColor];
+    self.emailColor = [UIColor blueColor];
     self.phoneColor = [UIColor blueColor];
+    self.autoHeight = YES;
 }
 @end

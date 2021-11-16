@@ -11,11 +11,19 @@
 
 /// 富文本 标签类型
 typedef NS_ENUM(NSInteger, TPRichTextLabelType) {
-    TPRichTextLabelTypeLink, // 链接www.baidu.com
+    TPRichTextLabelTypeNone,
+    TPRichTextLabelTypeImageTag,  // image
+    TPRichTextLabelTypeVideoTag, // Video
+    TPRichTextLabelTypeLinkTag, // Link
+    TPRichTextLabelTypeLinkA, // <a></a>
+    TPRichTextLabelTypeUrl, // 链接www.baidu.com
+    TPRichTextLabelTypeEmail, // xxxxx@163.com
+    TPRichTextLabelTypeKey, 
+    TPRichTextLabelTypePhone, // 0571-12345678 或者 13800000000
     TPRichTextLabelTypeUser, // @Topredator
     TPRichTextLabelTypeTopic, // #话题#
     TPRichTextLabelTypeEmoji, // 👍🏻😘
-    TPRichTextLabelTypePhone // 0571-12345678 或者 13800000000
+    
 };
 
 
