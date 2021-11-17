@@ -17,16 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"RichText";
+    [TPRichTextEmoji.shared configEmojiBundleName:@"RichText"];
     [self setupSubviews];
 }
 - (void)setupSubviews {
     
-    NSString *text = @"登录<at value='123'>点击试下</at>即代表<key value='234'>这是key啊</key>阅读<subject value='345'>项目？</subject>并同意${《学天教育服务协议》:123} 和 ${《第三方协议》} ";
+    NSString *text = @"登录<at value='123'>点击试下</at>即代表<key value='234'>这是key啊</key>阅读<subject value='345'>项目</subject>[拜拜][哈哈][呵呵]luyanggold@163.com并<a href='www.baidu.com'>百度</a>同意${《学天教育服务协议》:123} 和 ${《第三方协议》} <tag type='image' value='xxx'>展示一张图片</tag>紧接着<tag type='video' value='xxx'>你猜猜是什么</tag>再来一个<tag type='link' value='https://www.baidu.com'>链接</tag>";
     
     TPTextDisplayView *displayView = [[TPTextDisplayView alloc] initWithFrame:CGRectZero];
     displayView.text = text;
     displayView.delegate = self;
-    displayView.backgroundColor = [TPUI rgba:234];
+    displayView.backgroundColor = [TPUI tp_t:234];
     [self.view addSubview:displayView];
     
     [displayView mas_makeConstraints:^(MASConstraintMaker *make) {

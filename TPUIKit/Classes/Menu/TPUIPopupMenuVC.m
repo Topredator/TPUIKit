@@ -150,7 +150,7 @@
         _tableView.delaysContentTouches = YES;
         _tableView.separatorStyle = self.config.isShowDivider ? UITableViewCellSeparatorStyleSingleLine : UITableViewCellSeparatorStyleNone;
         _tableView.backgroundColor = [UIColor whiteColor];
-        _tableView.separatorColor = [TPUI rgba:229];
+        _tableView.separatorColor = [TPUI tp_t:229];
         _tableView.separatorInset = UIEdgeInsetsZero;
         _tableView.delegate = self;
         _tableView.dataSource = self;

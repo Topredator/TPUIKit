@@ -12,10 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 富文本 emoji配置
 @interface TPRichTextEmoji : NSObject
 + (instancetype)shared;
-/// 配置plist文件地址 及 图片文件夹地址
-- (void)configEmojiPlistPath:(NSString *)plistPath filePath:(NSString *)filePath;
+/// 设置外部 资源
+- (void)configEmojiBundleName:(NSString *)bundleName;
 /// 所有 emoji信息
 - (NSDictionary *)allEmojis;
++ (UIImage * _Nullable)emojiName:(NSString *)emojiName;
 @end
 
 NS_ASSUME_NONNULL_END

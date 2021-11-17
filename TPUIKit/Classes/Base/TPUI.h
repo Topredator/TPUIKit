@@ -41,11 +41,11 @@ typedef NS_ENUM(NSInteger, TPUIFontWeight) {
 /// 随机色
 + (UIColor *)tp_randomColor;
 /// RGB
-+ (UIColor *)r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue;
++ (UIColor *)tp_r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue;
 /// RGBA
-+ (UIColor *)r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue a:(CGFloat)alpha;
-+ (UIColor *)rgba:(CGFloat)t;
-+ (UIColor *)rgba:(CGFloat)t alpha:(CGFloat)alpha;
++ (UIColor *)tp_r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue a:(CGFloat)alpha;
++ (UIColor *)tp_t:(CGFloat)t;
++ (UIColor *)tp_t:(CGFloat)t alpha:(CGFloat)alpha;
 /// hex color
 + (UIColor *)tp_hexColor:(CGFloat)hex;
 + (UIColor *)tp_hexColor:(CGFloat)hex alpha:(CGFloat)alpha;

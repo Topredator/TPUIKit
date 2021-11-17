@@ -8,7 +8,7 @@
 #import "TPTextDisplayView.h"
 #import "TPRichTextOperator.h"
 #import <CoreText/CoreText.h>
-
+#import "TPRichTextEmoji.h"
 @interface TPTextDisplayView ()
 @property (nonatomic, strong) NSMutableDictionary *keyRectDict;
 @property (nonatomic, strong) NSMutableDictionary *keyAttributeDict;
@@ -229,12 +229,12 @@
                 if (firstCharAttribute == 'F') {
                     
                     NSArray * imageNameArr = [keyAttribute componentsSeparatedByString:@"("];
-                    NSString * imageName = (imageNameArr.count > 1) ? imageNameArr[0] : keyAttribute;
-                    UIImage *image = [UIImage imageNamed:imageName];
+                    NSString * imageName = (imageNameArr.count > 1) ? [imageNameArr[0] substringWithRange:NSMakeRange(2, ((NSString *)imageNameArr[0]).length -2)] : keyAttribute;
+                    UIImage *image = [TPRichTextEmoji emojiName:imageName];
                     if (image) {
-                        if ([keyAttribute hasPrefix:@"F:hyperlink"] ||
-                            [keyAttribute hasPrefix:@"F:video"] ||
-                            [keyAttribute hasPrefix:@"F:photo"]) {
+                        if ([keyAttribute hasPrefix:@"F:tagLink"] ||
+                            [keyAttribute hasPrefix:@"F:tagVideo"] ||
+                            [keyAttribute hasPrefix:@"F:tagPhoto"]) {
                             keyRect = CGRectMake(runPointX, runPointY + (lineHeight - self.config.tagImgSize.height)/2.0, self.config.tagImgSize.width, self.config.tagImgSize.height);
                             prevImgRect = CGRectMake(runPointX,
                                                      lineOrigin.y - (lineHeight + self.config.highlightBackgroundAdjustHeight - lineSpace) / 4 - self.config.highlightBackgroundOffset,
@@ -245,7 +245,9 @@
                         }
                         CGContextDrawImage(contextRef, keyRect, image.CGImage);
                     }
-                } else if (firstCharAttribute == 'T' ||
+                } else if (firstCharAttribute == 'I' ||
+                           firstCharAttribute == 'V' ||
+                           firstCharAttribute == 'L' ||
                            firstCharAttribute == 'H' ||
                            firstCharAttribute == 'U' ||
                            firstCharAttribute == '@' ||

@@ -29,12 +29,12 @@ const CGFloat kTPUIScrollTopBarHeight = 45;
     return self;
 }
 - (void)commonInit {
-    self.itemTitleColor = [TPUI rgba:102];
-    self.itemTitleSelectedColor = [TPUI rgba:51];
+    self.itemTitleColor = [TPUI tp_t:102];
+    self.itemTitleSelectedColor = [TPUI tp_t:51];
     self.itemTitleFont = [TPUI tp_font:15 weight:FontMedium];
     self.itemTitleSelectedFont = [TPUI tp_font:15 weight:FontMedium];
     self.indicatorScrollFollowContent = YES;
-    self.indicatorColor = [TPUI r:39 g:119 b:248];
+    self.indicatorColor = [TPUI tp_r:39 g:119 b:248];
     [self setIndicatorWidthFixTextAndMarginTop:kTPUIScrollTopBarHeight - 2 marginBottom:0 tapSwitchAnimated:YES];
 }
 @end

@@ -97,6 +97,8 @@
 		507AD4C345C778BF1706EA1B5EBABA02 /* TPUITableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DC67CFE4B92D0F09AE1003772F8A05AC /* TPUITableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		507F5502A3D833C8C526DE7AF694E26B /* UIImage+TPUIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C6002956ABC4841A6C62B05E0DB4E124 /* UIImage+TPUIExtension.m */; };
 		5247188F38A9D2415CB2A8EB3A34E2D3 /* NSString+TPCalSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB6DD5ACE5DC2A5126B2EE2173D77E6 /* NSString+TPCalSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5360C31D2744D69B002ECD4F /* TPUIRefreshConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5360C31B2744D69B002ECD4F /* TPUIRefreshConfig.h */; };
+		5360C31E2744D69B002ECD4F /* TPUIRefreshConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5360C31C2744D69B002ECD4F /* TPUIRefreshConfig.m */; };
 		54419443DC04DFC20FA8A3159F0A451F /* UIScrollView+TPUIExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0EAD13D2BAB302E7952E967D6D3958 /* UIScrollView+TPUIExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58AF805046CFD9986EFEAACCBA61F9BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7686F6627E91D46DB5B55B6BBD25D8AF /* Foundation.framework */; };
 		59A2549BCEE91195E68E6CA06C8C3E6B /* NSObject+TPNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = 0899F6BA04E304FB777DFA6E6B71D9B5 /* NSObject+TPNotify.m */; };
@@ -388,7 +390,7 @@
 		021FCAA95CCBEFFD57A1060A7C945FD8 /* Pods-TPUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0259B9140562424334C3E387F9EFD96B /* TPModelID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPModelID.h; path = TPFoundation/Classes/Base/TPModelID.h; sourceTree = "<group>"; };
 		0442E6DF14F67552948ED97F58ADCC20 /* TPRichTextOperator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPRichTextOperator.h; path = TPUIKit/Classes/RichTextView/TPRichTextOperator.h; sourceTree = "<group>"; };
-		047485331790D89B94BED74BAFC3C693 /* Pods_TPUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TPUIKit_Tests.framework; path = "Pods-TPUIKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		047485331790D89B94BED74BAFC3C693 /* Pods_TPUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05142308DFB75247E2BA268B637A9247 /* UICollectionViewCell+TPCollectionDataPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionViewCell+TPCollectionDataPrivate.m"; path = "TPFoundation/Classes/Utils/CollectionProxy/UICollectionViewCell+TPCollectionDataPrivate.m"; sourceTree = "<group>"; };
 		054B047F7B9C3CCCD90F95D8C7CFD728 /* Base.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Base.xcassets; path = TPUIKit/Assets/Base.xcassets; sourceTree = "<group>"; };
 		05E4ED08746CAA37045775F4C788509B /* NSString+TPCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+TPCoding.m"; path = "TPFoundation/Classes/Category/NSString/NSString+TPCoding.m"; sourceTree = "<group>"; };
@@ -396,7 +398,7 @@
 		074323294BB017F7800D9B993558184B /* MJRefreshComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshComponent.h; path = MJRefresh/Base/MJRefreshComponent.h; sourceTree = "<group>"; };
 		0772F38B7A4E69BAD7CA60798BB2AF77 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		0806640D31885EE87AAC70B184A0D543 /* TPUIPopupMenuVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIPopupMenuVC.m; path = TPUIKit/Classes/Menu/TPUIPopupMenuVC.m; sourceTree = "<group>"; };
-		0877B4313D22121F85ACD908301EAE43 /* Pods_TPUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TPUIKit_Example.framework; path = "Pods-TPUIKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0877B4313D22121F85ACD908301EAE43 /* Pods_TPUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0899F6BA04E304FB777DFA6E6B71D9B5 /* NSObject+TPNotify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TPNotify.m"; path = "TPFoundation/Classes/Category/NSObject/NSObject+TPNotify.m"; sourceTree = "<group>"; };
 		095257ABB4A3A69691A072D6A389837D /* UIViewController+TPUIPresentStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TPUIPresentStyle.h"; path = "TPUIKit/Classes/Category/UIViewController+TPUIPresentStyle.h"; sourceTree = "<group>"; };
 		0995D6752D06D29B7517E4C01C3B945C /* NSObject+TPKVO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TPKVO.m"; path = "TPFoundation/Classes/Category/NSObject/NSObject+TPKVO.m"; sourceTree = "<group>"; };
@@ -420,7 +422,7 @@
 		1CA99C33DBAEE070AD721DC7F72FBB2B /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoGifFooter.m; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
 		1D46A56A9A2BBAA3F8D88AC4856C8415 /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 		1F171A42A2280E41BE680D6DDCADA5B4 /* TPVerify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPVerify.m; path = TPFoundation/Classes/Utils/Verify/TPVerify.m; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21753EA9DB295A37C3D9ADDD815024B4 /* TPGCDSemaphore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPGCDSemaphore.h; path = TPFoundation/Classes/Utils/GCD/TPGCDSemaphore.h; sourceTree = "<group>"; };
 		228AB2CC1E05847241C2A2957CCE45EA /* MJRefreshComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshComponent.m; path = MJRefresh/Base/MJRefreshComponent.m; sourceTree = "<group>"; };
 		230EEB14CC6C71CBF916AF8006AFA2E5 /* TPUIShadowCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIShadowCell.m; path = TPUIKit/Classes/ShadowCell/TPUIShadowCell.m; sourceTree = "<group>"; };
@@ -481,13 +483,15 @@
 		4C86A9B835E67CCCAFF50305E3FAA152 /* TPRichTextEmoji.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPRichTextEmoji.h; path = TPUIKit/Classes/RichTextView/TPRichTextEmoji.h; sourceTree = "<group>"; };
 		4D0824DAA5847B8B8917C80A94855FEE /* TPRichTextOperator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPRichTextOperator.m; path = TPUIKit/Classes/RichTextView/TPRichTextOperator.m; sourceTree = "<group>"; };
 		4D1CFA36D0FF0911B8E0163A96990C38 /* TPTableViewProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPTableViewProxy.m; path = TPFoundation/Classes/Utils/TableViewProxy/TPTableViewProxy.m; sourceTree = "<group>"; };
-		4E2A83E8620D8A13B3AE8CAEF7A91463 /* TPUIShadowCell.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TPUIShadowCell.bundle; path = "TPUIKit-TPUIShadowCell.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2A83E8620D8A13B3AE8CAEF7A91463 /* TPUIShadowCell.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPUIShadowCell.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		528D3A41F07C26C6EA91096D8EFE08BE /* TPFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPFoundation.modulemap; sourceTree = "<group>"; };
 		52E56C90164DA42C3D31C09708C86F92 /* TPMutableArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPMutableArray.m; path = TPFoundation/Classes/Base/TPMutableArray.m; sourceTree = "<group>"; };
 		530EDFA23301A635ECC7B44F103D10AE /* UIDevice+TPExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+TPExtend.h"; path = "TPFoundation/Classes/Category/UIDevice/UIDevice+TPExtend.h"; sourceTree = "<group>"; };
+		5360C31B2744D69B002ECD4F /* TPUIRefreshConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TPUIRefreshConfig.h; path = TPUIKit/Classes/Refresh/TPUIRefreshConfig.h; sourceTree = "<group>"; };
+		5360C31C2744D69B002ECD4F /* TPUIRefreshConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TPUIRefreshConfig.m; path = TPUIKit/Classes/Refresh/TPUIRefreshConfig.m; sourceTree = "<group>"; };
 		5433FAA03B78C85F67D58EA31959EAD3 /* TPUIBaseNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBaseNavigationController.h; path = TPUIKit/Classes/Base/TPUIBaseNavigationController.h; sourceTree = "<group>"; };
 		545B8577E5F7BF34A28B95502625C019 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		553844E134CCB7C23995F73F66EC02C8 /* TPUIKitBase.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TPUIKitBase.bundle; path = "TPUIKit-TPUIKitBase.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		553844E134CCB7C23995F73F66EC02C8 /* TPUIKitBase.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPUIKitBase.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		555C4D4B45FD13EBE39EF0AB8E905CD2 /* TPModelID.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPModelID.m; path = TPFoundation/Classes/Base/TPModelID.m; sourceTree = "<group>"; };
 		595C253AB330F87BFCD9B7BC1D1F5D9D /* TPUIPopupMenuConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIPopupMenuConfig.m; path = TPUIKit/Classes/Menu/TPUIPopupMenuConfig.m; sourceTree = "<group>"; };
 		59B874D452CDE29E551B0317F52D1E14 /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
@@ -501,11 +505,11 @@
 		5FC5CB7DBA9463731A64843F6A6CAE23 /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
 		5FD414D7C3D2A40334D3F48624D93EA9 /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
 		61AE04EF3344E37CF3F052A8F8527A62 /* TPUIGrScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TPUIGrScrollView.m; sourceTree = "<group>"; };
-		62083F85A45003CEB7A59E8B4EC13AB9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		62083F85A45003CEB7A59E8B4EC13AB9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		641810B8624CE6387FB1CEECF3C18047 /* TPRichTextLabelConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPRichTextLabelConfig.h; path = TPUIKit/Classes/RichTextView/TPRichTextLabelConfig.h; sourceTree = "<group>"; };
 		6544BEEADEDB4E1727B5A24A719ACF4C /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		655D59F15B5FA524A7530CF330509EC2 /* TPUIKitRefresh.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TPUIKitRefresh.bundle; path = "TPUIKit-TPUIKitRefresh.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65D480B2BBC37B278ED7C8992AA7AC01 /* TPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPFoundation.framework; path = TPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		655D59F15B5FA524A7530CF330509EC2 /* TPUIKitRefresh.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPUIKitRefresh.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D480B2BBC37B278ED7C8992AA7AC01 /* TPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F8C2CF332CBD0D725592D61C82B699 /* TPUIRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIRefreshHeader.m; path = TPUIKit/Classes/Refresh/TPUIRefreshHeader.m; sourceTree = "<group>"; };
 		6672957D6A85364A63549A21189B6A4B /* TPUIBannerPageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBannerPageView.h; path = TPUIKit/Classes/Banner/TPUIBannerPageView.h; sourceTree = "<group>"; };
 		671F79890BD3F17AD71B62948B0F5BE6 /* UIView+TPBlankView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TPBlankView.h"; path = "TPUIKit/Classes/Blank/UIView+TPBlankView.h"; sourceTree = "<group>"; };
@@ -555,8 +559,8 @@
 		8A101EDCBA44B1952F254A57E2AE9E6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8A5BA9F707E27501C273FB3DFF4EDFBD /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		8A6EBC05F6294BA1D0B4CB74AB925509 /* TPUIShadowCellConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIShadowCellConfig.h; path = TPUIKit/Classes/ShadowCell/TPUIShadowCellConfig.h; sourceTree = "<group>"; };
-		8B34D9C8CB742E387C77FAF0A7BE5E2E /* TPUIKitToast.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TPUIKitToast.bundle; path = "TPUIKit-TPUIKitToast.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B34D9C8CB742E387C77FAF0A7BE5E2E /* TPUIKitToast.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPUIKitToast.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1B3C3EBF83DC8BCDE3FDAC0B3777F0 /* TPGCDQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPGCDQueue.h; path = TPFoundation/Classes/Utils/GCD/TPGCDQueue.h; sourceTree = "<group>"; };
 		8CA4273FDC2116D690F7C99960BBBF6C /* Pods-TPUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8DB6DD5ACE5DC2A5126B2EE2173D77E6 /* NSString+TPCalSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TPCalSize.h"; path = "TPFoundation/Classes/Category/NSString/NSString+TPCalSize.h"; sourceTree = "<group>"; };
@@ -580,7 +584,7 @@
 		9B51DCEB87DA349C21123CE898AF06C8 /* TPThreadSafeArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPThreadSafeArray.m; path = TPFoundation/Classes/Utils/ThreadSafeArray/TPThreadSafeArray.m; sourceTree = "<group>"; };
 		9BB985BA0D02E187C939059A3D975F42 /* TPRichTextEmoji.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPRichTextEmoji.m; path = TPUIKit/Classes/RichTextView/TPRichTextEmoji.m; sourceTree = "<group>"; };
 		9BCA5723D0AF4859A64097651883BEEF /* TPUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPUIKit-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DEF8215082A18EE3BC9A97F9ECF6CE5 /* TPUIAlertMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIAlertMaker.m; path = TPUIKit/Classes/Alert/TPUIAlertMaker.m; sourceTree = "<group>"; };
 		9E54D6E9A3C4315DF6812EE139CF8E31 /* TPUIGraphicView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIGraphicView.m; path = TPUIKit/Classes/GraphicView/TPUIGraphicView.m; sourceTree = "<group>"; };
 		9F91B212E156759A8542A7EC31E72144 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
@@ -615,7 +619,7 @@
 		BC6FBC8655F654F0A636072E8FF48177 /* TPUIMarginLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIMarginLabel.m; path = TPUIKit/Classes/MarginLabel/TPUIMarginLabel.m; sourceTree = "<group>"; };
 		BD2A3CE11A2E8E08FFED595CBDF281AA /* ResourceBundle-TPUIKitToast-TPUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TPUIKitToast-TPUIKit-Info.plist"; sourceTree = "<group>"; };
 		BDCB77B282A84686815B168C8633737C /* TPUIBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIBannerView.m; path = TPUIKit/Classes/Banner/TPUIBannerView.m; sourceTree = "<group>"; };
-		BE3976DA62FA0B59D0B691A11D88C77D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BE3976DA62FA0B59D0B691A11D88C77D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BE5E7A7F07A4DCA90B4CCF1017C5E59F /* TPUISubVCScrollProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TPUISubVCScrollProtocol.h; sourceTree = "<group>"; };
 		BE99D7D498F1D1F6FFC584783BC7C432 /* TPUIMethodSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIMethodSwizzling.m; path = TPUIKit/Classes/Base/TPUIMethodSwizzling.m; sourceTree = "<group>"; };
 		BF32C5B52BEAE62E16D3E285780C4DDB /* TPUIGradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGradientView.h; path = TPUIKit/Classes/GradientView/TPUIGradientView.h; sourceTree = "<group>"; };
@@ -635,7 +639,7 @@
 		CE15D6C9C962D5E009732C49CBEB35D6 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CE181DDF1CC8B3509C4B2B5C4D97606A /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
 		CE4D53A6A1B523F92BF220D27E82E3E0 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		CEC664968769A8BDF0DF4602FE2246CE /* TPUIKitBlank.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TPUIKitBlank.bundle; path = "TPUIKit-TPUIKitBlank.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC664968769A8BDF0DF4602FE2246CE /* TPUIKitBlank.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPUIKitBlank.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDB8C72FB606C65909C28399FDFB070 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
 		D0282D1A26213C9070E9540756F11882 /* TPUIGraphicView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIGraphicView.h; path = TPUIKit/Classes/GraphicView/TPUIGraphicView.h; sourceTree = "<group>"; };
 		D0D6393CCDC374BC71EBB03260748E4B /* TPUIQRCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIQRCode.m; path = TPUIKit/Classes/QRCode/TPUIQRCode.m; sourceTree = "<group>"; };
@@ -648,7 +652,7 @@
 		D46D1591D9CCF6B229A3EDAF4E05210B /* TPUIToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPUIToast.m; path = TPUIKit/Classes/Toast/TPUIToast.m; sourceTree = "<group>"; };
 		D49AC9539DC6DEE53D082FB5E60153FF /* TPCommonUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPCommonUD.m; path = TPFoundation/Classes/Utils/CommonUD/TPCommonUD.m; sourceTree = "<group>"; };
 		D51E03A8B65B22E6552DCA3277C3ADB5 /* UIView+TPBlankView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TPBlankView.m"; path = "TPUIKit/Classes/Blank/UIView+TPBlankView.m"; sourceTree = "<group>"; };
-		D553714163D77557B9CB2D9C7DEEA826 /* TPUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TPUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D553714163D77557B9CB2D9C7DEEA826 /* TPUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TPUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D5C9783880EA456D57146A1F8601379F /* NSObject+TPKVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TPKVO.h"; path = "TPFoundation/Classes/Category/NSObject/NSObject+TPKVO.h"; sourceTree = "<group>"; };
 		D5CF0EB71372768F661FCEA64FED8979 /* TPUIBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIBaseViewController.h; path = TPUIKit/Classes/Base/TPUIBaseViewController.h; sourceTree = "<group>"; };
 		D5DCB3460BEF04A00812E8103C54D83E /* TPUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIKit.h; path = TPUIKit/Classes/TPUIKit.h; sourceTree = "<group>"; };
@@ -661,7 +665,7 @@
 		DBB739BC85AB0EA364941ADF75A0421B /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
 		DBC00214CA6C9E8D3B162DACC4685297 /* TPUIPopupMenuConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUIPopupMenuConfig.h; path = TPUIKit/Classes/Menu/TPUIPopupMenuConfig.h; sourceTree = "<group>"; };
 		DC67CFE4B92D0F09AE1003772F8A05AC /* TPUITableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPUITableViewCell.h; path = TPUIKit/Classes/Base/TPUITableViewCell.h; sourceTree = "<group>"; };
-		DD93750FD25337E2F476E27611C5E8F3 /* TPUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPUIKit.framework; path = TPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD93750FD25337E2F476E27611C5E8F3 /* TPUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08E764942DDFABBD9423E3DE15BF5D6 /* TPThreadSafeDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPThreadSafeDictionary.h; path = TPFoundation/Classes/Utils/ThreadSafeDictionary/TPThreadSafeDictionary.h; sourceTree = "<group>"; };
 		E0C3AD02E81EA46023D894B2FE1EA3E5 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		E0EB74B4B182B54A763957722395740F /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
@@ -669,7 +673,7 @@
 		E1F0F3916495C869B356C8FCB947C7D5 /* TPMultipleProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPMultipleProxy.h; path = TPFoundation/Classes/Utils/WeakProxy/TPMultipleProxy.h; sourceTree = "<group>"; };
 		E34452D8ED74CB94464FF83FE1A0EC48 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
 		E4131C5F97167ADD6067CB1766058830 /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
-		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A6EF32103D63790DDDF94E750AD726 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		E5A6F52FEB9D9219E4957D36B7C037DD /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		E616F04931F0E05953C1BA1965F09F67 /* NSObject+TPNotify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TPNotify.h"; path = "TPFoundation/Classes/Category/NSObject/NSObject+TPNotify.h"; sourceTree = "<group>"; };
@@ -925,7 +929,6 @@
 				CBE6934C494D5CE48111E26DD12866CE /* Resources */,
 				68C351C4ED25B8AC86AD540B0D483ED3 /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -1032,7 +1035,6 @@
 				929F79DE7476B5E1AEC65D140E5CDCF8 /* Support Files */,
 				26B9F9DA274EA07C8D9DCF592D01E045 /* Utils */,
 			);
-			name = TPFoundation;
 			path = TPFoundation;
 			sourceTree = "<group>";
 		};
@@ -1211,6 +1213,8 @@
 				00E9AFB7802CB4D479CC4DC9E4EF3504 /* TPUIRefreshFooter.m */,
 				FCB07BC5590BFDC9A04846CCFF5AB7BD /* TPUIRefreshHeader.h */,
 				65F8C2CF332CBD0D725592D61C82B699 /* TPUIRefreshHeader.m */,
+				5360C31B2744D69B002ECD4F /* TPUIRefreshConfig.h */,
+				5360C31C2744D69B002ECD4F /* TPUIRefreshConfig.m */,
 			);
 			name = Refresh;
 			sourceTree = "<group>";
@@ -1418,7 +1422,6 @@
 				A313C8347197AFB456723FEEFFF6DDDE /* MBProgressHUD.m */,
 				0985B1C646137E43051C8767CD290CAE /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1502,7 +1505,6 @@
 				7784FF452C9620A1522D33E9D3AC5F1F /* ViewController+MASAdditions.m */,
 				3070FE3447217B1F654B55151E4564D0 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1554,6 +1556,7 @@
 				7A45B6ADA77BA78CD193D5556180C47F /* TPUIBaseTableViewCell.h in Headers */,
 				F5D7372FC1A3DB6BFB080552974FA5EC /* TPUIBaseViewController.h in Headers */,
 				24D1C5D37E21AC98667185AC64D591A6 /* TPUIBlankView.h in Headers */,
+				5360C31D2744D69B002ECD4F /* TPUIRefreshConfig.h in Headers */,
 				B29F3A07F8F75ECAEBFEDFC466553436 /* TPUIGradientButton.h in Headers */,
 				C5095BB602B676023FA5E81FDEDA8B85 /* TPUIGradientLabel.h in Headers */,
 				0D3369FE7D213E131D2F75768E8BF909 /* TPUIGradientLayer.h in Headers */,
@@ -2147,6 +2150,7 @@
 				7B3021706177EF96C368CB8B3B1E410B /* TPUIScreenShot.m in Sources */,
 				7A58C9F6CABAF1A98472D537AE3C4DC9 /* TPUIScrollTableVC.m in Sources */,
 				260ECEE7E2A64EE2652E4142A0BB0EBB /* TPUIScrollTopBar.m in Sources */,
+				5360C31E2744D69B002ECD4F /* TPUIRefreshConfig.m in Sources */,
 				D72391C0BFF211FB1B7A66E492A17FDC /* TPUIShadowCell.m in Sources */,
 				5DCD76078A95E4A9B4F1B11A9AAD80CE /* TPUIShadowCellConfig.m in Sources */,
 				66A2E5E5841C0DD7275373706F248AFB /* TPUISimButton.m in Sources */,
@@ -2937,8 +2941,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

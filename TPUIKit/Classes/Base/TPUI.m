@@ -44,28 +44,28 @@
 
 
 + (UIColor *)tp_randomColor {
-    return [self r:arc4random_uniform(255) g:arc4random_uniform(255) b:arc4random_uniform(255)];
+    return [self tp_r:arc4random_uniform(255) g:arc4random_uniform(255) b:arc4random_uniform(255)];
 }
 /// RGB
-+ (UIColor *)r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue {
-    return [self r:red g:green b:blue a:1.0];
++ (UIColor *)tp_r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue {
+    return [self tp_r:red g:green b:blue a:1.0];
 }
 /// RGBA
-+ (UIColor *)r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue a:(CGFloat)alpha {
++ (UIColor *)tp_r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue a:(CGFloat)alpha {
     return [UIColor colorWithRed:(red) / 255.0 green:(green) / 255.0 blue:(blue) / 255.0 alpha:alpha];
 }
-+ (UIColor *)rgba:(CGFloat)t {
-    return [self r:t g:t b:t];
++ (UIColor *)tp_t:(CGFloat)t {
+    return [self tp_r:t g:t b:t];
 }
-+ (UIColor *)rgba:(CGFloat)t alpha:(CGFloat)alpha {
-    return [self r:t g:t b:t a:alpha];
++ (UIColor *)tp_t:(CGFloat)t alpha:(CGFloat)alpha {
+    return [self tp_r:t g:t b:t a:alpha];
 }
 /// hex color
 + (UIColor *)tp_hexColor:(unsigned long)hex {
     return [self tp_hexColor:hex alpha:1.0];
 }
 + (UIColor *)tp_hexColor:(unsigned long)hex alpha:(CGFloat)alpha {
-    return [self r:(CGFloat)((hex & 0xFF0000) >> 16)
+    return [self tp_r:(CGFloat)((hex & 0xFF0000) >> 16)
                  g:(CGFloat)((hex & 0xFF00) >> 8)
                  b:(CGFloat)((hex & 0xFF))
                  a:alpha];
@@ -100,7 +100,14 @@
                bundleName:(NSString *)bundleName {
     NSString *bundlePath = [[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:[NSString stringWithFormat:@"/%@.bundle", bundleName]];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-    return [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
+    if (@available(iOS 13.0, *)) {
+        return [UIImage imageNamed:imageName
+                          inBundle:bundle
+                 withConfiguration:nil];
+    }
+    return [UIImage imageNamed:imageName
+                      inBundle:bundle
+            compatibleWithTraitCollection:nil];
 }
 
 + (void)tp_adjustsInsets:(UIScrollView *)scrollView vc:(UIViewController *)vc {

@@ -19,9 +19,9 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        if (@available(iOS 10.0, *)) self.tabBar.unselectedItemTintColor = [TPUI rgba:102];
-        self.tabBar.tintColor = [TPUI r:39 g:119 b:248];
-        self.tabBar.layer.shadowColor = [TPUI rgba:0 alpha:0.1].CGColor;
+        if (@available(iOS 10.0, *)) self.tabBar.unselectedItemTintColor = [TPUI tp_t:102];
+        self.tabBar.tintColor = [TPUI tp_r:39 g:119 b:248];
+        self.tabBar.layer.shadowColor = [TPUI tp_t:0 alpha:0.1].CGColor;
         self.tabBar.layer.shadowOffset = CGSizeMake(0, -1);
         self.tabBar.layer.shadowOpacity = 0.3;
         

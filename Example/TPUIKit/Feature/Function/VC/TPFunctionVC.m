@@ -24,6 +24,10 @@
     [self.tableview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsZero);
     }];
+    __weak typeof(self) weakSelf = self;
+    self.tableview.mj_header = [TPUIRefreshHeader headerWithRefreshingBlock:^{
+        [weakSelf loadData];
+    }];
 }
 - (void)loadData {
     NSArray *items = @[
@@ -34,25 +38,13 @@
         [TPItem itemName:@"Banner" type:Banner],
         [TPItem itemName:@"Menu" type:Menu]
     ];
-    TPTableSection *section = [self tableSection];
+    TPTableSection *section = [TPTableSection section];
     for (TPItem *item in items) {
         [section tp_safetyAddObject:[TPFunctionRow itemRow:item]];
     }
     [self reloadData:@[section]];
-}
-
-
-
-
-
-- (TPTableSection *)tableSection {
-    TPTableSection *section = [TPTableSection section];
-    section.headerHeight = ^CGFloat(__kindof TPTableSection * _Nonnull sectionData, TPTableViewProxy * _Nonnull proxy, NSUInteger section) {
-        return 0.1;
-    };
-    section.footerHeight = ^CGFloat(__kindof TPTableSection * _Nonnull sectionData, TPTableViewProxy * _Nonnull proxy, NSUInteger section) {
-        return 0.1;
-    };
-    return section;
+    [TPGCDQueue executeInMainQueue:^{
+        [self.tableview.mj_header endRefreshing];
+    } afterDelaySecs:1.5];
 }
 @end

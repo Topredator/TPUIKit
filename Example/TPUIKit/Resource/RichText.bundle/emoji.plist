@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>[linka]</key>
+	<string>tagLink.png</string>
+	<key>[linkv]</key>
+	<string>tagVideo.png</string>
+	<key>[linkp]</key>
+	<string>tagPhoto.png</string>
+	<key>[爱你]</key>
+	<string>tp_aini.png</string>
+	<key>[拜拜]</key>
+	<string>tp_baibai.png</string>
+	<key>[悲伤]</key>
+	<string>tp_beishang.png</string>
+	<key>[鄙视]</key>
+	<string>tp_bishi.png</string>
+	<key>[闭嘴]</key>
+	<string>tp_bizui.png</string>
+	<key>[馋嘴]</key>
+	<string>tp_chanzui.png</string>
+	<key>[吃惊]</key>
+	<string>tp_chijing.png</string>
+	<key>[打哈气]</key>
+	<string>tp_dahaqi.png</string>
+	<key>[打脸]</key>
+	<string>tp_dalian.png</string>
+	<key>[感冒]</key>
+	<string>tp_ganmao.png</string>
+	<key>[鼓掌]</key>
+	<string>tp_guzhang.png</string>
+	<key>[哈哈]</key>
+	<string>tp_haha.png</string>
+	<key>[含蓄]</key>
+	<string>tp_hanxu.png</string>
+	<key>[汗]</key>
+	<string>tp_han.png</string>
+	<key>[呵呵]</key>
+	<string>tp_hehe.png</string>
+	<key>[哼]</key>
+	<string>tp_heng.png</string>
+	<key>[黑线]</key>
+	<string>tp_heixian.png</string>
+	<key>[花心]</key>
+	<string>tp_huaxin.png</string>
+	<key>[急眼]</key>
+	<string>tp_jiyan.png</string>
+	<key>[可爱]</key>
+	<string>tp_keai.png</string>
+	<key>[可怜]</key>
+	<string>tp_kelian.png</string>
+	<key>[酷]</key>
+	<string>tp_ku.png</string>
+	<key>[困]</key>
+	<string>tp_kun.png</string>
+	<key>[懒得理你]</key>
+	<string>tp_landelini.png</string>
+</dict>
+</plist>
