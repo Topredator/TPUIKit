@@ -53,7 +53,7 @@
         [menuVC setDismissBlock:^{
             NSLog(@"消失了");
         }];
-        [menuVC presentInTargetVC:self contentHeight:MIN(200, [menuVC maxContentHeight]) topOffset:0];
+        [menuVC presentInTargetVC:self contentHeight:MIN(200, [menuVC maxContentHeight]) topOffset:200];
         self.menuVC = menuVC;
     }
 }
