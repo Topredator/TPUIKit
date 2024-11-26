@@ -8,6 +8,7 @@
 
 #import "TPClassifyVC.h"
 #import "TPClassifyRow.h"
+#import <TPUIKit/TPUIRefreshFooter.h>
 @interface TPClassifyVC ()
 
 @end
@@ -25,6 +26,12 @@
     self.tableview.hidden = NO;
     [self.tableview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsZero);
+    }];
+    __weak typeof(self) weakSelf = self;
+    self.tableview.mj_footer = [TPUIRefreshFooter footerWithRefreshingBlock:^{
+        [TPGCDQueue executeInMainQueue:^{
+            [weakSelf.tableview.mj_footer endRefreshing];
+        } afterDelaySecs:2];
     }];
 }
 - (void)loadData {

@@ -65,3 +65,10 @@
 #import "TPTextDisplayView.h"
 #import "TPRichTextLabelConfig.h"
 #import "TPRichTextEmoji.h"
+
+/// LimitTextField
+#import "TPLimitTextField.h"
+#import "TPNoPasteTextField.h"
+
+/// Line
+#import "TPLine.h"

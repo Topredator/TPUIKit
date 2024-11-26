@@ -70,7 +70,38 @@
                  b:(CGFloat)((hex & 0xFF))
                  a:alpha];
 }
-
++ (UIColor *)tp_hexStringColor:(NSString *)hexString {
+    return [self tp_hexStringColor:hexString alpha:1.0];
+}
++ (UIColor *)tp_hexStringColor:(NSString *)hexString alpha:(CGFloat)alpha {
+    if ([hexString length] < 6) {
+        return [UIColor clearColor];
+    }
+    if ([hexString hasPrefix:@"0x"] ||
+        [hexString hasPrefix:@"0X"]) {
+        hexString = [hexString substringFromIndex:2];
+    } else if ([hexString hasPrefix:@"#"]) {
+        hexString = [hexString substringFromIndex:1];
+    }
+    if (hexString.length != 6) {
+        return [UIColor clearColor];
+    }
+    NSRange range;
+    range.location    = 0;
+    range.length      = 2;
+    // R、G、B
+    NSString *rString = [hexString substringWithRange:range];
+    range.location    = 2;
+    NSString *gString = [hexString substringWithRange:range];
+    range.location    = 4;
+    NSString *bString = [hexString substringWithRange:range];
+    // Scan values
+    unsigned int r, g, b;
+    [[NSScanner scannerWithString:rString] scanHexInt:&r];
+    [[NSScanner scannerWithString:gString] scanHexInt:&g];
+    [[NSScanner scannerWithString:bString] scanHexInt:&b];
+    return [self tp_r:(CGFloat)r g:(CGFloat)g b:(CGFloat)b a:alpha];
+}
 
 + (UIFont *)tp_font:(CGFloat)fontSize weight:(TPUIFontWeight)weight {
     if (weight < FontThin || weight > FontLight) weight = FontRegular;
