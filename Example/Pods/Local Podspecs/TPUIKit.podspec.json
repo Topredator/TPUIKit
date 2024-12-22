@@ -1,6 +1,6 @@
 {
   "name": "TPUIKit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "summary": "A short description of TPUIKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Topredator/TPUIKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Topredator/TPUIKit.git",
-    "tag": "1.1.0"
+    "tag": "1.1.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -216,6 +216,10 @@
     {
       "name": "Line",
       "source_files": "TPUIKit/Classes/Line/**/*"
+    },
+    {
+      "name": "CustomLayout",
+      "source_files": "TPUIKit/Classes/CustomLayout/**/*"
     }
   ]
 }

@@ -378,7 +378,7 @@
     if (self.isVertical) { // 如果竖直布局
         CGFloat y = self.leadAndTrailSpace;
         if (!self.scrollView.scrollEnabled) { // 如果不支持滚动
-            self.itemHeight = ceil((self.frame.size.height - 2 * self.leadAndTrailSpace) / self.items.count);
+            self.itemHeight = ceil((self.frame.size.height - 2 * self.leadAndTrailSpace - (self.items.count - 1) * self.itemSpace) / self.items.count);
         }
         for (NSUInteger index = 0; index < self.items.count; index ++) {
             TPUITabItem *item = self.items[index];
@@ -386,6 +386,7 @@
             item.index = index;
             y += self.itemHeight;
         }
+        y -= self.itemSpace;
         // 设置scrollview的contentSize
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, MAX(y + self.leadAndTrailSpace, self.scrollView.frame.size.height));
     } else { // 水平布局
@@ -401,12 +402,13 @@
                 
                 item.frame = CGRectMake(x, 0, width, self.frame.size.height);
                 item.index = index;
-                x += width;
+                x += (width + self.itemSpace);
             }
+            x -= self.itemSpace;
             self.scrollView.contentSize = CGSizeMake(MAX(x + self.leadAndTrailSpace, self.scrollView.frame.size.width), self.scrollView.frame.size.height);
         } else { // 不支持滚动
             CGFloat x = self.leadAndTrailSpace;
-            CGFloat allItemsWidth = self.frame.size.width - self.leadAndTrailSpace * 2;
+            CGFloat allItemsWidth = self.frame.size.width - self.leadAndTrailSpace * 2 - (self.items.count - 1) * self.itemSpace;
             self.itemWidth = allItemsWidth / self.items.count;
             // 四舍五入，取整，防止字体模糊
             self.itemWidth = floorf(self.itemWidth + 0.5f);
@@ -415,7 +417,7 @@
                 TPUITabItem *item = self.items[index];
                 item.frame = CGRectMake(x, 0, self.itemWidth, self.frame.size.height);
                 item.index = index;
-                x += self.itemWidth;
+                x += (self.itemWidth + self.itemSpace);
             }
             self.scrollView.contentSize = CGSizeMake(self.bounds.size.width, self.bounds.size.height);
         }

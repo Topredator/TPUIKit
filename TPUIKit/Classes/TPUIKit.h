@@ -22,9 +22,13 @@
 #import "UIView+TPUILayout.h"
 #import "UIViewController+TPUIPresentStyle.h"
 // GradientView
+#import "TPUIGradientLayer.h"
 #import "TPUIGradientView.h"
 #import "TPUIGradientButton.h"
 #import "TPUIGradientLabel.h"
+#import "UIButton+TPTitleGradient.h"
+#import "UILabel+TPTitleGradient.h"
+#import "UIView+TPBgGradient.h"
 
 //Graphic View
 #import "TPUIGraphicView.h"
@@ -72,3 +76,7 @@
 
 /// Line
 #import "TPLine.h"
+
+/// CustomLayout
+#import "TPFitWidthLayout.h"
+#import "TPWaterfallLayout.h"

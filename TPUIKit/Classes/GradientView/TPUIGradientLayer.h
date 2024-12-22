@@ -17,6 +17,12 @@ typedef NS_ENUM(NSInteger, TPUIGradientDirection) {
 /// 自定义 梯度layer
 @interface TPUIGradientLayer : CAGradientLayer
 + (instancetype)gradientBeginColor:(UIColor *)beginColor endColor:(UIColor *)endColor direction:(TPUIGradientDirection)direction;
+/// 生成图片
+/// - Parameter size: 传入的尺寸
+- (UIImage *)tp_imageWithSize:(CGSize)size;
+/// 生成颜色
+/// - Parameter size: 尺寸
+- (UIColor *)tp_colorWithSize:(CGSize)size;
 @end
 
 /**

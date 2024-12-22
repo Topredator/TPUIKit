@@ -42,6 +42,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		94AE8AF82D17E27600312D45 /* TPTabbarRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AE8AF72D17E27600312D45 /* TPTabbarRow.m */; };
 		94E7641D2223882C0091FA5B /* TPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E7641C2223882C0091FA5B /* TPTestViewController.m */; };
 		94E7642022238C060091FA5B /* invalidName@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E7641E22238C060091FA5B /* invalidName@3x.png */; };
 		94E7642122238C060091FA5B /* invalidName@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E7641F22238C060091FA5B /* invalidName@2x.png */; };
@@ -122,6 +123,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		798AFF8BA4E1DDEA5061E758 /* Pods-TPUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPUIKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TPUIKit_Tests/Pods-TPUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A22F010802BE37745DEC94B /* TPUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TPUIKit.podspec; path = ../TPUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94AE8AF62D17E27600312D45 /* TPTabbarRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPTabbarRow.h; sourceTree = "<group>"; };
+		94AE8AF72D17E27600312D45 /* TPTabbarRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPTabbarRow.m; sourceTree = "<group>"; };
 		94E7641B2223882C0091FA5B /* TPTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPTestViewController.h; sourceTree = "<group>"; };
 		94E7641C2223882C0091FA5B /* TPTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPTestViewController.m; sourceTree = "<group>"; };
 		94E7641E22238C060091FA5B /* invalidName@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invalidName@3x.png"; sourceTree = "<group>"; };
@@ -292,6 +295,7 @@
 		53F44DAD271FABA4006D4538 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				94AE8AF52D17E21800312D45 /* View */,
 				53F44DAA271FAB7F006D4538 /* TPScrollContainer.h */,
 				53F44DAB271FAB7F006D4538 /* TPScrollContainer.m */,
 				53F44DAE271FABC2006D4538 /* TPTabbarPageVC.h */,
@@ -415,6 +419,15 @@
 				35376D21691B5E8AB70E3D54 /* Pods-TPUIKit_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		94AE8AF52D17E21800312D45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94AE8AF62D17E27600312D45 /* TPTabbarRow.h */,
+				94AE8AF72D17E27600312D45 /* TPTabbarRow.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -597,6 +610,7 @@
 			files = (
 				53F44D87271EA8C7006D4538 /* TPBaseTableVC.m in Sources */,
 				53F44DB0271FABC2006D4538 /* TPTabbarPageVC.m in Sources */,
+				94AE8AF82D17E27600312D45 /* TPTabbarRow.m in Sources */,
 				94E7641D2223882C0091FA5B /* TPTestViewController.m in Sources */,
 				53F44DA5271EC3E4006D4538 /* TPFunctionRow.m in Sources */,
 				53F44DB7271FADA1006D4538 /* TPBannerPage.m in Sources */,
