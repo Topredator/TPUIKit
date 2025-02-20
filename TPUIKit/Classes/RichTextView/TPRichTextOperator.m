@@ -357,6 +357,30 @@
             forIndex += 11;
             continue;
         }
+        char firstChar = [subString characterAtIndex:0];
+        switch (firstChar) {
+            case '@': {
+                content = [subString substringWithRange:NSMakeRange(2, subString.length - 3)];
+                NSArray *contentArray = [content componentsSeparatedByString:@":"];
+                NSInteger tempLength = 0;
+                if(contentArray.count > 1) {
+                    replaceStr = [NSString stringWithFormat:@"@%@",contentArray[0]];
+                    tempLength = ((NSString *)contentArray[1]).length + 1;
+                    forIndex += tempLength;
+                } else {
+                    replaceStr = [NSString stringWithFormat:@"@%@",content];
+                }
+            }
+                break;
+            case '$': {}
+                break;
+            case '#': {}
+                break;
+            case '[': {}
+                break;
+            default:
+                break;
+        }
     }
 }
 @end
