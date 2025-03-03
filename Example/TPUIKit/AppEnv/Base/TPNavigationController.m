@@ -27,16 +27,16 @@
     self.navigationBar.barStyle = UIBarStyleDefault;
     self.navigationBar.titleTextAttributes = @{
         NSFontAttributeName: [TPUI tp_font:18 weight:FontMedium],
-        NSForegroundColorAttributeName : [TPUI rgba:51]
+        NSForegroundColorAttributeName : [TPUI tp_t:51]
     };
     [[UINavigationBar appearance]  setBackgroundImage:[[UIImage alloc] init] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
     [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
     [[UITabBarItem appearance] setTitleTextAttributes:@{
-        NSForegroundColorAttributeName: [TPUI r:101 g:109 b:127],
+        NSForegroundColorAttributeName: [TPUI tp_r:101 g:109 b:127],
         NSFontAttributeName: [TPUI tp_font:10 weight:FontRegular]
     } forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{
-        NSForegroundColorAttributeName: [TPUI r:39 g:119 b:248],
+        NSForegroundColorAttributeName: [TPUI tp_r:39 g:119 b:248],
         NSFontAttributeName: [TPUI tp_font:10 weight:FontRegular]
     } forState:UIControlStateSelected];
     [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -2)];

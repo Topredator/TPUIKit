@@ -40,4 +40,21 @@
     }
     return self;
 }
+- (UIImage *)tp_generateImage {
+    UIGraphicsBeginImageContextWithOptions(self.frame.size, self.opaque, 0);
+    [self renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *outputImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return outputImage;
+}
+- (UIImage *)tp_imageWithSize:(CGSize)size {
+    UIGraphicsBeginImageContextWithOptions(size, self.opaque, 0);
+    [self renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *outputImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return outputImage;
+}
+- (UIColor *)tp_colorWithSize:(CGSize)size {
+    return [UIColor colorWithPatternImage:[self tp_imageWithSize:size]];
+}
 @end

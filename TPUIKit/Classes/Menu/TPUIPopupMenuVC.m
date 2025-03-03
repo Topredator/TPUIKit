@@ -58,14 +58,15 @@
     [targetVC addChildViewController:self];
     [targetVC.view addSubview:self.view];
     if ((targetVC.navigationController && !targetVC.navigationController.navigationBar.translucent) || !targetVC.navigationController) {
-        self.view.frame = CGRectMake(0, topOffset, targetVC.view.bounds.size.width, targetVC.view.bounds.size.height);
+        self.view.frame = CGRectMake(0, 0, targetVC.view.bounds.size.width, targetVC.view.bounds.size.height);
     } else {
         [self.view mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.mas_equalTo(UIEdgeInsetsMake([TPUI tp_topBarHeight] + topOffset, 0, 0, 0));
+            make.edges.mas_equalTo(UIEdgeInsetsMake([TPUI tp_topBarHeight], 0, 0, 0));
         }];
     }
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.mas_equalTo(0);
+        make.left.right.mas_equalTo(0);
+        make.top.mas_equalTo(topOffset);
         self.heightConstraint = make.height.mas_equalTo(0);
     }];
     [self.view setNeedsLayout];
@@ -101,6 +102,12 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return self.config.rowHeight;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return nil;
+}
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section { return 0.01; }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section { return 0.01; }
@@ -150,7 +157,7 @@
         _tableView.delaysContentTouches = YES;
         _tableView.separatorStyle = self.config.isShowDivider ? UITableViewCellSeparatorStyleSingleLine : UITableViewCellSeparatorStyleNone;
         _tableView.backgroundColor = [UIColor whiteColor];
-        _tableView.separatorColor = [TPUI rgba:229];
+        _tableView.separatorColor = [TPUI tp_t:229];
         _tableView.separatorInset = UIEdgeInsetsZero;
         _tableView.delegate = self;
         _tableView.dataSource = self;

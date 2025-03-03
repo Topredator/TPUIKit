@@ -42,7 +42,7 @@
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         _titleLabel.font = [TPUI tp_font:14 weight:FontMedium];
-        _titleLabel.textColor = [TPUI rgba:51];
+        _titleLabel.textColor = [TPUI tp_t:51];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLabel;

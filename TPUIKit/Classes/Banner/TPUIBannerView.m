@@ -142,10 +142,13 @@ static char kTPUIBannerPageViewPageIndexKey;
     NSInteger currentIndex = round(pageRate);
     // 如果当前分页不可用(即index无效,超出数组范围)，直接返回
     if (![self isVaildPageIndex:currentIndex]) return;
-    
+    if (!self.pageControl.isHidden) {
+        if (self.scrollDirection != TPUIBannerDirectionHorizontal) {
+            self.pageControl.hidden = YES;
+        }
+    }
     // 滚动到指定分页
     if (scroll) {
-        self.pageControl.hidden = !(self.scrollDirection == TPUIBannerDirectionHorizontal);
         if (self.scrollDirection == TPUIBannerDirectionHorizontal) { // 竖屏或者竖直
             CGFloat offset = currentIndex * self.scrollView.frame.size.width;
             if (offset != self.scrollView.contentOffset.x) {

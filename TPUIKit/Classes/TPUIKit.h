@@ -21,10 +21,16 @@
 #import "UIView+TPUIExtension.h"
 #import "UIView+TPUILayout.h"
 #import "UIViewController+TPUIPresentStyle.h"
+#import "UITextView+TPPlaceholder.h"
+
 // GradientView
+#import "TPUIGradientLayer.h"
 #import "TPUIGradientView.h"
 #import "TPUIGradientButton.h"
 #import "TPUIGradientLabel.h"
+#import "UIButton+TPTitleGradient.h"
+#import "UILabel+TPTitleGradient.h"
+#import "UIView+TPBgGradient.h"
 
 //Graphic View
 #import "TPUIGraphicView.h"
@@ -60,3 +66,24 @@
 #import "TPUIQRCode.h"
 // ScreenShot
 #import "TPUIScreenShot.h"
+
+// RichText
+#import "TPTextDisplayView.h"
+#import "TPRichTextLabelConfig.h"
+#import "TPRichTextEmoji.h"
+
+/// LimitTextField
+#import "TPLimitTextField.h"
+#import "TPNoPasteTextField.h"
+
+/// Line
+#import "TPLine.h"
+
+/// CustomLayout
+#import "TPFitWidthLayout.h"
+#import "TPWaterfallLayout.h"
+
+/// Menu
+#import "TPUIPopupMenuVC.h"
+#import "TPUIPopupMenuConfig.h"
+#import "TPUIPopupMenuCell.h"

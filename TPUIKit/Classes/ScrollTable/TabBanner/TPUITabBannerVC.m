@@ -147,15 +147,15 @@
 - (TPUITabbar *)tabbar {
     if (!_tabbar) {
         _tabbar = [[TPUITabbar alloc] initWithFrame:CGRectMake(0, 0, TPUI.tp_screenWidth, 40)];
-        _tabbar.itemTitleColor = [TPUI rgba:153];
-        _tabbar.itemTitleSelectedColor = [TPUI rgba:51];
+        _tabbar.itemTitleColor = [TPUI tp_t:153];
+        _tabbar.itemTitleSelectedColor = [TPUI tp_t:51];
         _tabbar.itemTitleFont = [TPUI tp_font:16 weight:FontRegular];
         _tabbar.itemTitleSelectedFont = [TPUI tp_font:20 weight:FontMedium];
         _tabbar.indicatorColor = UIColor.clearColor;
         _tabbar.leadAndTrailSpace = 6;
         [_tabbar setScrollEnabledAndItemFitTextWidthWithSpacing:30];
         _tabbar.indicatorRadius = 1.5;
-        _tabbar.indicatorColor = [TPUI r:39 g:119 b:248];
+        _tabbar.indicatorColor = [TPUI tp_r:39 g:119 b:248];
         [_tabbar setIndicatorPosition:TPUIIndicatorPositionMake(0, 15, 3) tapSwitchAnimated:YES];
         _tabbar.delegate = self;
     }

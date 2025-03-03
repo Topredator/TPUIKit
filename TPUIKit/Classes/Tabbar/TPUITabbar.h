@@ -68,6 +68,8 @@ typedef NS_ENUM(NSInteger, TPUITabbarIndicatorAnimationType) {
 
 /// tabbar边缘 与第一个和最后一个item的距离
 @property (nonatomic, assign) CGFloat leadAndTrailSpace;
+/// tabbar中 item间隔
+@property (nonatomic, assign) CGFloat itemSpace;
 /// 选中的item下标
 @property (nonatomic, assign) NSUInteger selectedItemIndex;
 

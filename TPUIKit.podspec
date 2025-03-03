@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TPUIKit'
-  s.version          = '1.0.8'
+  s.version          = '1.1.2'
   s.summary          = 'A short description of TPUIKit.'
 
 # This description is used to generate tags and improve search results.
@@ -136,6 +136,16 @@ TODO: Add long description of the pod here.
    s.subspec 'RichTextView' do |ss|
        ss.source_files = 'TPUIKit/Classes/RichTextView/**/*'
        ss.dependency 'TPUIKit/Base'
+   end
+   s.subspec 'LimitTextField' do |ss|
+     ss.source_files = 'TPUIKit/Classes/LimitTextField/**/*'
+   end
+   s.subspec 'Line' do |ss|
+     ss.source_files = 'TPUIKit/Classes/Line/**/*'
+   end
+   
+   s.subspec 'CustomLayout' do |ss|
+     ss.source_files = 'TPUIKit/Classes/CustomLayout/**/*'
    end
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

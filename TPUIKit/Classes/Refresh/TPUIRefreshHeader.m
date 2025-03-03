@@ -8,50 +8,77 @@
 #import "TPUIRefreshHeader.h"
 #import <Masonry/Masonry.h>
 #import "TPUI.h"
+#import "TPUIRefreshConfig.h"
 @implementation TPUIRefreshHeader
 - (void)prepare {
     [super prepare];
     [self setupSubviews];
 }
 - (void)placeSubviews {
+    self.lastUpdatedTimeLabel.hidden = YES;
+    self.stateLabel.hidden = YES;
+    self.gifView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.gifView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.centerY.mas_equalTo(0);
+        make.width.mas_lessThanOrEqualTo(80);
+    }];
     [super placeSubviews];
 }
 - (void)setupSubviews {
-    self.lastUpdatedTimeLabel.hidden = YES;
+    // 初始化间距
+    self.labelLeftInset = 20;
+    
+    //所有的自定义东西都放在这里
+    [self setTitle:[TPUIRefreshConfig config].refreshMaker.headerIdleTitle forState:MJRefreshStateIdle];
+    [self setTitle:[TPUIRefreshConfig config].refreshMaker.headerPullTitle forState:MJRefreshStatePulling];
+    [self setTitle:[TPUIRefreshConfig config].refreshMaker.headerRefreshTitle forState:MJRefreshStateRefreshing];
+    [self setTitle:[TPUIRefreshConfig config].refreshMaker.willRefreshTitle forState:MJRefreshStateWillRefresh];
+
+    
+    // 设置普通状态的动画图片
+    [self setImages:[TPUIRefreshConfig config].refreshMaker.idleImgs forState:MJRefreshStateIdle];
+    
+    // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
+    [self setImages:[TPUIRefreshConfig config].refreshMaker.willRefreshImgs forState:MJRefreshStatePulling];
+    
+    // 设置正在刷新状态的动画图片
+    [self setImages:[TPUIRefreshConfig config].refreshMaker.refreshImgs forState:MJRefreshStateRefreshing];
+    
+    
     // 设置状态标签
 //    self.stateLabel.textAlignment = NSTextAlignmentCenter;
 //    self.stateLabel.font = [UIFont systemFontOfSize:20];
     
-    [self setTitle:@"下拉刷新" forState:MJRefreshStateIdle];
-    [self setTitle:@"松开刷新" forState:MJRefreshStatePulling];
-    [self setTitle:@"加载中" forState:MJRefreshStateRefreshing];
-    
-    [self.stateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.mas_equalTo(0);
-        make.height.mas_equalTo(15);
-        make.top.mas_equalTo(50);
-    }];
-    
-    // 设置Gif
-    
-    NSArray *idleImages = @[[TPUI tp_imageName:@"loading1_00000" bundleName:@"TPUIKitRefresh"]];
-    // 设置即将刷新状态的动画图片
-    NSMutableArray *refreshingImages = [NSMutableArray array];
-    for (NSInteger i = 0; i <= 49; i++) {
-        UIImage *image = [TPUI tp_imageName:[NSString stringWithFormat:@"loading1_000%02ld", i]
-                                 bundleName:@"TPUIKitRefresh"];
-        [refreshingImages addObject:image];
-    }
-    // 设置不同状态的图片
-    [self setImages:idleImages forState:MJRefreshStateIdle];
-    [self setImages:refreshingImages forState:MJRefreshStatePulling];
-    [self setImages:refreshingImages duration:3.5 forState:MJRefreshStateRefreshing];
-    
-    [self.gifView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(44, 22));
-        make.centerX.mas_equalTo(0);
-        make.bottom.equalTo(self.stateLabel.mas_top).offset(-10);
-    }];
+//    [self setTitle:@"下拉刷新" forState:MJRefreshStateIdle];
+//    [self setTitle:@"松开刷新" forState:MJRefreshStatePulling];
+//    [self setTitle:@"加载中" forState:MJRefreshStateRefreshing];
+//
+//    [self.stateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.centerX.mas_equalTo(0);
+//        make.height.mas_equalTo(15);
+//        make.top.mas_equalTo(50);
+//    }];
+//
+//    // 设置Gif
+//
+//    NSArray *idleImages = @[[TPUI tp_imageName:@"loading1_00000" bundleName:@"TPUIKitRefresh"]];
+//    // 设置即将刷新状态的动画图片
+//    NSMutableArray *refreshingImages = [NSMutableArray array];
+//    for (NSInteger i = 0; i <= 49; i++) {
+//        UIImage *image = [TPUI tp_imageName:[NSString stringWithFormat:@"loading1_000%02ld", i]
+//                                 bundleName:@"TPUIKitRefresh"];
+//        [refreshingImages addObject:image];
+//    }
+//    // 设置不同状态的图片
+//    [self setImages:idleImages forState:MJRefreshStateIdle];
+//    [self setImages:refreshingImages forState:MJRefreshStatePulling];
+//    [self setImages:refreshingImages duration:3.5 forState:MJRefreshStateRefreshing];
+//
+//    [self.gifView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.size.mas_equalTo(CGSizeMake(44, 22));
+//        make.centerX.mas_equalTo(0);
+//        make.bottom.equalTo(self.stateLabel.mas_top).offset(-10);
+//    }];
 }
 - (void)setPullingPercent:(CGFloat)pullingPercent {
     [super setPullingPercent:pullingPercent];

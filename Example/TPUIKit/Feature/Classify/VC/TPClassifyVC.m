@@ -7,7 +7,8 @@
 //
 
 #import "TPClassifyVC.h"
-
+#import "TPClassifyRow.h"
+#import <TPUIKit/TPUIRefreshFooter.h>
 @interface TPClassifyVC ()
 
 @end
@@ -26,8 +27,21 @@
     [self.tableview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsZero);
     }];
+    __weak typeof(self) weakSelf = self;
+    self.tableview.mj_footer = [TPUIRefreshFooter footerWithRefreshingBlock:^{
+        [TPGCDQueue executeInMainQueue:^{
+            [weakSelf.tableview.mj_footer endRefreshing];
+        } afterDelaySecs:2];
+    }];
 }
 - (void)loadData {
-    
+    NSArray *items = @[
+        [TPClassifyItem itemName:@"RichText" type:RichText],
+    ];
+    TPTableSection *section = [TPTableSection section];
+    for (TPClassifyItem *item in items) {
+        [section tp_safetyAddObject:[TPClassifyRow itemRow:item]];
+    }
+    [self reloadData:@[section]];
 }
 @end

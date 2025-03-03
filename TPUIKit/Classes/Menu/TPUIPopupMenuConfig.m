@@ -11,8 +11,8 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _textColor                        = [TPUI rgba:51];
-        _selectedTextColor            = [TPUI r:41 g:143 b:237];
+        _textColor                        = [TPUI tp_t:51];
+        _selectedTextColor            = [TPUI tp_r:41 g:143 b:237];
         
         _textFont                         = [TPUI tp_font:14 weight:FontRegular];
         _selectedTextFont             = [TPUI tp_font:14 weight:FontMedium];
@@ -23,7 +23,7 @@
         _selectedIndex                  = 0;
         _rowHeight                       = 44.0;
         _showDivider                    = YES;
-        _shieldColor                     = [TPUI rgba:0 alpha:0.1];
+        _shieldColor                     = [TPUI tp_t:0 alpha:0.1];
     }
     return self;
 }

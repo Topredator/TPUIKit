@@ -44,33 +44,64 @@
 
 
 + (UIColor *)tp_randomColor {
-    return [self r:arc4random_uniform(255) g:arc4random_uniform(255) b:arc4random_uniform(255)];
+    return [self tp_r:arc4random_uniform(255) g:arc4random_uniform(255) b:arc4random_uniform(255)];
 }
 /// RGB
-+ (UIColor *)r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue {
-    return [self r:red g:green b:blue a:1.0];
++ (UIColor *)tp_r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue {
+    return [self tp_r:red g:green b:blue a:1.0];
 }
 /// RGBA
-+ (UIColor *)r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue a:(CGFloat)alpha {
++ (UIColor *)tp_r:(CGFloat)red g:(CGFloat)green b:(CGFloat)blue a:(CGFloat)alpha {
     return [UIColor colorWithRed:(red) / 255.0 green:(green) / 255.0 blue:(blue) / 255.0 alpha:alpha];
 }
-+ (UIColor *)rgba:(CGFloat)t {
-    return [self r:t g:t b:t];
++ (UIColor *)tp_t:(CGFloat)t {
+    return [self tp_r:t g:t b:t];
 }
-+ (UIColor *)rgba:(CGFloat)t alpha:(CGFloat)alpha {
-    return [self r:t g:t b:t a:alpha];
++ (UIColor *)tp_t:(CGFloat)t alpha:(CGFloat)alpha {
+    return [self tp_r:t g:t b:t a:alpha];
 }
 /// hex color
 + (UIColor *)tp_hexColor:(unsigned long)hex {
     return [self tp_hexColor:hex alpha:1.0];
 }
 + (UIColor *)tp_hexColor:(unsigned long)hex alpha:(CGFloat)alpha {
-    return [self r:(CGFloat)((hex & 0xFF0000) >> 16)
+    return [self tp_r:(CGFloat)((hex & 0xFF0000) >> 16)
                  g:(CGFloat)((hex & 0xFF00) >> 8)
                  b:(CGFloat)((hex & 0xFF))
                  a:alpha];
 }
-
++ (UIColor *)tp_hexStringColor:(NSString *)hexString {
+    return [self tp_hexStringColor:hexString alpha:1.0];
+}
++ (UIColor *)tp_hexStringColor:(NSString *)hexString alpha:(CGFloat)alpha {
+    if ([hexString length] < 6) {
+        return [UIColor clearColor];
+    }
+    if ([hexString hasPrefix:@"0x"] ||
+        [hexString hasPrefix:@"0X"]) {
+        hexString = [hexString substringFromIndex:2];
+    } else if ([hexString hasPrefix:@"#"]) {
+        hexString = [hexString substringFromIndex:1];
+    }
+    if (hexString.length != 6) {
+        return [UIColor clearColor];
+    }
+    NSRange range;
+    range.location    = 0;
+    range.length      = 2;
+    // R、G、B
+    NSString *rString = [hexString substringWithRange:range];
+    range.location    = 2;
+    NSString *gString = [hexString substringWithRange:range];
+    range.location    = 4;
+    NSString *bString = [hexString substringWithRange:range];
+    // Scan values
+    unsigned int r, g, b;
+    [[NSScanner scannerWithString:rString] scanHexInt:&r];
+    [[NSScanner scannerWithString:gString] scanHexInt:&g];
+    [[NSScanner scannerWithString:bString] scanHexInt:&b];
+    return [self tp_r:(CGFloat)r g:(CGFloat)g b:(CGFloat)b a:alpha];
+}
 
 + (UIFont *)tp_font:(CGFloat)fontSize weight:(TPUIFontWeight)weight {
     if (weight < FontThin || weight > FontLight) weight = FontRegular;
@@ -100,7 +131,14 @@
                bundleName:(NSString *)bundleName {
     NSString *bundlePath = [[NSBundle bundleForClass:[self class]].resourcePath stringByAppendingPathComponent:[NSString stringWithFormat:@"/%@.bundle", bundleName]];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
-    return [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
+    if (@available(iOS 13.0, *)) {
+        return [UIImage imageNamed:imageName
+                          inBundle:bundle
+                 withConfiguration:nil];
+    }
+    return [UIImage imageNamed:imageName
+                      inBundle:bundle
+            compatibleWithTraitCollection:nil];
 }
 
 + (void)tp_adjustsInsets:(UIScrollView *)scrollView vc:(UIViewController *)vc {
